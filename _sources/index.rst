@@ -23,54 +23,81 @@ OSSCAR started in 2019 and is funded by the EPFL Open Science Fund until 2022.
 
    :fa:`rocket,mr-1` **Getting Started**
 
-   AiiDA installation, configuration and troubleshooting.
+   Introduction: goals, technologies and utilisation overall.
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
    .. link-button:: intro/get_started
       :type: ref
-      :text: To the installation guides
+      :text: To the introduction
       :classes: btn-outline-primary btn-block stretched-link
 
    ----------------------------------------------
 
-   :fa:`info-circle,mr-1` **Tutorial**
+   :fa:`tools,mr-1` **JupyterLab Extensions**
 
-   First time users: Get your feet wet with AiiDA basics!
+   A collection of JupyterLab extensions developed by OSSCAR team.
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
    .. link-button:: intro/tutorial
       :type: ref
-      :text: To the tutorials
+      :text: To the extensions
       :classes: btn-outline-primary btn-block stretched-link
 
    ----------------------------------------------
 
-   :fa:`question-circle,mr-1` **How-To Guides**
+   :fa:`sliders-h,mr-1` **Jupyter Widgets**
 
-   Learn how to use AiiDA to power your own work.
+   A collection of Jupyter widgets developed by OSSCAR team.
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: widgets/index
+      :type: ref
+      :text: To the widgets
+      :classes: btn-outline-primary btn-block stretched-link
+
+   ----------------------------------------------
+
+   :fa:`book,mr-1` **Course Applications**
+
+   A collection of developed courses applications for quantum mechanics
+   and computational materials science.
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
    .. link-button:: howto/index
       :type: ref
-      :text: To the how-to guides
+      :text: To the course applications
       :classes: btn-outline-primary btn-block stretched-link
 
    ----------------------------------------------
 
-   :fa:`bookmark,mr-1` **Topics**
+   :fa:`file-code,mr-1` **Tutorial for Developers**
 
-   Background information on AiiDA's underlying concepts.
+   Tutorial: how to develop interactive web applications with
+   Jupyter notebooks.
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
    .. link-button:: topics/index
       :type: ref
-      :text: To the topics
+      :text: To the tutorial
       :classes: btn-outline-primary btn-block stretched-link
 
+   ----------------------------------------------
+
+   :fa:`users,mr-1` **OSSCAR Team**
+
+   Introduction to the members of OSSCAR team.
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: topics/index
+      :type: ref
+      :text: To the team
+      :classes: btn-outline-primary btn-block stretched-link
 
 .. _Materials Cloud: https://www.materialscloud.org
 .. _CECAM: https://www.cecam.org
