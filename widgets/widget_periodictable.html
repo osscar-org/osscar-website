@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The widget periodic table &#8212; Open Software Services for Classrooms and Research</title>
+    <title>widget-periodictable: A Jupyter Widget to Create Interactive Periodic Table &#8212; Open Software Services for Classrooms and Research</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -93,13 +95,8 @@
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../markdown.html">
-   Markdown Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notebooks.html">
-   Content with notebooks
+  <a class="reference internal" href="index.html">
+   Jupyter Widgets
   </a>
  </li>
 </ul>
@@ -207,39 +204,72 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#visualize-the-element-grid">
-   Visualize the element grid
+  <a class="reference internal nav-link" href="#try-it-with-binder">
+   Try it with Binder
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#set-the-states-of-the-elements">
-   Set the states of the elements
+  <a class="reference internal nav-link" href="#tutorial">
+   Tutorial
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#get-the-selected-values-in-python">
-   Get the selected values in python
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#play-with-enabling-disabling-some-elements">
-   Play with enabling/disabling some elements
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#freeze-disable-clicking-events-the-whole-periodic-table">
-   Freeze (disable clicking events) the whole periodic table
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#set-the-selected-values-from-python">
-   Set the selected values from python
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#change-the-displayed-string-for-some-elements">
-   Change the displayed string for some elements
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-the-widget">
+     <strong>
+      Import the widget
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#initialize-and-visualize-the-element-grid">
+     <strong>
+      Initialize and visualize the element grid
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-the-states-of-the-elements">
+     <strong>
+      Set the states of the elements
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#get-the-selected-values-in-python">
+     <strong>
+      Get the selected values in python
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#play-with-enabling-disabling-some-elements">
+     <strong>
+      Play with enabling/disabling some elements
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#freeze-disable-clicking-events-the-whole-periodic-table">
+     <strong>
+      Freeze (disable clicking events) the whole periodic table
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-the-selected-values-from-python">
+     <strong>
+      Set the selected values from python
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#change-the-displayed-string-for-some-elements">
+     <strong>
+      Change the displayed string for some elements
+     </strong>
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -252,46 +282,69 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="the-widget-periodic-table">
-<h1>The widget periodic table<a class="headerlink" href="#the-widget-periodic-table" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="widget-periodictable-a-jupyter-widget-to-create-interactive-periodic-table">
+<h1><code class="docutils literal notranslate"><span class="pre">widget-periodictable</span></code>: A Jupyter Widget to Create Interactive Periodic Table<a class="headerlink" href="#widget-periodictable-a-jupyter-widget-to-create-interactive-periodic-table" title="Permalink to this headline">¶</a></h1>
+<p><strong>Introduction</strong>: Periodic table is a important tool for chemistry and physics
+education and research. This is a Jupyter widget to create a interactive periodic
+table. Users can custom the colors of the elements and group elements by colors.
+The elements are also clickable and triggle custom events.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/widget_periodictable.png"><img alt="image periodictable" class="bg-primary mb-1 align-center" src="../_images/widget_periodictable.png" style="width: 500px;" /></a>
+<div class="admonition-installation admonition">
+<p class="admonition-title">Installation</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install --upgrade widget-periodictable
+</pre></div>
+</div>
+</div>
+<div class="section" id="try-it-with-binder">
+<h2>Try it with Binder<a class="headerlink" href="#try-it-with-binder" title="Permalink to this headline">¶</a></h2>
+<p>You can try the interactive periodic table and check the usage through the Binder link:
+<a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/widget-periodictable/develop?urlpath=%2Fvoila%2Frender%2Fexamples%2Fintroduction.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
+</div>
+<div class="section" id="tutorial">
+<h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
+<hr style="border:1px solid gray"> </hr>
+<div class="section" id="import-the-widget">
+<h3><strong>Import the widget</strong><a class="headerlink" href="#import-the-widget" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 <span class="kn">from</span> <span class="nn">widget_periodictable</span> <span class="kn">import</span> <span class="n">PTableWidget</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">Layout</span>
-<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
 </pre></div>
 </div>
 </div>
 </div>
-<div class="section" id="visualize-the-element-grid">
-<h2>Visualize the element grid<a class="headerlink" href="#visualize-the-element-grid" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="initialize-and-visualize-the-element-grid">
+<h3><strong>Initialize and visualize the element grid</strong><a class="headerlink" href="#initialize-and-visualize-the-element-grid" title="Permalink to this headline">¶</a></h3>
+<p>Here, we initialize the periodic table with three states, which have red, green
+and blue color respectively. The selected elements are C, Si and Ge. The carbon
+is in the 1st state, which has red color. The elements B, Al and Ga are disabled,
+which means they are not clickable. All the rest unselected elements are in pink
+color. The border color of each element is black. The width option is set for
+each element.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Show the widget</span>
-<span class="n">widget</span> <span class="o">=</span> <span class="n">PTableWidget</span><span class="p">(</span><span class="n">states</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">selected_elements</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;C&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Si&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Ge&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">widget</span> <span class="o">=</span> <span class="n">PTableWidget</span><span class="p">(</span><span class="n">states</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">selected_elements</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;C&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Si&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Ge&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span> 
                       <span class="n">selected_colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">],</span> 
                       <span class="n">disabled_elements</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;Al&#39;</span><span class="p">,</span> <span class="s1">&#39;Ga&#39;</span><span class="p">],</span>
                       <span class="n">unselected_color</span><span class="o">=</span><span class="s1">&#39;pink&#39;</span><span class="p">,</span> <span class="n">border_color</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;20px&#39;</span><span class="p">)</span>
 
-<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;widget_periodictable&quot;</span><span class="p">,</span> <span class="n">widget</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">widget</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "c75830cd25ab4a92a03acc494739fecb"}
+{"version_major": 2, "version_minor": 0, "model_id": "07b305a810cf40c796154c1b9c3ff3c8"}
 </script></div>
 </div>
 </div>
 <div class="section" id="set-the-states-of-the-elements">
-<h2>Set the states of the elements<a class="headerlink" href="#set-the-states-of-the-elements" title="Permalink to this headline">¶</a></h2>
+<h3><strong>Set the states of the elements</strong><a class="headerlink" href="#set-the-states-of-the-elements" title="Permalink to this headline">¶</a></h3>
 <p>The periodic table allows users to customize the states of the selected elements.
-If one do not give the selected element’s state, it will set the state as zero.</p>
-<p>Init the selected elements by using a dictionary:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">widget</span><span class="o">.</span><span class="n">selected_elements</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;La&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Ce&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Pr&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
-</pre></div>
-</div>
+If one do not give the selected element’s state, it will set the state as zero.
+One can init the selected elements by using a dictionary.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">widget</span><span class="o">.</span><span class="n">selected_elements</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;La&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Ce&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Pr&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
@@ -299,10 +352,8 @@ If one do not give the selected element’s state, it will set the state as zero
 </div>
 </div>
 </div>
-<p>Change or set element state by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">widget</span><span class="o">.</span><span class="n">set_element_state</span><span class="p">(</span><span class="s2">&quot;Nd&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-</pre></div>
-</div>
+<p>Change or reset element state by the <code class="docutils literal notranslate"><span class="pre">set_element_state</span></code> method.
+However, you cannot use widget.selected_elements[“Nd”] = 1 to set the states of the elements.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">widget</span><span class="o">.</span><span class="n">set_element_state</span><span class="p">(</span><span class="s2">&quot;Nd&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
@@ -310,11 +361,7 @@ If one do not give the selected element’s state, it will set the state as zero
 </div>
 </div>
 </div>
-<p>However, you cannot use widget.selected_elements[“Nd”] = 1 to set the states of the elements.</p>
-<p>Get the elements have the same state:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">widget</span><span class="o">.</span><span class="n">get_elements_by_state</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-</pre></div>
-</div>
+<p>Get the elements which are in the same state:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">widget</span><span class="o">.</span><span class="n">get_elements_by_state</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -329,7 +376,7 @@ If one do not give the selected element’s state, it will set the state as zero
 </div>
 </div>
 <div class="section" id="get-the-selected-values-in-python">
-<h2>Get the selected values in python<a class="headerlink" href="#get-the-selected-values-in-python" title="Permalink to this headline">¶</a></h2>
+<h3><strong>Get the selected values in python</strong><a class="headerlink" href="#get-the-selected-values-in-python" title="Permalink to this headline">¶</a></h3>
 <p>Check which elements are currently selected</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -355,12 +402,12 @@ If one do not give the selected element’s state, it will set the state as zero
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "097c9e0cb064468196449619339a77e7"}
+{"version_major": 2, "version_minor": 0, "model_id": "08fe39ea8dca4342a6bf58d21162e5ea"}
 </script></div>
 </div>
 </div>
 <div class="section" id="play-with-enabling-disabling-some-elements">
-<h2>Play with enabling/disabling some elements<a class="headerlink" href="#play-with-enabling-disabling-some-elements" title="Permalink to this headline">¶</a></h2>
+<h3><strong>Play with enabling/disabling some elements</strong><a class="headerlink" href="#play-with-enabling-disabling-some-elements" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">toggle_disabled</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Checkbox</span><span class="p">(</span>
@@ -390,12 +437,12 @@ If one do not give the selected element’s state, it will set the state as zero
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "525faa485fbf43f69294de622c2414ac"}
+{"version_major": 2, "version_minor": 0, "model_id": "509431a30b4a4187822d8368fd001a69"}
 </script></div>
 </div>
 </div>
 <div class="section" id="freeze-disable-clicking-events-the-whole-periodic-table">
-<h2>Freeze (disable clicking events) the whole periodic table<a class="headerlink" href="#freeze-disable-clicking-events-the-whole-periodic-table" title="Permalink to this headline">¶</a></h2>
+<h3><strong>Freeze (disable clicking events) the whole periodic table</strong><a class="headerlink" href="#freeze-disable-clicking-events-the-whole-periodic-table" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">toggle_freeze</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Checkbox</span><span class="p">(</span>
@@ -415,12 +462,12 @@ If one do not give the selected element’s state, it will set the state as zero
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "c4933d94fb104b08bb26de21fff1fe95"}
+{"version_major": 2, "version_minor": 0, "model_id": "9b21808237864b328539d0bb821ed0a9"}
 </script></div>
 </div>
 </div>
 <div class="section" id="set-the-selected-values-from-python">
-<h2>Set the selected values from python<a class="headerlink" href="#set-the-selected-values-from-python" title="Permalink to this headline">¶</a></h2>
+<h3><strong>Set the selected values from python</strong><a class="headerlink" href="#set-the-selected-values-from-python" title="Permalink to this headline">¶</a></h3>
 <p>Choose the selected values from python</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -440,12 +487,12 @@ If one do not give the selected element’s state, it will set the state as zero
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "bd60a06ad0e84690a838dbe66a0f4824"}
+{"version_major": 2, "version_minor": 0, "model_id": "3bab0b29c9144ffe9512706e4ff76faf"}
 </script></div>
 </div>
 </div>
 <div class="section" id="change-the-displayed-string-for-some-elements">
-<h2>Change the displayed string for some elements<a class="headerlink" href="#change-the-displayed-string-for-some-elements" title="Permalink to this headline">¶</a></h2>
+<h3><strong>Change the displayed string for some elements</strong><a class="headerlink" href="#change-the-displayed-string-for-some-elements" title="Permalink to this headline">¶</a></h3>
 <p>Note that you should pass valid HTML strings, as they will not be escaped. On the other hand this allows to use HTML to change the class, color, …</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -496,16 +543,16 @@ If one do not give the selected element’s state, it will set the state as zero
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "10c4beb7fd7144cca89eee778e588adf"}
+{"version_major": 2, "version_minor": 0, "model_id": "f326022c8d6a4f86a1c9792a50ee8e0b"}
 </script></div>
 </div>
-<p>This work has been done with the support of the EPFL Open Science Fund <a class="reference external" href="http://www.osscar.org">OSSCAR</a>.</p>
-<img src="http://www.osscar.org/wp-content/uploads/2019/03/OSSCAR-logo.png" style="height:40px; width: 200px"/></div>
+</div>
+</div>
 </div>
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"49d456f44b4e4271967acfb78ad5e784": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c75830cd25ab4a92a03acc494739fecb": {"model_name": "MCPTableModel", "model_module": "widget-periodictable", "model_module_version": "^3.0.0", "state": {"_dom_classes": [], "_model_module": "widget-periodictable", "_model_module_version": "^3.0.0", "_model_name": "MCPTableModel", "_view_count": null, "_view_module": "widget-periodictable", "_view_module_version": "^3.0.0", "_view_name": "MCPTableView", "allElements": ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", "Al", "Si", "P", "S", "Cl", "Ar", "K", "Ca", "Sc", "Ti", "V", "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn", "Ga", "Ge", "As", "Se", "Br", "Kr", "Rb", "Sr", "Y", "Zr", "Nb", "Mo", "Tc", "Ru", "Rh", "Pd", "Ag", "Cd", "In", "Sn", "Sb", "Te", "I", "Xe", "Cs", "Ba", "Hf", "Ta", "W", "Re", "Os", "Ir", "Pt", "Au", "Hg", "Tl", "Pb", "Bi", "Po", "At", "Rn", "Fr", "Ra", "Rf", "Db", "Sg", "Bh", "Hs", "Mt", "Ds", "Rg", "Cn", "Nh", "Fi", "Mc", "Lv", "Ts", "Og", "La", "Ce", "Pr", "Nd", "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb", "Lu", "Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm", "Md", "No", "Lr"], "border_color": "rgb(0,0,0)", "disabled": false, "disabled_color": "rgb(128,128,128)", "disabled_elements": ["B", "Al", "Ga"], "display_names_replacements": {}, "layout": "IPY_MODEL_49d456f44b4e4271967acfb78ad5e784", "selected_colors": ["rgb(255,0,0)", "rgb(0,128,0)", "rgb(0,0,255)"], "selected_elements": {"La": 0, "Ce": 1, "Pr": 2, "Nd": 0}, "states": 3, "unselected_color": "rgb(255,192,203)", "width": "20px"}}, "5a29702ea2fe404cbf51fbce86b50da3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "eede5d56b4d24bfb933bca3937416dac": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_5a29702ea2fe404cbf51fbce86b50da3", "msg_id": "", "outputs": []}}, "27960425d1e24634ac6443a186f6df97": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "300px"}}, "b9c25b257e4744798a15cee79e8028ab": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "a08904088c104422a351bb51dadc5c5b": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "success", "description": "Get the currently selected values", "disabled": false, "icon": "", "layout": "IPY_MODEL_27960425d1e24634ac6443a186f6df97", "style": "IPY_MODEL_b9c25b257e4744798a15cee79e8028ab", "tooltip": ""}}, "25dee14ad5ec4b65aab52ff9327dc7ab": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "097c9e0cb064468196449619339a77e7": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_a08904088c104422a351bb51dadc5c5b", "IPY_MODEL_eede5d56b4d24bfb933bca3937416dac"], "layout": "IPY_MODEL_25dee14ad5ec4b65aab52ff9327dc7ab"}}, "929f96adc77844fb9ecff06e01ac6d77": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "206ee628ccaa450f87c49a137b2139ab": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "525faa485fbf43f69294de622c2414ac": {"model_name": "CheckboxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "CheckboxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "CheckboxView", "description": "Disable oxygen", "description_tooltip": null, "disabled": false, "indent": true, "layout": "IPY_MODEL_929f96adc77844fb9ecff06e01ac6d77", "style": "IPY_MODEL_206ee628ccaa450f87c49a137b2139ab", "value": false}}, "80b92239247e43489c489227e8a86476": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f67e7a6bdf39473d92eb83b4b690e4b1": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "c4933d94fb104b08bb26de21fff1fe95": {"model_name": "CheckboxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "CheckboxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "CheckboxView", "description": "Freeze periodic table:", "description_tooltip": null, "disabled": false, "indent": true, "layout": "IPY_MODEL_80b92239247e43489c489227e8a86476", "style": "IPY_MODEL_f67e7a6bdf39473d92eb83b4b690e4b1", "value": false}}, "d534c9922dec4ee1af2eccd60a203c87": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "300px"}}, "a378fcbfeaf244c2a66dc899d833f95d": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "bd60a06ad0e84690a838dbe66a0f4824": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "success", "description": "Select only Li and H (from python)", "disabled": false, "icon": "", "layout": "IPY_MODEL_d534c9922dec4ee1af2eccd60a203c87", "style": "IPY_MODEL_a378fcbfeaf244c2a66dc899d833f95d", "tooltip": ""}}, "4cd957bfb8344e31be376e0aaa962662": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "300px"}}, "78add267642340838ad38e62cbfbdbd9": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "10c4beb7fd7144cca89eee778e588adf": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "success", "description": "Make noble gases bold", "disabled": false, "icon": "", "layout": "IPY_MODEL_4cd957bfb8344e31be376e0aaa962662", "style": "IPY_MODEL_78add267642340838ad38e62cbfbdbd9", "tooltip": ""}}}, "version_major": 2, "version_minor": 0}
+{"state": {"b2c213f8e28248328a98384fd7f74c57": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "07b305a810cf40c796154c1b9c3ff3c8": {"model_name": "MCPTableModel", "model_module": "widget-periodictable", "model_module_version": "^3.0.0", "state": {"_dom_classes": [], "_model_module": "widget-periodictable", "_model_module_version": "^3.0.0", "_model_name": "MCPTableModel", "_view_count": null, "_view_module": "widget-periodictable", "_view_module_version": "^3.0.0", "_view_name": "MCPTableView", "allElements": ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", "Al", "Si", "P", "S", "Cl", "Ar", "K", "Ca", "Sc", "Ti", "V", "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn", "Ga", "Ge", "As", "Se", "Br", "Kr", "Rb", "Sr", "Y", "Zr", "Nb", "Mo", "Tc", "Ru", "Rh", "Pd", "Ag", "Cd", "In", "Sn", "Sb", "Te", "I", "Xe", "Cs", "Ba", "Hf", "Ta", "W", "Re", "Os", "Ir", "Pt", "Au", "Hg", "Tl", "Pb", "Bi", "Po", "At", "Rn", "Fr", "Ra", "Rf", "Db", "Sg", "Bh", "Hs", "Mt", "Ds", "Rg", "Cn", "Nh", "Fi", "Mc", "Lv", "Ts", "Og", "La", "Ce", "Pr", "Nd", "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb", "Lu", "Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm", "Md", "No", "Lr"], "border_color": "rgb(0,0,0)", "disabled": false, "disabled_color": "rgb(128,128,128)", "disabled_elements": ["B", "Al", "Ga"], "display_names_replacements": {}, "layout": "IPY_MODEL_b2c213f8e28248328a98384fd7f74c57", "selected_colors": ["rgb(255,0,0)", "rgb(0,128,0)", "rgb(0,0,255)"], "selected_elements": {"La": 0, "Ce": 1, "Pr": 2, "Nd": 0}, "states": 3, "unselected_color": "rgb(255,192,203)", "width": "20px"}}, "36af844ecdee4dcbad075ff416616383": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a31442cc13664fd2a6d0a4512afb6ab8": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_36af844ecdee4dcbad075ff416616383", "msg_id": "", "outputs": []}}, "abf2a47fdd5a4f128f66cafe3c643848": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "300px"}}, "128479dd36be4f948aad890303cd16a3": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "1edfad620f374d278c7832a44915c736": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "success", "description": "Get the currently selected values", "disabled": false, "icon": "", "layout": "IPY_MODEL_abf2a47fdd5a4f128f66cafe3c643848", "style": "IPY_MODEL_128479dd36be4f948aad890303cd16a3", "tooltip": ""}}, "82083f2517b64943950e1d0736bd009d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "08fe39ea8dca4342a6bf58d21162e5ea": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_1edfad620f374d278c7832a44915c736", "IPY_MODEL_a31442cc13664fd2a6d0a4512afb6ab8"], "layout": "IPY_MODEL_82083f2517b64943950e1d0736bd009d"}}, "6143639a4f3b41a1bf67c344494b62ad": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "fae225e67935404fa6bcdea0685cfe9b": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "509431a30b4a4187822d8368fd001a69": {"model_name": "CheckboxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "CheckboxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "CheckboxView", "description": "Disable oxygen", "description_tooltip": null, "disabled": false, "indent": true, "layout": "IPY_MODEL_6143639a4f3b41a1bf67c344494b62ad", "style": "IPY_MODEL_fae225e67935404fa6bcdea0685cfe9b", "value": false}}, "68d0d74a610640f096e37d5cc78f52ac": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0a9698b8242a435bb63fd5e9c60a8739": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "9b21808237864b328539d0bb821ed0a9": {"model_name": "CheckboxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "CheckboxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "CheckboxView", "description": "Freeze periodic table:", "description_tooltip": null, "disabled": false, "indent": true, "layout": "IPY_MODEL_68d0d74a610640f096e37d5cc78f52ac", "style": "IPY_MODEL_0a9698b8242a435bb63fd5e9c60a8739", "value": false}}, "685ae809743f4279afcd5de9099d99e0": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "300px"}}, "bfc32d8f42b94076be085ae713984a32": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "3bab0b29c9144ffe9512706e4ff76faf": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "success", "description": "Select only Li and H (from python)", "disabled": false, "icon": "", "layout": "IPY_MODEL_685ae809743f4279afcd5de9099d99e0", "style": "IPY_MODEL_bfc32d8f42b94076be085ae713984a32", "tooltip": ""}}, "678d65667c7343d6a3193109904b45b1": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "300px"}}, "2d039c314fa348a6b02cfd73c649c637": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "f326022c8d6a4f86a1c9792a50ee8e0b": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "success", "description": "Make noble gases bold", "disabled": false, "icon": "", "layout": "IPY_MODEL_678d65667c7343d6a3193109904b45b1", "style": "IPY_MODEL_2d039c314fa348a6b02cfd73c649c637", "tooltip": ""}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 

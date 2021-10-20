@@ -2,6 +2,9 @@
 Jupyter Widgets 
 ================
 
+We developed Jupyter widgets related to computational chemistry
+and physics.
+
 .. panels::
    :body: bg-light text-center
    :footer: bg-light border-0
