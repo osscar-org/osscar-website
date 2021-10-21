@@ -67,7 +67,7 @@ OSSCAR started in 2019 and is funded by the EPFL Open Science Fund until 2022.
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: howto/index
+   .. link-button:: courses/index
       :type: ref
       :text: To the course applications
       :classes: btn-outline-primary btn-block stretched-link
