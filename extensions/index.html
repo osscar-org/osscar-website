@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to your Jupyter Book &#8212; Open Software Services for Classrooms and Research</title>
+    <title>JupyterLab Extensions &#8212; Open Software Services for Classrooms and Research</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -42,8 +42,6 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -53,6 +51,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Jupyter Widgets" href="../widgets/index.html" />
+    <link rel="prev" title="Welcome to OSSCAR’s documentation!" href="../index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -93,9 +93,9 @@
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../extensions/index.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    JupyterLab Extensions
   </a>
  </li>
@@ -145,9 +145,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/intro/get_started.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/extensions/index.rst"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.rst</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -165,7 +165,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/osscar-org/osscar-book/issues/new?title=Issue%20on%20page%20%2Fintro/get_started.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/osscar-org/osscar-book/issues/new?title=Issue%20on%20page%20%2Fextensions/index.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -194,19 +194,37 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="welcome-to-your-jupyter-book">
-<h1>Welcome to your Jupyter Book<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Permalink to this headline">¶</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note!</p>
+  <div class="section" id="jupyterlab-extensions">
+<h1>JupyterLab Extensions<a class="headerlink" href="#jupyterlab-extensions" title="Permalink to this headline">¶</a></h1>
+<p>We developed JupyterLab extensions to help developing and education.</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body bg-light text-center docutils">
+<p class="card-text"><span class="fa fa-tools mr-1"></span> <strong>Extension to Run and Hide Codes</strong></p>
+<p class="card-text">A JupyterLab extension to run and hide all codecells.</p>
+<img alt="../_images/hide-input.gif" src="../_images/hide-input.gif" />
 </div>
-<p>And here is a code block:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">e</span> <span class="o">=</span> <span class="n">mc</span><span class="o">^</span><span class="mi">2</span>
-</pre></div>
+<div class="card-footer bg-light border-0 docutils">
+<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="jupyterlab_hide_code.html"><span class="doc">To the instruction</span></a></p>
 </div>
-<p>Check out the content pages bundled with this sample book to see more.</p>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body bg-light text-center docutils">
+<p class="card-text"><span class="fa fa-tools mr-1"></span> <strong>Extension to Visaulize Molecular Orbital</strong></p>
+<p class="card-text">A JupyterLab launcher extension to visualize the Gaussian cube files.</p>
+<img alt="../_images/mol-visualizer.gif" src="../_images/mol-visualizer.gif" />
+</div>
+<div class="card-footer bg-light border-0 docutils">
+<p class="card-text"><span class="xref any sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link">To the instruction</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -222,7 +240,7 @@ structured.</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./intro"
+            path: "./extensions"
         },
         predefinedOutput: true
     }
@@ -238,6 +256,24 @@ structured.</p>
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="../index.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Welcome to OSSCAR’s documentation!</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../widgets/index.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Jupyter Widgets</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
 
 </div>
         
