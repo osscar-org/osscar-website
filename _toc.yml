@@ -4,4 +4,5 @@
 format: jb-book
 root: index
 chapters:
+- file: extensions/index
 - file: widgets/index
