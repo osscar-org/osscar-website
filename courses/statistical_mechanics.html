@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Course Applications &#8212; Open Software Services for Classrooms and Research</title>
+    <title>Statistical Mechanics &#8212; Open Software Services for Classrooms and Research</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,7 +51,6 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Jupyter Widgets" href="../widgets/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -92,7 +91,7 @@
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../extensions/index.html">
    JupyterLab Extensions
@@ -103,8 +102,8 @@
    Jupyter Widgets
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
    Course Applications
   </a>
  </li>
@@ -149,9 +148,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/courses/index.rst"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/courses/statistical_mechanics.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.rst</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -169,7 +168,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/osscar-org/osscar-book/issues/new?title=Issue%20on%20page%20%2Fcourses/index.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/osscar-org/osscar-book/issues/new?title=Issue%20on%20page%20%2Fcourses/statistical_mechanics.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -190,6 +189,29 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#monte-carlo-simulations-to-sample-the-canonical-distribution">
+   1. Monte Carlo Simulations to Sample the Canonical Distribution
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#monte-carlo-calculation-of-pi">
+   2. Monte Carlo Calculation of Pi
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ising-model-in-2d">
+   3. Ising Model in 2D
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -198,60 +220,37 @@
         
               <div>
                 
-  <div class="section" id="course-applications">
-<h1>Course Applications<a class="headerlink" href="#course-applications" title="Permalink to this headline">¶</a></h1>
-<p>We developed JupyterLab extensions to help developing and education.</p>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body bg-light text-center docutils">
-<p class="card-text"><span class="fa fa-book mr-1"></span> <strong>Quantum Mechanics</strong></p>
-<p class="card-text">A collection of web applications for quantum mechanics.</p>
-<img alt="../_images/avoided_crossing.png" src="../_images/avoided_crossing.png" />
+  <div class="tex2jax_ignore mathjax_ignore section" id="statistical-mechanics">
+<h1><strong>Statistical Mechanics</strong><a class="headerlink" href="#statistical-mechanics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="monte-carlo-simulations-to-sample-the-canonical-distribution">
+<h2>1. <a class="reference external" href="https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/statistical-mechanics/monte_carlo_parabolic.ipynb">Monte Carlo Simulations to Sample the Canonical Distribution</a><a class="headerlink" href="#monte-carlo-simulations-to-sample-the-canonical-distribution" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fstatistical-mechanics%2Fmonte_carlo_parabolic.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
+<a class="reference external" href="https://osscar-quantum-mechanics.matcloud.xyz/voila/render/statistical-mechanics/monte_carlo_parabolic.ipynb"><img alt="Materials Cloud Tool osscar-qmcourse" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
+<p>Monte Carlo simulations are often used to sample the canonical distribution,
+given a potential energy surface. In this notebook, we demonstrated to use
+Metropolis-Hastings algorithm to find the global minimum of two-dimensional
+potential energy surfaces.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/monte_carlo.png"><img alt="monte carlo" class="bg-primary mb-1 align-center" src="../_images/monte_carlo.png" style="width: 500px;" /></a>
 </div>
-<div class="card-footer bg-light border-0 docutils">
-<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="quantum_mechanics.html"><span class="doc">To the collection</span></a></p>
+<div class="section" id="monte-carlo-calculation-of-pi">
+<h2>2. <a class="reference external" href="https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/statistical-mechanics/monte_carlo_pi.ipynb">Monte Carlo Calculation of Pi</a><a class="headerlink" href="#monte-carlo-calculation-of-pi" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fstatistical-mechanics%2Fmonte_carlo_pi.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
+<a class="reference external" href="https://osscar-quantum-mechanics.matcloud.xyz/voila/render/statistical-mechanics/monte_carlo_pi.ipynb"><img alt="Materials Cloud Tool osscar-qmcourse" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
+<p>Monte Carlo method is a large category of computational algorithms and methods,
+which replys on random number sampling to solve problems numerically. In the
+notebook, we introduce the Monte Carlo method by a simple simulation to
+calculate the value of Pi.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/montecarlo_pi.png"><img alt="monte carlo pi" class="bg-primary mb-1 align-center" src="../_images/montecarlo_pi.png" style="width: 500px;" /></a>
 </div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body bg-light text-center docutils">
-<p class="card-text"><span class="fa fa-book mr-1"></span> <strong>Band Theory of Crystals</strong></p>
-<p class="card-text">A collection of web applications for band theory.</p>
-<img alt="../_images/free_electron.png" src="../_images/free_electron.png" />
-</div>
-<div class="card-footer bg-light border-0 docutils">
-<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="band_theory.html"><span class="doc">To the collection</span></a></p>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body bg-light text-center docutils">
-<p class="card-text"><span class="fa fa-book mr-1"></span> <strong>Statistical Mechanics</strong></p>
-<p class="card-text">A collection of web applications for statisitcal mechanics.</p>
-<img alt="../_images/ising_model.png" src="../_images/ising_model.png" />
-</div>
-<div class="card-footer bg-light border-0 docutils">
-<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="statistical_mechanics.html"><span class="doc">To the collection</span></a></p>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body bg-light text-center docutils">
-<p class="card-text"><span class="fa fa-book mr-1"></span> <strong>Molecular Dynamics</strong></p>
-<p class="card-text">A collection of web applications for molecular dynamics (MD) simulations.</p>
-<img alt="../_images/verlet_integration.png" src="../_images/verlet_integration.png" />
-</div>
-<div class="card-footer bg-light border-0 docutils">
-<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="molecular_dynamics.html"><span class="doc">To the collection</span></a></p>
-</div>
-</div>
-</div>
-</div>
+<div class="section" id="ising-model-in-2d">
+<h2>3. <a class="reference external" href="https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/statistical-mechanics/ising_model.ipynb">Ising Model in 2D</a><a class="headerlink" href="#ising-model-in-2d" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fstatistical-mechanics%2Fising_model.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
+<a class="reference external" href="https://osscar-quantum-mechanics.matcloud.xyz/voila/render/statistical-mechanics/ising_model.ipynb"><img alt="Materials Cloud Tool osscar-qmcourse" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
+<p>Magnetism is an important physical property of materials. The Ising model is a
+simple and successful model to predict the net magnetization of a regular
+lattice of spins. Here, we used Ising model to predict the ferromagnetic or
+antiferromagnetic behavior of a square (2D) spin lattice.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/ising_model.png"><img alt="ising model" class="bg-primary mb-1 align-center" src="../_images/ising_model.png" style="width: 500px;" /></a>
 </div>
 </div>
 
@@ -284,15 +283,6 @@
 
 <div class='prev-next-bottom'>
     
-    <div id="prev">
-        <a class="left-prev" href="../widgets/index.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Jupyter Widgets</p>
-            </div>
-        </a>
-    </div>
 
 </div>
         

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Course Applications &#8212; Open Software Services for Classrooms and Research</title>
+    <title>Molecular Dynamics &#8212; Open Software Services for Classrooms and Research</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,7 +51,6 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Jupyter Widgets" href="../widgets/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -92,7 +91,7 @@
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../extensions/index.html">
    JupyterLab Extensions
@@ -103,8 +102,8 @@
    Jupyter Widgets
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
    Course Applications
   </a>
  </li>
@@ -149,9 +148,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/courses/index.rst"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/courses/molecular_dynamics.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.rst</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -169,7 +168,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/osscar-org/osscar-book/issues/new?title=Issue%20on%20page%20%2Fcourses/index.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/osscar-org/osscar-book/issues/new?title=Issue%20on%20page%20%2Fcourses/molecular_dynamics.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -190,6 +189,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#verlet-integration">
+   1. Verlet Integration
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -198,60 +210,19 @@
         
               <div>
                 
-  <div class="section" id="course-applications">
-<h1>Course Applications<a class="headerlink" href="#course-applications" title="Permalink to this headline">¶</a></h1>
-<p>We developed JupyterLab extensions to help developing and education.</p>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body bg-light text-center docutils">
-<p class="card-text"><span class="fa fa-book mr-1"></span> <strong>Quantum Mechanics</strong></p>
-<p class="card-text">A collection of web applications for quantum mechanics.</p>
-<img alt="../_images/avoided_crossing.png" src="../_images/avoided_crossing.png" />
-</div>
-<div class="card-footer bg-light border-0 docutils">
-<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="quantum_mechanics.html"><span class="doc">To the collection</span></a></p>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body bg-light text-center docutils">
-<p class="card-text"><span class="fa fa-book mr-1"></span> <strong>Band Theory of Crystals</strong></p>
-<p class="card-text">A collection of web applications for band theory.</p>
-<img alt="../_images/free_electron.png" src="../_images/free_electron.png" />
-</div>
-<div class="card-footer bg-light border-0 docutils">
-<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="band_theory.html"><span class="doc">To the collection</span></a></p>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body bg-light text-center docutils">
-<p class="card-text"><span class="fa fa-book mr-1"></span> <strong>Statistical Mechanics</strong></p>
-<p class="card-text">A collection of web applications for statisitcal mechanics.</p>
-<img alt="../_images/ising_model.png" src="../_images/ising_model.png" />
-</div>
-<div class="card-footer bg-light border-0 docutils">
-<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="statistical_mechanics.html"><span class="doc">To the collection</span></a></p>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body bg-light text-center docutils">
-<p class="card-text"><span class="fa fa-book mr-1"></span> <strong>Molecular Dynamics</strong></p>
-<p class="card-text">A collection of web applications for molecular dynamics (MD) simulations.</p>
-<img alt="../_images/verlet_integration.png" src="../_images/verlet_integration.png" />
-</div>
-<div class="card-footer bg-light border-0 docutils">
-<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="molecular_dynamics.html"><span class="doc">To the collection</span></a></p>
-</div>
-</div>
-</div>
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="molecular-dynamics">
+<h1><strong>Molecular Dynamics</strong><a class="headerlink" href="#molecular-dynamics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="verlet-integration">
+<h2>1. <a class="reference external" href="https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/molecular-dynamics/verlet_integration.ipynb">Verlet Integration</a><a class="headerlink" href="#verlet-integration" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fmolecular_dynamics%2Fverlet_integration.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
+<a class="reference external" href="https://osscar-quantum-mechanics.matcloud.xyz/voila/render/molecular-dynamics/verlet_integration.ipynb"><img alt="Materials Cloud Tool osscar-qmcourse" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
+<p>In the classic molecular dynamics simulations, the molecular motions are
+computed by solving the Newton equation. The numerical approximation is
+employed, which treats the velocities of the atoms as constant during a tiny
+period Δt. A numerical aglorithm called verlet integration is employed to update
+the positions, velocities and accelerations of the simulated systems. Here, we
+used a two-body system (sun and earth) to demonstrate this numerical method.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/verlet_integration.png"><img alt="verlet integration" class="bg-primary mb-1 align-center" src="../_images/verlet_integration.png" style="width: 500px;" /></a>
 </div>
 </div>
 
@@ -284,15 +255,6 @@
 
 <div class='prev-next-bottom'>
     
-    <div id="prev">
-        <a class="left-prev" href="../widgets/index.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Jupyter Widgets</p>
-            </div>
-        </a>
-    </div>
 
 </div>
         

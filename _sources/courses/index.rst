@@ -18,7 +18,7 @@ We developed JupyterLab extensions to help developing and education.
 
    .. link-button:: quantum_mechanics
       :type: ref
-      :text: To the list
+      :text: To the collection
       :classes: btn-outline-primary btn-block stretched-link
 
    ----------------------------------------------
@@ -27,12 +27,43 @@ We developed JupyterLab extensions to help developing and education.
 
    A collection of web applications for band theory.
 
-   .. image:: images/band_theory.png
+   .. image:: images/free_electron.png
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: widget_periodictable
+   .. link-button:: band_theory
       :type: ref
-      :text: To the list
+      :text: To the collection
       :classes: btn-outline-primary btn-block stretched-link
+
+   ----------------------------------------------
+
+   :fa:`book,mr-1` **Statistical Mechanics**
+
+   A collection of web applications for statisitcal mechanics.
+
+   .. image:: images/ising_model.png
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: statistical_mechanics
+      :type: ref
+      :text: To the collection
+      :classes: btn-outline-primary btn-block stretched-link
+
+   ----------------------------------------------
+
+   :fa:`book,mr-1` **Molecular Dynamics**
+
+   A collection of web applications for molecular dynamics (MD) simulations.
+
+   .. image:: images/verlet_integration.png
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: molecular_dynamics
+      :type: ref
+      :text: To the collection
+      :classes: btn-outline-primary btn-block stretched-link
+
 
