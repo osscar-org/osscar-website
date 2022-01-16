@@ -63,7 +63,7 @@ applications with OSSCAR technologies.
 
    ----------------------------------------------
 
-   :fa:`file-code,mr-1` **OSSCAR Team**
+   :fa:`users,mr-1` **OSSCAR Team**
 
    Information about OSSCAR team.
 
