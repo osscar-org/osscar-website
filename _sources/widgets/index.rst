@@ -32,8 +32,23 @@ and physics.
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: widget_periodictable
+   .. link-button:: widget_bandsplot
       :type: ref
       :text: To the instruction
       :classes: btn-outline-primary btn-block stretched-link
 
+   ----------------------------------------------
+
+   :fa:`atom,mr-1` **Widget Brillouin Zone Visualizer**
+
+   A Jupyter widget to plot the 1st Brillouin zone and path for the
+   band structure.
+
+   .. image:: images/widget_bzvisualizer.png
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: widget_bzvisualizer
+      :type: ref
+      :text: To the instruction
+      :classes: btn-outline-primary btn-block stretched-link
