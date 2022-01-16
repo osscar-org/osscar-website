@@ -71,7 +71,7 @@ applications with OSSCAR technologies.
 
    .. link-button:: team/index
       :type: ref
-      :text: To the tutorial
+      :text: To the team
       :classes: btn-outline-primary btn-block stretched-link
 
 Acknowledgements
