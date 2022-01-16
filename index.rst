@@ -60,3 +60,28 @@ applications with OSSCAR technologies.
       :type: ref
       :text: To the tutorial
       :classes: btn-outline-primary btn-block stretched-link
+
+   ----------------------------------------------
+
+   :fa:`file-code,mr-1` **OSSCAR Team**
+
+   Information about OSSCAR team.
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: team/index
+      :type: ref
+      :text: To the tutorial
+      :classes: btn-outline-primary btn-block stretched-link
+
+Acknowledgements
+*****************
+
+OSSCAR is a project funded by the 
+`EPFL Open Science Fund <https://www.epfl.ch/research/open-science/in-practice/open-science-fund>`_ 
+and is developed in collaboration between 
+`CECAM <https://www.cecam.org>`_ and 
+`NCCR MARVEL <https://nccr-marvel.ch>`_.
+
+.. image:: logos.png
+  :width: 400
