@@ -26,7 +26,7 @@ with open('Si_dos.json', 'r') as file:
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mFileNotFoundError[0m                         Traceback (most recent call last)
-[0;32m/tmp/ipykernel_17438/3988150073.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/tmp/ipykernel_12044/3988150073.py[0m in [0;36m<module>[0;34m[0m
 [0;32m----> 1[0;31m [0;32mwith[0m [0mopen[0m[0;34m([0m[0;34m'Si_bands.json'[0m[0;34m,[0m [0;34m'r'[0m[0;34m)[0m [0;32mas[0m [0mfile[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
 [0m[1;32m      2[0m     [0mdata1[0m [0;34m=[0m [0mjson[0m[0;34m.[0m[0mload[0m[0;34m([0m[0mfile[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [1;32m      3[0m [0;34m[0m[0m
