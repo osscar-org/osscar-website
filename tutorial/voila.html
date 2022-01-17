@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Using Voila to convert Jupyter notebooks into web application &#8212; Open Software Services for Classrooms and Research</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -262,9 +263,9 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="using-voila-to-convert-jupyter-notebooks-into-web-application">
+  <section class="tex2jax_ignore mathjax_ignore" id="using-voila-to-convert-jupyter-notebooks-into-web-application">
 <h1><strong>Using Voila to convert Jupyter notebooks into web application</strong><a class="headerlink" href="#using-voila-to-convert-jupyter-notebooks-into-web-application" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction-to-voila">
+<section id="introduction-to-voila">
 <h2>1. Introduction to Voila<a class="headerlink" href="#introduction-to-voila" title="Permalink to this headline">¶</a></h2>
 <p>Volia is a program to convert the Jupyter notebooks into standalone web applications,
 which can be shared with people. Voila supports interactive widgets (ipywidgets), which
@@ -273,10 +274,10 @@ is largely used in the OSSCAR project.</p>
 Voila will run all the code cells in the notebooks. Voila hides all the code cells and
 only show the output cells. It converts notebooks into web pages. One can see the texts
 and images on the web pages. Users can interact with the Jupyter kernel through widgets.</p>
-</div>
-<div class="section" id="run-voila-and-deploy-web-application">
+</section>
+<section id="run-voila-and-deploy-web-application">
 <h2>2. Run Voila and Deploy Web Application<a class="headerlink" href="#run-voila-and-deploy-web-application" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="a-run-voila-locally">
+<section id="a-run-voila-locally">
 <h3><strong>a. Run Voila locally</strong><a class="headerlink" href="#a-run-voila-locally" title="Permalink to this headline">¶</a></h3>
 <p>Voila can be deployed with a variety of platforms. Primarly, one can access the web pages locally.
 The default port number is 8866. One can specify the port number with “–port”. There are two ways
@@ -298,8 +299,8 @@ to use Voila locally.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>voila --template<span class="o">=</span>osscar --enable_nbextensions<span class="o">=</span>True your_notebook.ipynb
 </pre></div>
 </div>
-</div>
-<div class="section" id="b-deploying-with-binder-mybinder-org">
+</section>
+<section id="b-deploying-with-binder-mybinder-org">
 <h3><strong>b. Deploying with Binder (<a class="reference external" href="http://mybinder.org">mybinder.org</a>)</strong><a class="headerlink" href="#b-deploying-with-binder-mybinder-org" title="Permalink to this headline">¶</a></h3>
 <p>Binder (<a class="reference external" href="http://mybinder.org">mybinder.org</a>) offers free cloud computing services to deploy Jupyter applications.
 We can deploy the web applications with Voila by calling the Voila server extension.
@@ -311,8 +312,8 @@ put the package name “voila” into the requirements.txt file.</p></li>
 </ul>
 <p>Put the URL in the <a class="reference external" href="http://mybinder.org">mybinder.org</a> as shown below:</p>
 <p><img alt="voila" src="../_images/fig_binderVoila.png" /></p>
-</div>
-<div class="section" id="c-deploying-at-dokku-server">
+</section>
+<section id="c-deploying-at-dokku-server">
 <h3><strong>c. Deploying at dokku server</strong><a class="headerlink" href="#c-deploying-at-dokku-server" title="Permalink to this headline">¶</a></h3>
 <p>The disadavantage of using Binder is that the cloud computing power is very limited and
 loading can take long time. Alternately, we can delopy the apps on dokku servers.
@@ -335,9 +336,9 @@ can set the timeout to kill idle kernels as:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web: voila —-port<span class="o">=</span><span class="nv">$PORT</span> —-no-browser your_notebook.ipynb --MappingKernelManager.cull_interval<span class="o">=</span><span class="m">60</span> --MappingKernelManager.cull_idle_timeout<span class="o">=</span><span class="m">120</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="use-osscar-voila-template">
+</section>
+</section>
+<section id="use-osscar-voila-template">
 <h2>3. Use OSSCAR Voila template<a class="headerlink" href="#use-osscar-voila-template" title="Permalink to this headline">¶</a></h2>
 <p>We developed a Voila template (<strong>voila-osscar-template</strong>)
 for the OSSCAR project. The template has been released with PyPi.
@@ -371,8 +372,8 @@ other notebooks. The Procfile is shown below:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web: voila --template<span class="o">=</span>osscar --VoilaConfiguration.enable_nbextensions<span class="o">=</span>True --port<span class="o">=</span><span class="nv">$PORT</span> --no-browser your_folder/
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

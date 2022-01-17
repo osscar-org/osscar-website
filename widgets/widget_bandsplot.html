@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>A Jupyter widget to plot the bandstructure and density of states (DOS) &#8212; Open Software Services for Classrooms and Research</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -254,12 +255,12 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="a-jupyter-widget-to-plot-the-bandstructure-and-density-of-states-dos">
+  <section class="tex2jax_ignore mathjax_ignore" id="a-jupyter-widget-to-plot-the-bandstructure-and-density-of-states-dos">
 <h1><strong>A Jupyter widget to plot the bandstructure and density of states (DOS)</strong><a class="headerlink" href="#a-jupyter-widget-to-plot-the-bandstructure-and-density-of-states-dos" title="Permalink to this headline">¶</a></h1>
 <hr style="height:1px;border:none;color:#cccccc;background-color:#cccccc;" /><p style="text-align: justify;font-size:15px">
     This is a Jupyter widget, which plots the bandstructure and density of states from given json files.
 </p>
-<div class="section" id="input-json-files">
+<section id="input-json-files">
 <h2><strong>Input json files</strong><a class="headerlink" href="#input-json-files" title="Permalink to this headline">¶</a></h2>
 <p style="text-align: justify;font-size:15px">
     On the left, it plots the bandstructures. One can input several bandstructure json files as a list.
@@ -284,8 +285,8 @@ https://raw.githubusercontent.com/osscar-org/widget-bandsplot/develop/example/Si
     <span class="n">data2</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="fermi-energy">
+</section>
+<section id="fermi-energy">
 <h2><strong>Fermi energy</strong><a class="headerlink" href="#fermi-energy" title="Permalink to this headline">¶</a></h2>
 <p style="text-align: justify;font-size:15px">
     The Fermi energy is reading from the bands and DOS json files. And bandstructure and density 
@@ -296,14 +297,14 @@ https://raw.githubusercontent.com/osscar-org/widget-bandsplot/develop/example/Si
     can turn it off by setting plot_fermilevel = False. The legend of the DOS can be turned off
     by set show_legend = False.
 </p>
-</div>
-<div class="section" id="usage-of-the-widget">
+</section>
+<section id="usage-of-the-widget">
 <h2><strong>Usage of the widget</strong><a class="headerlink" href="#usage-of-the-widget" title="Permalink to this headline">¶</a></h2>
 <p style="text-align: justify;font-size:15px">
     Remeber to pass the bandstructure data as a list of json objects. "energy_range" sets the 
     energy range for the plots.
 </p>
-<div class="section" id="plot-both-bandstructure-and-dos">
+<section id="plot-both-bandstructure-and-dos">
 <h3><strong>Plot both bandstructure and DOS</strong><a class="headerlink" href="#plot-both-bandstructure-and-dos" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">w1</span> <span class="o">=</span> <span class="n">BandsPlotWidget</span><span class="p">(</span><span class="n">bands</span><span class="o">=</span><span class="p">[</span><span class="n">data1</span><span class="p">],</span> <span class="n">dos</span><span class="o">=</span><span class="n">data2</span><span class="p">,</span> <span class="n">plot_fermilevel</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">energy_range</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;ymin&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">13.0</span><span class="p">,</span> <span class="s2">&quot;ymax&quot;</span><span class="p">:</span> <span class="mf">10.0</span><span class="p">})</span>
 <span class="n">display</span><span class="p">(</span><span class="n">w1</span><span class="p">)</span>
@@ -317,6 +318,18 @@ https://raw.githubusercontent.com/osscar-org/widget-bandsplot/develop/example/Si
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_8980</span><span class="o">/</span><span class="mf">1377445130.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">widget_bandsplot</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">json</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;widget_bandsplot&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -325,20 +338,6 @@ https://raw.githubusercontent.com/osscar-org/widget-bandsplot/develop/example/Si
     
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;Si_dos.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
     <span class="n">data2</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_12044</span><span class="o">/</span><span class="mf">3988150073.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;Si_bands.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="n">data1</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> 
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;Si_dos.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">data2</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;Si_bands.json&#39;
 </pre></div>
 </div>
 </div>
@@ -392,9 +391,9 @@ https://raw.githubusercontent.com/osscar-org/widget-bandsplot/develop/example/Si
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
