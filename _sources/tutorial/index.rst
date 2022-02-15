@@ -2,11 +2,10 @@
 Tutorials for Developers
 ###################################
 
-Here we give tutorials to guide you to develop web applications with OSSCAR
-cloud solution. Besides, we developed Jupyter widgets related to computational
-chemistry and physics under the OSSCAR project. We also developed JupyterLab
-extensions to help our developement. You can see more descriptions in the
-`OSSCAR Tools` section. 
+Here we provide tutorials to guide you through the development of a web application using the OSSCAR
+cloud solution. Furthermore, we have developed Jupyter widgets related to computational
+chemistry and physics under the OSSCAR project. We have also developed JupyterLab
+extensions to help in the development process. More information on these tools can be found in the `OSSCAR Tools` section. 
 
 .. panels::
    :body: bg-light text-center

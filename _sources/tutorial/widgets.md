@@ -1,17 +1,17 @@
 # Use Widgets
 
-Widgets is the core of our interactive web applications. We mainly use the
+Widgets are at the core of our interactive web applications. We predominantly use the
 `ipywidgets` package. 
 
-The ipywidgets can be installed with pip:
+Ipywidgets can be installed with pip:
 
 ```bash
 pip install --upgrade ipywidgets
 ```
 
-Ipywidgets offer a large number of widgets as interactive components.
+Ipywidgets offers a large number of widgets to be used as interactive components of a Jupyter notebook.
 
-## Example: create a slider with integer number
+## Example: create a slider with integer steps
 
 ```python
 import ipywidgets as widgets
@@ -36,9 +36,9 @@ w = widgets.Textarea(
 display(w)
 ```
 
-For more widgets, please read the <a
+For more widgets, please refer to the <a
 href="https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html">ipywidgets
-document</a>.
+documentation</a>.
 
 ## Use matplotlib figure as widget
 
@@ -53,9 +53,9 @@ To enable the ipympl backend, simply use the matplotlib Jupyter magic:
 ## Use OSSCAR widgets
 
 In the OSSCAR project, we have developed a few custom widgets related to
-computational chemistry and physics. For example, we developed a interactive
+computational chemistry and physics. For example, we developed an interactive
 periodic table.
 
 ![widget periodic table](images/widget_periodictable.gif)
 
-For more information, please check the "Tools" section.
+For more information, please check out the "Tools" section.

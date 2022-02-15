@@ -43,8 +43,6 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -235,13 +233,9 @@
                 
   <section class="tex2jax_ignore mathjax_ignore" id="quantum-mechanics">
 <h1><strong>Quantum Mechanics</strong><a class="headerlink" href="#quantum-mechanics" title="Permalink to this headline">¶</a></h1>
-<p>Quantum mechanics is the core of modern physics and chemistry. Computational
-physics and chemistry are predominantly involved in implementing computer
-algorithms of quantum mechanics calculations to simulate molecular and material
-systems.</p>
-<p>Here, we developed several web applications to demonstrate the fundamental
-concepts and knowledge in quantum mechanics. We focused on the numerical methods
-to solve simple potential systems.</p>
+<p>Quantum mechanics is one of the pillars of modern physics and chemistry. A large amount of the work carried out in computational physics and chemistry is concerned with the implementation of computer algorithms to perform quantum mechanical calculations with the goal of simulating molecular and material systems.</p>
+<p>Here, we present a collection of web applications which demonstrate fundamental
+concepts underpinning quantum theory. Focus has been given to numerical methods employed in the solution of the time independent and dependent Schrödinger equation for systems in the presence of simple potentials.</p>
 <section id="numerical-solution-of-the-schrodinger-equation-for-a-1d-quantum-well">
 <h2>1. <a class="reference external" href="https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/quantum-mechanics/1quantumwell.ipynb">Numerical Solution of the Schrödinger Equation for a 1D Quantum Well</a><a class="headerlink" href="#numerical-solution-of-the-schrodinger-equation-for-a-1d-quantum-well" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fquantum-mechanics%2F1quantumwell.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
@@ -255,8 +249,8 @@ eigenfunctions (plotted at the height of the corresponding eigenvalues).</p>
 <h2>2. <a class="reference external" href="https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/quantum-mechanics/2quantumwells.ipynb">Numerical Solution of the Schrödinger Equation for the Double Square Well Potential</a><a class="headerlink" href="#numerical-solution-of-the-schrodinger-equation-for-the-double-square-well-potential" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fquantum-mechanics%2F2quantumwells.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
 <a class="reference external" href="https://osscar-quantum-mechanics.matcloud.xyz/voila/render/quantum-mechanics/2quantumwells.ipynb"><img alt="Materials Cloud Tool osscar-qmcourse" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
-<p>This notebook displays interactively the eigenfunctions for double square well
-potential (DSWP) in one dimension, as obtained from the numerical solution.  The
+<p>This notebook displays interactively the eigenfunctions for the double square well
+potential (DSWP) in one dimension, as obtained from the numerical solution of the associated time-independent Schrödinger equation.  The
 double square well potential model is a simple but efficient way to describe
 real molecular or material systems.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/2quantum_wells.png"><img alt="double quantum wells" class="bg-primary mb-1 align-center" src="../_images/2quantum_wells.png" style="width: 500px;" /></a>
@@ -265,7 +259,7 @@ real molecular or material systems.</p>
 <h2>3. <a class="reference external" href="https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/quantum-mechanics/asymmetricwell.ipynb">Avoided Crossing in One Dimensional Asymmetric Quantum Well</a><a class="headerlink" href="#avoided-crossing-in-one-dimensional-asymmetric-quantum-well" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fquantum-mechanics%2Fasymmetricwell.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
 <a class="reference external" href="https://osscar-quantum-mechanics.matcloud.xyz/voila/render/quantum-mechanics/asymmetricwell.ipynb"><img alt="Materials Cloud Tool osscar-qmcourse" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
-<p>We demonstrate the avoided crossing phenomenon by solving the Shrödinger
+<p>We demonstrate the phenomenon of avoided crossing by solving the Shrödinger
 equation of a one-dimensional asymmetric quantum well.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/avoided_crossing.png"><img alt="avoid crossing" class="bg-primary mb-1 align-center" src="../_images/avoided_crossing.png" style="width: 500px;" /></a>
 </section>
@@ -274,7 +268,7 @@ equation of a one-dimensional asymmetric quantum well.</p>
 <p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fquantum-mechanics%2Fshooting_method.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
 <a class="reference external" href="https://osscar-quantum-mechanics.matcloud.xyz/voila/render/quantum-mechanics/shooting_method.ipynb"><img alt="Materials Cloud Tool osscar-qmcourse" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
 <p>The main goal of this notebook is to demonstrate the shooting method with the
-Numerov algorithm to search the eigenfunctions and eigenvalues for a 1D quantum
+Numerov algorithm to search for the eigenfunctions and eigenvalues of a 1D quantum
 well.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/shooting_method.png"><img alt="shooting method" class="bg-primary mb-1 align-center" src="../_images/shooting_method.png" style="width: 500px;" /></a>
 </section>
@@ -282,8 +276,7 @@ well.</p>
 <h2>5. <a class="reference external" href="https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/quantum-mechanics/soft.ipynb">Numerical Solution of 1D Time Dependent Schrödinger Equation by Split Operator Fourier Transform (SOFT) Method</a><a class="headerlink" href="#numerical-solution-of-1d-time-dependent-schrodinger-equation-by-split-operator-fourier-transform-soft-method" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fquantum-mechanics%2Fsoft_intro.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
 <a class="reference external" href="https://osscar-quantum-mechanics.matcloud.xyz/voila/render/quantum-mechanics/soft_intro.ipynb"><img alt="Materials Cloud Tool osscar-qmcourse" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
-<p>We presented the split operator Fourier transform (SOFT) numerical method to
-solve the one-dimensional time-dependent Schrödinger equation with various
+<p>The split-operator Fourier transform (SOFT) method is presented and applied to solve the one-dimensional time-dependent Schrödinger equation with various
 potentials.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/soft.png"><img alt="soft" class="bg-primary mb-1 align-center" src="../_images/soft.png" style="width: 500px;" /></a>
 </section>

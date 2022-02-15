@@ -43,8 +43,6 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -258,8 +256,9 @@
   <section class="tex2jax_ignore mathjax_ignore" id="a-jupyter-widget-to-plot-the-bandstructure-and-density-of-states-dos">
 <h1><strong>A Jupyter widget to plot the bandstructure and density of states (DOS)</strong><a class="headerlink" href="#a-jupyter-widget-to-plot-the-bandstructure-and-density-of-states-dos" title="Permalink to this headline">¶</a></h1>
 <hr style="height:1px;border:none;color:#cccccc;background-color:#cccccc;" /><p style="text-align: justify;font-size:15px">
-    This is a Jupyter widget, which plots the bandstructure and density of states from given json files.
+    This widget facilitates the plotting of electronic bandstructure and density of states from supplied json files.
 </p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/bands.png"><img alt="image bandstructure" class="bg-primary mb-1 align-center" src="../_images/bands.png" style="width: 800px; height: 500px;" /></a>
 <section id="input-json-files">
 <h2><strong>Input json files</strong><a class="headerlink" href="#input-json-files" title="Permalink to this headline">¶</a></h2>
 <p style="text-align: justify;font-size:15px">
@@ -289,13 +288,13 @@ https://raw.githubusercontent.com/osscar-org/widget-bandsplot/develop/example/Si
 <section id="fermi-energy">
 <h2><strong>Fermi energy</strong><a class="headerlink" href="#fermi-energy" title="Permalink to this headline">¶</a></h2>
 <p style="text-align: justify;font-size:15px">
-    The Fermi energy is reading from the bands and DOS json files. And bandstructure and density 
-    of states plots are aligned to the Fermi energy (shift the Fermi energy to zero).
+    The Fermi energy is read from the bands and DOS json files. The bandstructure and density 
+    of states plots have their origins aligned according to the provided Fermi energy (the Fermi energy is defined to be zero).
 </p>
 <p style="text-align: justify;font-size:15px">
     In the default plot for the DOS, there is a horizontal line to highlight the Fermi level. One 
     can turn it off by setting plot_fermilevel = False. The legend of the DOS can be turned off
-    by set show_legend = False.
+    by setting show_legend = False.
 </p>
 </section>
 <section id="usage-of-the-widget">
@@ -321,7 +320,7 @@ https://raw.githubusercontent.com/osscar-org/widget-bandsplot/develop/example/Si
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_8980</span><span class="o">/</span><span class="mf">1377445130.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_17920</span><span class="o">/</span><span class="mf">1377445130.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">widget_bandsplot</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">json</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
@@ -351,11 +350,11 @@ https://raw.githubusercontent.com/osscar-org/widget-bandsplot/develop/example/Si
 </div>
 </div>
 <p style="text-align: justify;font-size:15px">
-    There are inputrea and buttons below the figures. The inputarea can be used to edit
-    the path. The buttons are used to view the figures.
+    There are inputrea and button widgets below the figures. The inputarea widgets can be used to edit
+    the k-point path. The buttons are used to manipulate the figures and toggle plotting of the projected density of states.
 </p>
 <p style="text-align: justify;font-size:15px">
-    One can also reuse the data from the widget and plot the DOS by matplotlib.   
+    One can also reuse the data from the widget and plot the DOS using matplotlib.   
 </p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -391,6 +390,7 @@ https://raw.githubusercontent.com/osscar-org/widget-bandsplot/develop/example/Si
 </div>
 </div>
 </div>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/dos1.png"><img alt="image bandstructure" class="bg-primary mb-1 align-center" src="../_images/dos1.png" style="width: 500px;" /></a>
 </section>
 </section>
 </section>

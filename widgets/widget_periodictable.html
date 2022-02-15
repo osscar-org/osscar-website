@@ -295,10 +295,10 @@
                 
   <section class="tex2jax_ignore mathjax_ignore" id="widget-periodictable-a-jupyter-widget-to-create-interactive-periodic-table">
 <h1><code class="docutils literal notranslate"><span class="pre">widget-periodictable</span></code>: A Jupyter Widget to Create Interactive Periodic Table<a class="headerlink" href="#widget-periodictable-a-jupyter-widget-to-create-interactive-periodic-table" title="Permalink to this headline">¶</a></h1>
-<p><strong>Introduction</strong>: Periodic table is a important tool for chemistry and physics
-education and research. This is a Jupyter widget to create a interactive periodic
-table. Users can custom the colors of the elements and group elements by colors.
-The elements are also clickable and triggle custom events.</p>
+<p><strong>Introduction</strong>: The periodic table is an important tool for chemistry and physics
+education and research. This is a Jupyter widget to create an interactive periodic
+table. Users can customize the colors of the elements and group elements by assigning them colors.
+The elements are also clickable and trigger custom events.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/widget_periodictable.png"><img alt="image periodictable" class="bg-primary mb-1 align-center" src="../_images/widget_periodictable.png" style="width: 500px;" /></a>
 <div class="admonition-installation admonition">
 <p class="admonition-title">Installation</p>
@@ -327,7 +327,7 @@ The elements are also clickable and triggle custom events.</p>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_9017</span><span class="o">/</span><span class="mf">3469649736.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_7311</span><span class="o">/</span><span class="mf">3469649736.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">widget_periodictable</span> <span class="kn">import</span> <span class="n">PTableWidget</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">Layout</span>
@@ -343,8 +343,7 @@ The elements are also clickable and triggle custom events.</p>
 <p>Here, we initialize the periodic table with three states, which have red, green
 and blue color respectively. The selected elements are C, Si and Ge. The carbon
 is in the 1st state, which has red color. The elements B, Al and Ga are disabled,
-which means they are not clickable. All the rest unselected elements are in pink
-color. The border color of each element is black. The width option is set for
+which means they are not clickable. The remaining unselected elements are in pink. The border color of each element is black. The width option is set for
 each element.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -357,13 +356,17 @@ each element.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c59bf12be17a454c89589d7b154857dc", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </section>
 <section id="set-the-states-of-the-elements">
 <h3><strong>Set the states of the elements</strong><a class="headerlink" href="#set-the-states-of-the-elements" title="Permalink to this headline">¶</a></h3>
 <p>The periodic table allows users to customize the states of the selected elements.
-If one do not give the selected element’s state, it will set the state as zero.
-One can init the selected elements by using a dictionary.</p>
+If one does not specify the selected element’s state, it shall default to zero.
+One can initialize the selected elements by using a dictionary.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">widget</span><span class="o">.</span><span class="n">selected_elements</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;La&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Ce&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Pr&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
@@ -371,8 +374,8 @@ One can init the selected elements by using a dictionary.</p>
 </div>
 </div>
 </div>
-<p>Change or reset element state by the <code class="docutils literal notranslate"><span class="pre">set_element_state</span></code> method.
-However, you cannot use widget.selected_elements[“Nd”] = 1 to set the states of the elements.</p>
+<p>Change or reset the element’s state via the <code class="docutils literal notranslate"><span class="pre">set_element_state</span></code> method.
+Note, however, that you cannot use widget.selected_elements[“Nd”] = 1 to set the states of the elements for instance.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">widget</span><span class="o">.</span><span class="n">set_element_state</span><span class="p">(</span><span class="s2">&quot;Nd&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
@@ -384,6 +387,11 @@ However, you cannot use widget.selected_elements[“Nd”] = 1 to set the states
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">widget</span><span class="o">.</span><span class="n">get_elements_by_state</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;La&#39;, &#39;Nd&#39;]
 </pre></div>
 </div>
 </div>
@@ -414,6 +422,10 @@ However, you cannot use widget.selected_elements[“Nd”] = 1 to set the states
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "f658caea21644cbba8d8c05a099079d5", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </section>
 <section id="play-with-enabling-disabling-some-elements">
@@ -445,6 +457,10 @@ However, you cannot use widget.selected_elements[“Nd”] = 1 to set the states
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "1b169901f3fd42b59182d7772e0f0384", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </section>
 <section id="freeze-disable-clicking-events-the-whole-periodic-table">
@@ -466,6 +482,10 @@ However, you cannot use widget.selected_elements[“Nd”] = 1 to set the states
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "fc3d79d12d76454a8250a602de665f81", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </section>
 <section id="set-the-selected-values-from-python">
@@ -487,11 +507,15 @@ However, you cannot use widget.selected_elements[“Nd”] = 1 to set the states
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "f29cb7d4e8fc49ed9aefc9e1ae8761d6", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </section>
 <section id="change-the-displayed-string-for-some-elements">
 <h3><strong>Change the displayed string for some elements</strong><a class="headerlink" href="#change-the-displayed-string-for-some-elements" title="Permalink to this headline">¶</a></h3>
-<p>Note that you should pass valid HTML strings, as they will not be escaped. On the other hand this allows to use HTML to change the class, color, …</p>
+<p>Note that you should pass valid HTML strings, as they will not be escaped. On the other hand this allows one to use HTML to change the class, color, …</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_noble_gases_state</span><span class="p">():</span>
@@ -539,6 +563,10 @@ However, you cannot use widget.selected_elements[“Nd”] = 1 to set the states
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b61605d0b08345f19f8344d3761b9677", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </section>
 </section>

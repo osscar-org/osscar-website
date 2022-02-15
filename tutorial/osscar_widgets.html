@@ -257,15 +257,15 @@
                 
   <section class="tex2jax_ignore mathjax_ignore" id="a-simple-web-application-with-nglview-and-periodic-table-widget">
 <h1><strong>A simple web application with nglview and periodic table widget</strong><a class="headerlink" href="#a-simple-web-application-with-nglview-and-periodic-table-widget" title="Permalink to this headline">¶</a></h1>
-<p>In this notebook, we gave a more complex example, which was related to computational chemisty and physics.
-We are going to use atomic simulation environment (ASE) package to build molecular structure. Then the
-three-dimensional gemometry structure of the selected molecule will be shown in the NGL visualizer.
+<p>In this notebook, we give a more complex example, which is more directly related to computational chemistry and physics.
+We are going to use the atomic simulation environment (ASE) package to build molecular structure. Then the
+three-dimensional geometrical structure of the selected molecule will be shown in the NGL visualizer.
 The elements of the molecule will be highlighted in the interactive periodic table.</p>
 <section id="import-pacakges">
 <h2>1. Import pacakges<a class="headerlink" href="#import-pacakges" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>We import the <code class="docutils literal notranslate"><span class="pre">Textarea</span></code> widget from “ipywidget”. We use it for users to input the name of the molecule.</p></li>
-<li><p>Atomic simulation environment (ASE) is a python package, which contains a varities of functions and tools for computaional chemistry and physics. Here, we import the molecule function, which has the geometry data for some popular molecules.</p></li>
+<li><p>We import the <code class="docutils literal notranslate"><span class="pre">Textarea</span></code> widget from “ipywidgets”. We use it enable users to input the name of the molecule they wish to visualize.</p></li>
+<li><p>Atomic simulation environment (ASE) is a python package, which contains a variety of functions and tools for computational chemistry and physics. Here, we import the molecule function, which has the geometry data for some popular molecules.</p></li>
 <li><p>NGLview is a powerful molecular visualizer. Here we are using it to visualize the molecular structure.</p></li>
 <li><p>We are using the interactive periodic table to highlight the elements of the molecules. This widget is developed under the OSSCAR project.</p></li>
 </ul>
@@ -281,13 +281,13 @@ The elements of the molecule will be highlighted in the interactive periodic tab
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_8917</span><span class="o">/</span><span class="mf">2575365811.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_7210</span><span class="o">/</span><span class="mf">2575365811.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">HBox</span><span class="p">,</span> <span class="n">VBox</span><span class="p">,</span> <span class="n">Textarea</span><span class="p">,</span> <span class="n">Button</span><span class="p">,</span> <span class="n">Layout</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">ase.build</span> <span class="kn">import</span> <span class="n">molecule</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">nglview</span> <span class="k">as</span> <span class="nn">nv</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">ase.build</span> <span class="kn">import</span> <span class="n">molecule</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">nglview</span> <span class="k">as</span> <span class="nn">nv</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">widget_periodictable</span> <span class="kn">import</span> <span class="n">PTableWidget</span>
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;ase&#39;
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;nglview&#39;
 </pre></div>
 </div>
 </div>
@@ -319,7 +319,7 @@ The elements of the molecule will be highlighted in the interactive periodic tab
 </section>
 <section id="deploy-a-textarea-for-the-input-of-the-molecule-name">
 <h2>3. Deploy a textarea for the input of the molecule name<a class="headerlink" href="#deploy-a-textarea-for-the-input-of-the-molecule-name" title="Permalink to this headline">¶</a></h2>
-<p>Use the <code class="docutils literal notranslate"><span class="pre">Textarea</span></code> widget from the “ipywidget” package.</p>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">Textarea</span></code> widget from the “ipywidgets” package.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">w</span> <span class="o">=</span> <span class="n">Textarea</span><span class="p">(</span>
@@ -346,8 +346,8 @@ The elements of the molecule will be highlighted in the interactive periodic tab
 </section>
 <section id="define-the-callback-function-for-the-button-click-event">
 <h2>5. Define the callback function for the button click event<a class="headerlink" href="#define-the-callback-function-for-the-button-click-event" title="Permalink to this headline">¶</a></h2>
-<p>Here, we deploy a “Update” button, which reads the name of the molecule from the textarea and udpate the
-strcuture in the visualizer and highlighted elements in the perodic table.</p>
+<p>Here, we deploy an “Update” button, which reads the name of the molecule from the textarea and updates the
+structure in the visualizer and highlighted elements in the periodic table.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">on_button_click</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
@@ -374,7 +374,7 @@ strcuture in the visualizer and highlighted elements in the perodic table.</p>
 </section>
 <section id="display-the-widgets">
 <h2>6. Display the widgets<a class="headerlink" href="#display-the-widgets" title="Permalink to this headline">¶</a></h2>
-<p>Display all the widgets and arrange them in a good layout.</p>
+<p>Display all the widgets and arrange them in a nice layout.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HBox</span><span class="p">([</span><span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">]),</span> <span class="n">VBox</span><span class="p">([</span><span class="n">view</span><span class="p">,</span> <span class="n">PTable</span><span class="p">]))</span>
