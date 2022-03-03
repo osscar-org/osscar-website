@@ -2,7 +2,7 @@
 JupyterLab Extensions 
 ======================
 
-We developed JupyterLab extensions to help developing and education.
+We have developed JupyterLab extensions to help with development and education.
 
 .. panels::
    :body: bg-light text-center
@@ -25,7 +25,7 @@ We developed JupyterLab extensions to help developing and education.
 
    :fa:`tools,mr-1` **Extension to Visaulize Molecular Orbital**
 
-   A JupyterLab launcher extension to visualize the Gaussian cube files.
+   A JupyterLab launcher extension to visualize Gaussian cube files.
 
    .. image:: images/mol-visualizer.gif
 

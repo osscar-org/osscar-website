@@ -16,9 +16,9 @@ Welcome to OSSCAR homepage!
 
 .. OSSCAR started in 2019 and is funded by the EPFL Open Science Fund until 2022.
 
-We developed interactive web applications for quantum mechanics and
-computational materials science education. The web applications (e.g. shown in
-the animation below) demonstrate knowledge through high-quality interactive
+In the OSSCAR project we have developed a collection of interactive web applications for quantum mechanics and
+computational materials science education. The web applications (like that shown, for example, in
+the animation below) demonstrate concepts through high-quality interactive
 visualization.
 
 .. image:: images/osscar-demo.gif
@@ -26,8 +26,8 @@ visualization.
   :alt: osscar demo
   :align: center
 
-Our web applications are converted from Jupyter notebooks, which are popular for
-educational purposes among the science community. Our technologies are reuseable
+Our web applications are generated from Jupyter notebooks, which are popular for
+educational purposes among the scientific community. Our technologies are reusable
 and we encourage teachers and students to develop their educational web
 applications with OSSCAR technologies.
 
@@ -37,7 +37,7 @@ applications with OSSCAR technologies.
 
    :fa:`book,mr-1` **Course Applications**
 
-   Browse OSSCAR developed courses applications for quantum mechanics and
+   Browse OSSCAR-developed applications for courses in quantum mechanics and
    computational materials science.
 
    +++++++++++++++++++++++++++++++++++++++++++++
@@ -65,7 +65,7 @@ applications with OSSCAR technologies.
 
    :fa:`users,mr-1` **OSSCAR Team**
 
-   Information about OSSCAR team.
+   Information about the OSSCAR team.
 
    +++++++++++++++++++++++++++++++++++++++++++++
 

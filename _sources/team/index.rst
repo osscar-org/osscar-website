@@ -43,3 +43,13 @@ OSSCAR Team
    `Dr. Dou Du <https://people.epfl.ch/dou.du>`_
 
    +++++++++++++++++++++++++++++++++++++++++++++
+   
+   ----------------------------------------------
+
+   :fa:`atom,mr-1` **Team Member**
+
+   .. image:: images/Baird.jpg
+
+   `Taylor Baird <https://people.epfl.ch/taylor.baird>`_	      
+
+   +++++++++++++++++++++++++++++++++++++++++++++

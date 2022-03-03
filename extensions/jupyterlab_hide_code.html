@@ -201,14 +201,13 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="jupyterlab-hide-code-a-jupyterlab-extension-to-run-and-hide-source-code">
 <h1><code class="docutils literal notranslate"><span class="pre">jupyterlab-hide-code</span></code>: A JupyterLab Extension to Run and Hide Source Code<a class="headerlink" href="#jupyterlab-hide-code-a-jupyterlab-extension-to-run-and-hide-source-code" title="Permalink to this headline">¶</a></h1>
-<p>A button in JupyterLab to run the code cells and then to hide the code cells.
+<p>This extension adds a button in JupyterLab which enables one to run the code cells of a notebook and have them subsequently be hidden from view.
 This JupyterLab extension was inspired by the
 <a class="reference external" href="https://github.com/AixViPMaP/jlab-hide-code"><code class="docutils literal notranslate"><span class="pre">jlab-hide-code</span></code></a> JupyterLab
 extension from Aachen (Aix) Virtual Platform for Materials Processing.</p>
-<p>This extension creates a button on the toolbar of each opened notebook.
-Clicking it first time will run all code cells and hide the codecells. It allows
-users to check the layout of the output cells in a fast way. One call toggle
-back the code cells by clicking the button again.</p>
+<p>Clicking the button for a first time will run all code cells before hiding their contents (displaying only the output of the cells). It allows
+users to check the layout of the output cells in an efficient way. One call toggle
+back the content of the code cells by clicking the button again.</p>
 <div class="admonition-installation admonition">
 <p class="admonition-title">Installation</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install jupyterlab-hide-code
