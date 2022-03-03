@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Using Voila to convert Jupyter notebooks into web application &#8212; Open Software Services for Classrooms and Research</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/osscar-log.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Open Software Services for Classrooms and Research</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Welcome to OSSCAR homepage!
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../extensions/index.html">
+   JupyterLab Extensions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/index.html">
+   Jupyter Widgets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../courses/index.html">
+   Course Applications
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/tutorial/voila.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/osscar-org/osscar-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/osscar-org/osscar-book/issues/new?title=Issue%20on%20page%20%2Ftutorial/voila.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/osscar-org/osscar-book/master?urlpath=tree/./tutorial/voila.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-voila">
+   1. Introduction to Voila
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-voila-and-deploy-a-web-application">
+   2. Run Voila and Deploy a Web Application
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-run-voila-locally">
+     <strong>
+      a. Run Voila locally
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-deploying-with-binder-mybinder-org">
+     <strong>
+      b. Deploying with Binder (mybinder.org)
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-deploying-on-a-dokku-server">
+     <strong>
+      c. Deploying on a dokku server
+     </strong>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-the-osscar-voila-template">
+   3. Use the OSSCAR Voila template
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="using-voila-to-convert-jupyter-notebooks-into-web-application">
+<h1><strong>Using Voila to convert Jupyter notebooks into web application</strong><a class="headerlink" href="#using-voila-to-convert-jupyter-notebooks-into-web-application" title="Permalink to this headline">¶</a></h1>
+<section id="introduction-to-voila">
+<h2>1. Introduction to Voila<a class="headerlink" href="#introduction-to-voila" title="Permalink to this headline">¶</a></h2>
+<p>Volia is a program used to convert Jupyter notebooks into standalone web applications which can be shared with others. Voila supports interactive widgets provided by the ipywidgets package, which
+is largely used in the OSSCAR project.</p>
+<p>The purpose of the Voila program is to render the selected notebook and enable real-time interaction with the included widgets.</p>
+</section>
+<section id="run-voila-and-deploy-a-web-application">
+<h2>2. Run Voila and Deploy a Web Application<a class="headerlink" href="#run-voila-and-deploy-a-web-application" title="Permalink to this headline">¶</a></h2>
+<section id="a-run-voila-locally">
+<h3><strong>a. Run Voila locally</strong><a class="headerlink" href="#a-run-voila-locally" title="Permalink to this headline">¶</a></h3>
+<p>Voila can be deployed via a variety of platforms. Primarily, one can access the web pages locally by connecting to a “port” provided by all computers which allows such local hosting of web pages.
+The default port number is 8866. One can specify the port number with “–port”. There are two ways
+to use Voila locally.</p>
+<ul>
+<li><p>Run Voila as a Jupyter server extension:</p>
+<p>One can access the web apps through the Jupyter server extension by inserting
+“/voila/render/” after the Jupyter base URL and before the notebook path:</p>
+</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>localhost:8888/voila/render/your_notebook.ipynb
+</pre></div>
+</div>
+<ul>
+<li><p>Run Voila as standalone application:</p>
+<p>One can also run Voila as a standalone application through the terminal:</p>
+</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>voila --template<span class="o">=</span>osscar --enable_nbextensions<span class="o">=</span>True your_notebook.ipynb
+</pre></div>
+</div>
+</section>
+<section id="b-deploying-with-binder-mybinder-org">
+<h3><strong>b. Deploying with Binder (<a class="reference external" href="http://mybinder.org">mybinder.org</a>)</strong><a class="headerlink" href="#b-deploying-with-binder-mybinder-org" title="Permalink to this headline">¶</a></h3>
+<p>Binder (<a class="reference external" href="http://mybinder.org">mybinder.org</a>) offers free cloud computing services to deploy Jupyter applications.
+We can deploy the web applications with Voila by calling the Voila server extension.
+One can follow the steps as listed below:</p>
+<ul class="simple">
+<li><p>In order to use Voila, one needs to first install the Voila python package. For the binder cloud deployment path,
+put the package name “voila” in the requirements.txt file.</p></li>
+<li><p>The voila Jupyter server extension is specified by prepending “<strong>voila/render</strong>” to the path of your Jupyter notebook.</p></li>
+</ul>
+<p>Provide the URL to <a class="reference external" href="http://mybinder.org">mybinder.org</a> as shown below:</p>
+<p><img alt="voila" src="../_images/fig_binderVoila.png" /></p>
+</section>
+<section id="c-deploying-on-a-dokku-server">
+<h3><strong>c. Deploying on a dokku server</strong><a class="headerlink" href="#c-deploying-on-a-dokku-server" title="Permalink to this headline">¶</a></h3>
+<p>The disadvantage of using Binder is that the allocated cloud computing power is very limited and
+loading can take long time. Alternatively, we can deploy the apps on dokku servers.
+Dokku is a open source platform as a service, which supports voila deployment as
+web applications. One can set up their own dokku servers. Otherwise, there is a
+dokku server maintained by the Materials Cloud team. Here is the link for instructions on how to deploy
+a new tool at Materials Cloud.</p>
+<p><a class="reference external" href="https://github.com/materialscloud-org/issues/wiki/Contributing-a-new-tool">https://github.com/materialscloud-org/issues/wiki/Contributing-a-new-tool</a></p>
+<p>For deploying apps with Voila for a single notebook, we need set the Procfile file as:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web: voila —-port<span class="o">=</span><span class="nv">$PORT</span> —-no-browser your_notebook.ipynb
+</pre></div>
+</div>
+<p>For multiple notebooks, one can put them in a folder and use Voila to host the
+whole folder as:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web: voila —-port<span class="o">=</span><span class="nv">$PORT</span> —-no-browser your_folder/
+</pre></div>
+</div>
+<p>In order to save the computing resources and prevent idling kernels, one
+can set the timeout to kill idle kernels as:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web: voila —-port<span class="o">=</span><span class="nv">$PORT</span> —-no-browser your_notebook.ipynb --MappingKernelManager.cull_interval<span class="o">=</span><span class="m">60</span> --MappingKernelManager.cull_idle_timeout<span class="o">=</span><span class="m">120</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="use-the-osscar-voila-template">
+<h2>3. Use the OSSCAR Voila template<a class="headerlink" href="#use-the-osscar-voila-template" title="Permalink to this headline">¶</a></h2>
+<p>We developed a Voila template (<strong>voila-osscar-template</strong>)
+for the OSSCAR project. The template has been released with PyPi.
+One can install it locally with pip:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">voila</span><span class="o">-</span><span class="n">osscar</span><span class="o">-</span><span class="n">template</span>
+</pre></div>
+</div>
+<p>For delopying with Binder and Dokku platforms,
+One needs to put the “voila-osscar-template” into the <strong>requriments.txt</strong> file.
+For Binder, one also needs to specify the <strong>jupyter_config.json</strong> file in the GitHub
+repository. The content of this file is shown below:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">{</span>
+  <span class="s2">&quot;VoilaConfiguration&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;enable_nbextensions&quot;</span>: true,  
+    <span class="s2">&quot;theme&quot;</span>: <span class="s2">&quot;light&quot;</span>,
+    <span class="s2">&quot;template&quot;</span>: <span class="s2">&quot;osscar&quot;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Normally, we need to set the <strong>enable_nbextenions: true</strong> for
+using custom widgets like the “widget-periodictable”. The <strong>theme</strong>
+has two options, <strong>light</strong> and <strong>dark</strong>.</p>
+<p>For dokku, we can modify the Procfile file as:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web: voila --template<span class="o">=</span>osscar --VoilaConfiguration.enable_nbextensions<span class="o">=</span>True --port<span class="o">=</span><span class="nv">$PORT</span> --no-browser your_notebook.ipynb
+</pre></div>
+</div>
+<p>For multiple notebooks, this template (special feature) will redirect the starting page
+from “index.ipynb”. One can create the “index.ipynb” file to link all
+other notebooks. The relevant input to the dokku Procfile is shown below:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web: voila --template<span class="o">=</span>osscar --VoilaConfiguration.enable_nbextensions<span class="o">=</span>True --port<span class="o">=</span><span class="nv">$PORT</span> --no-browser your_folder/
+</pre></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./tutorial"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By The OSSCAR Develop Team<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
