@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Use Widgets &#8212; Open Software Services for Classrooms and Research</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -198,8 +197,8 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-create-a-slider-with-integer-steps">
-   Example: create a slider with integer steps
+  <a class="reference internal nav-link" href="#example-create-a-slider-with-integer-number">
+   Example: create a slider with integer number
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -228,17 +227,17 @@
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="use-widgets">
+  <div class="tex2jax_ignore mathjax_ignore section" id="use-widgets">
 <h1>Use Widgets<a class="headerlink" href="#use-widgets" title="Permalink to this headline">¶</a></h1>
-<p>Widgets are at the core of our interactive web applications. We predominantly use the
+<p>Widgets is the core of our interactive web applications. We mainly use the
 <code class="docutils literal notranslate"><span class="pre">ipywidgets</span></code> package.</p>
-<p>Ipywidgets can be installed with pip:</p>
+<p>The ipywidgets can be installed with pip:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install --upgrade ipywidgets
 </pre></div>
 </div>
-<p>Ipywidgets offers a large number of widgets to be used as interactive components of a Jupyter notebook.</p>
-<section id="example-create-a-slider-with-integer-steps">
-<h2>Example: create a slider with integer steps<a class="headerlink" href="#example-create-a-slider-with-integer-steps" title="Permalink to this headline">¶</a></h2>
+<p>Ipywidgets offer a large number of widgets as interactive components.</p>
+<div class="section" id="example-create-a-slider-with-integer-number">
+<h2>Example: create a slider with integer number<a class="headerlink" href="#example-create-a-slider-with-integer-number" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 
 <span class="n">w</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;A slider:&#39;</span><span class="p">)</span>
@@ -246,8 +245,8 @@
 </pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">display</span></code> function will show the widget in the notebook.</p>
-</section>
-<section id="example-textarea-to-show-some-text">
+</div>
+<div class="section" id="example-textarea-to-show-some-text">
 <h2>Example: Textarea to show some text<a class="headerlink" href="#example-textarea-to-show-some-text" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 
@@ -261,11 +260,11 @@
 <span class="n">display</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>For more widgets, please refer to the <a
+<p>For more widgets, please read the <a
 href="https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html">ipywidgets
-documentation</a>.</p>
-</section>
-<section id="use-matplotlib-figure-as-widget">
+document</a>.</p>
+</div>
+<div class="section" id="use-matplotlib-figure-as-widget">
 <h2>Use matplotlib figure as widget<a class="headerlink" href="#use-matplotlib-figure-as-widget" title="Permalink to this headline">¶</a></h2>
 <p>Leveraging the Jupyter interactive widgets framework, <code class="docutils literal notranslate"><span class="pre">ipympl</span></code> enables the
 interactive features of matplotlib in the Jupyter notebook and in JupyterLab.
@@ -273,16 +272,16 @@ To enable the ipympl backend, simply use the matplotlib Jupyter magic:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">widget</span>
 </pre></div>
 </div>
-</section>
-<section id="use-osscar-widgets">
+</div>
+<div class="section" id="use-osscar-widgets">
 <h2>Use OSSCAR widgets<a class="headerlink" href="#use-osscar-widgets" title="Permalink to this headline">¶</a></h2>
 <p>In the OSSCAR project, we have developed a few custom widgets related to
-computational chemistry and physics. For example, we developed an interactive
+computational chemistry and physics. For example, we developed a interactive
 periodic table.</p>
 <p><img alt="widget periodic table" src="../_images/widget_periodictable.gif" /></p>
-<p>For more information, please check out the “Tools” section.</p>
-</section>
-</section>
+<p>For more information, please check the “Tools” section.</p>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

@@ -11,7 +11,7 @@ and physics.
 
    :fa:`atom,mr-1` **Widget Periodic Table**
 
-   A Jupyter widget for an interactive periodic table.
+   A Jupyter widget for a interactive periodic table.
 
    .. image:: images/widget_periodictable.png
 

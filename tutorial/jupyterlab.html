@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JupyterLab &#8212; Open Software Services for Classrooms and Research</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -237,48 +236,50 @@
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="jupyterlab">
+  <div class="tex2jax_ignore mathjax_ignore section" id="jupyterlab">
 <h1>JupyterLab<a class="headerlink" href="#jupyterlab" title="Permalink to this headline">¶</a></h1>
-<section id="introduction">
+<div class="section" id="introduction">
 <h2>1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>JupyterLab is the next-generation GUI for the Jupyter project, taking over from the standard Jupyter notebook. We use JupyterLab as the OSSCAR development
+<p>JupyterLab is called the next generation of the Jupyter, which has a powerful
+graphic user interface (GUI). We use the JupyterLab as the OSSCAR development
 environment.</p>
-<section id="a-installation">
+<div class="section" id="a-installation">
 <h3>a. Installation<a class="headerlink" href="#a-installation" title="Permalink to this headline">¶</a></h3>
-<p>JupyterLab can be easily installed via pip:</p>
+<p>JupyterLab can be easily installed by the pip. Otherwise, you can also use the
+EPFL <a href="https://noto.epfl.ch">NOTO platform</a>, which offers JupyterLab
+as a cloud webpage.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install --upgrade jupyterlab
 </pre></div>
 </div>
-<p>Otherwise, you can alternatively use the
-EPFL <a href="https://noto.epfl.ch">NOTO platform</a>, which offers JupyterLab
-as a cloud webpage.</p>
-</section>
-</section>
-<section id="jupyterlab-extensions">
+</div>
+</div>
+<div class="section" id="jupyterlab-extensions">
 <h2>2. JupyterLab extensions<a class="headerlink" href="#jupyterlab-extensions" title="Permalink to this headline">¶</a></h2>
-<p>JupyterLab allows for the development and installation of extensions. For the development of the
+<p>JupyterLab allows to develop and install extensions. For the development of the
 notebooks, we need to install two JupyterLab extensions.</p>
-<section id="a-jupyterlab-hide-code-extension">
+<div class="section" id="a-jupyterlab-hide-code-extension">
 <h3>a. JupyterLab hide code extension<a class="headerlink" href="#a-jupyterlab-hide-code-extension" title="Permalink to this headline">¶</a></h3>
-<p>We developed the “jupyterlab-hide-code” extension, which runs all code cells of the current notebook and hides their output. It is useful to quickly check the layout of the notebook’s output. Install it with pip:</p>
+<p>We developed the “jupyterlab-hide-code” extension, which runs all and hide all
+the code cells of current notebook. It is useful to quickly check the layout of
+the output of the notebook. Install it with pip.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install --upgrade jupyterlab-hide-code
 </pre></div>
 </div>
-<p>Once installed it shall show up as a button with an eye icon in the toolbar of the current notebook. One can
+<p>It is a button with an eye icon on the toolbar of the current notebook. One can
 toggle to hide or show the source codes by clicking the button.</p>
 <p><img alt="Jupyterlab hide code" src="../_images/hide-input1.gif" /></p>
-</section>
-<section id="b-voila-extension">
+</div>
+<div class="section" id="b-voila-extension">
 <h3>b. Voila extension<a class="headerlink" href="#b-voila-extension" title="Permalink to this headline">¶</a></h3>
-<p>The Voila package provides a JupyterLab extension. After installing Voila with
-pip, one will have the Voila extension available in JupyterLab.</p>
+<p>The Voila package contains a JupyterLab extension. After installation Voila with
+pip, one will have the Voila extension inside the JupyterLab.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install --upgrade voila 
 </pre></div>
 </div>
 <p><img alt="Jupyterlab Voila" src="../_images/jupyterlab_voila.gif" /></p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

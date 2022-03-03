@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Statistical Mechanics &#8212; Open Software Services for Classrooms and Research</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -43,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -221,39 +222,39 @@
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="statistical-mechanics">
+  <div class="tex2jax_ignore mathjax_ignore section" id="statistical-mechanics">
 <h1><strong>Statistical Mechanics</strong><a class="headerlink" href="#statistical-mechanics" title="Permalink to this headline">¶</a></h1>
-<section id="monte-carlo-simulations-to-sample-the-canonical-distribution">
+<div class="section" id="monte-carlo-simulations-to-sample-the-canonical-distribution">
 <h2>1. <a class="reference external" href="https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/statistical-mechanics/monte_carlo_parabolic.ipynb">Monte Carlo Simulations to Sample the Canonical Distribution</a><a class="headerlink" href="#monte-carlo-simulations-to-sample-the-canonical-distribution" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fstatistical-mechanics%2Fmonte_carlo_parabolic.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
 <a class="reference external" href="https://osscar-quantum-mechanics.matcloud.xyz/voila/render/statistical-mechanics/monte_carlo_parabolic.ipynb"><img alt="Materials Cloud Tool osscar-qmcourse" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
-<p>Monte Carlo simulations are often used to sample the canonical distribution of a system
-given a potential energy surface. In this notebook, we demonstrate the use of the
-Metropolis-Hastings algorithm to find the global minimum of a two-dimensional
-potential energy surface.</p>
+<p>Monte Carlo simulations are often used to sample the canonical distribution,
+given a potential energy surface. In this notebook, we demonstrated to use
+Metropolis-Hastings algorithm to find the global minimum of two-dimensional
+potential energy surfaces.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/monte_carlo.png"><img alt="monte carlo" class="bg-primary mb-1 align-center" src="../_images/monte_carlo.png" style="width: 500px;" /></a>
-</section>
-<section id="monte-carlo-calculation-of-pi">
+</div>
+<div class="section" id="monte-carlo-calculation-of-pi">
 <h2>2. <a class="reference external" href="https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/statistical-mechanics/monte_carlo_pi.ipynb">Monte Carlo Calculation of Pi</a><a class="headerlink" href="#monte-carlo-calculation-of-pi" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fstatistical-mechanics%2Fmonte_carlo_pi.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
 <a class="reference external" href="https://osscar-quantum-mechanics.matcloud.xyz/voila/render/statistical-mechanics/monte_carlo_pi.ipynb"><img alt="Materials Cloud Tool osscar-qmcourse" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
-<p>Monte Carlo methods encompass a large number of computational algorithms and methods,
-which rely on random number sampling to solve problems numerically. In this
-notebook, we introduce the Monte Carlo method by using a simple simulation to
+<p>Monte Carlo method is a large category of computational algorithms and methods,
+which replys on random number sampling to solve problems numerically. In the
+notebook, we introduce the Monte Carlo method by a simple simulation to
 calculate the value of Pi.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/montecarlo_pi.png"><img alt="monte carlo pi" class="bg-primary mb-1 align-center" src="../_images/montecarlo_pi.png" style="width: 500px;" /></a>
-</section>
-<section id="ising-model-in-2d">
+</div>
+<div class="section" id="ising-model-in-2d">
 <h2>3. <a class="reference external" href="https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/statistical-mechanics/ising_model.ipynb">Ising Model in 2D</a><a class="headerlink" href="#ising-model-in-2d" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fstatistical-mechanics%2Fising_model.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
 <a class="reference external" href="https://osscar-quantum-mechanics.matcloud.xyz/voila/render/statistical-mechanics/ising_model.ipynb"><img alt="Materials Cloud Tool osscar-qmcourse" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
 <p>Magnetism is an important physical property of materials. The Ising model is a
-simple and successful model used to predict the net magnetization of a regular
-lattice of spins. Here, we have used Ising model to predict the ferromagnetic or
-antiferromagnetic behaviour of a square (2D) spin lattice.</p>
+simple and successful model to predict the net magnetization of a regular
+lattice of spins. Here, we used Ising model to predict the ferromagnetic or
+antiferromagnetic behavior of a square (2D) spin lattice.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/ising_model.png"><img alt="ising model" class="bg-primary mb-1 align-center" src="../_images/ising_model.png" style="width: 500px;" /></a>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

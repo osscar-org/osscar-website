@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Molecular Dynamics &#8212; Open Software Services for Classrooms and Research</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -43,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -211,21 +212,21 @@
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="molecular-dynamics">
+  <div class="tex2jax_ignore mathjax_ignore section" id="molecular-dynamics">
 <h1><strong>Molecular Dynamics</strong><a class="headerlink" href="#molecular-dynamics" title="Permalink to this headline">¶</a></h1>
-<section id="verlet-integration">
+<div class="section" id="verlet-integration">
 <h2>1. <a class="reference external" href="https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/molecular-dynamics/verlet_integration.ipynb">Verlet Integration</a><a class="headerlink" href="#verlet-integration" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fmolecular_dynamics%2Fverlet_integration.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
 <a class="reference external" href="https://osscar-quantum-mechanics.matcloud.xyz/voila/render/molecular-dynamics/verlet_integration.ipynb"><img alt="Materials Cloud Tool osscar-qmcourse" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
-<p>In classical molecular dynamics simulations, molecular motions are
-computed via Newton’s equations. A numerical approximation is
-employed to affect this propagation on a computer. In this approximation, velocities of the atoms are treated as constant during a tiny time
-period Δt. A numerical algorithm called Verlet integration is employed to update
-the positions, velocities and accelerations of the simulated system. Here, we
-consider a two-body system (sun and earth) to demonstrate this numerical method.</p>
+<p>In the classic molecular dynamics simulations, the molecular motions are
+computed by solving the Newton equation. The numerical approximation is
+employed, which treats the velocities of the atoms as constant during a tiny
+period Δt. A numerical aglorithm called verlet integration is employed to update
+the positions, velocities and accelerations of the simulated systems. Here, we
+used a two-body system (sun and earth) to demonstrate this numerical method.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/verlet_integration.png"><img alt="verlet integration" class="bg-primary mb-1 align-center" src="../_images/verlet_integration.png" style="width: 500px;" /></a>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

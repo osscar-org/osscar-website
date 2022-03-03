@@ -2,7 +2,7 @@
 Course Applications 
 ======================
 
-Below is a compilation of educational web applications for a range of different courses in the domains of quantum mechanics and materials science. 
+We developed JupyterLab extensions to help developing and education.
 
 .. panels::
    :body: bg-light text-center
@@ -40,7 +40,7 @@ Below is a compilation of educational web applications for a range of different 
 
    :fa:`book,mr-1` **Statistical Mechanics**
 
-   A collection of web applications for statistical mechanics.
+   A collection of web applications for statisitcal mechanics.
 
    .. image:: images/ising_model.png
 
