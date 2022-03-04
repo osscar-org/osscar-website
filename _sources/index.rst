@@ -1,24 +1,21 @@
 ###################################
-Welcome to OSSCAR homepage!
+Welcome to the OSSCAR homepage!
 ###################################
 
-.. The OSSCAR (Open Software Services for Classrooms and Research) platform is a
-.. collaborative environment targeted at enhancing awareness and adoption of best
-.. practises in Open Science.
+The OSSCAR (Open Software Services for Classrooms and Research) platform is a collaborative environment targeted at enhancing awareness and adoption of best practises in Open Science.
 
-.. OSSCAR targets both research and education: it provides some of the core tools
-.. needed for “computational thinking”, first targeting physics, chemistry,
-.. materials science, mechanical and chemical engineering. 
+OSSCAR targets both research and education: it provides some of the core tools
+needed for “computational thinking”, first targeting physics, chemistry,
+materials science, mechanical and chemical engineering. 
 
-.. OSSCAR develops original educational content, offered exploiting the
-.. infrastructural resources developed for the `Materials Cloud`_, and disseminated
-.. widely through the `CECAM`_ network and beyond.
+OSSCAR develops original educational content, offered exploiting the
+infrastructural resources developed for `Materials Cloud <https://www.materialscloud.org>`_, and disseminated
+widely through the `CECAM`_ network and beyond.
+OSSCAR started in 2019 and is funded by the EPFL Open Science Fund until 2022.
 
-.. OSSCAR started in 2019 and is funded by the EPFL Open Science Fund until 2022.
+In the OSSCAR project, we have developed a collection of interactive web applications for quantum mechanics and computational materials science education.
 
-In the OSSCAR project we have developed a collection of interactive web applications for quantum mechanics and
-computational materials science education. The web applications (like that shown, for example, in
-the animation below) demonstrate concepts through high-quality interactive
+The web applications (like that shown, for example, in the animation below) demonstrate concepts through high-quality interactive
 visualization.
 
 .. image:: images/osscar-demo.gif
@@ -49,7 +46,7 @@ applications with OSSCAR technologies.
 
    ----------------------------------------------
 
-   :fa:`file-code,mr-1` **Tutorial for Developers**
+   :fa:`file-code,mr-1` **Tutorials for Developers**
 
    Tutorial: how to develop interactive web applications with Jupyter notebooks
    by using OSSCAR technologies.
@@ -63,16 +60,29 @@ applications with OSSCAR technologies.
 
    ----------------------------------------------
 
-   :fa:`users,mr-1` **OSSCAR Team**
+   :fa:`users,mr-1` **About OSSCAR**
 
-   Information about the OSSCAR team.
+   Information about the OSSCAR project.
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: team/index
+   .. link-button:: about/index
       :type: ref
-      :text: To the team
+      :text: To about section
       :classes: btn-outline-primary btn-block stretched-link
+
+   ----------------------------------------------
+
+   :fa:`users,mr-1` **OSSCAR Source Code**
+
+    Check out all (open-source!) code developed by OSSCAR (courses, widgets, ...).
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: https://github.com/osscar-org/
+      :text: To GitHub
+      :classes: btn-outline-primary btn-block stretched-link
+		
 
 Acknowledgements
 *****************
