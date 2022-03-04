@@ -73,7 +73,7 @@ applications with OSSCAR technologies.
 
    ----------------------------------------------
 
-   :fa:`users,mr-1` **OSSCAR Source Code**
+   :fa:`file-code,mr-1` **OSSCAR Source Code**
 
     Check out all (open-source!) code developed by OSSCAR (courses, widgets, ...).
 

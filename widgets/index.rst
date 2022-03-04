@@ -6,9 +6,7 @@ We developed Jupyter widgets related to computational chemistry
 and physics.
 
 .. panels::
-   :body: bg-light text-center
-   :footer: bg-light border-0
-
+	    
    :fa:`atom,mr-1` **Widget Periodic Table**
 
    A Jupyter widget for an interactive periodic table.
