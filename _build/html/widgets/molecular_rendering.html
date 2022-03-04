@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Molecular orbital visualizer: JupyterLab Extension to Visualize Molecular Orbitals and Structure &#8212; Open Software Services for Classrooms and Research</title>
+    <title>Molecular Rendering: A collection of tools to render high quality molecular images and videos using POVRAY. It supports the plotting of molecular structures, isosurfaces, and isosurfaces with colormap. &#8212; Open Software Services for Classrooms and Research</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -94,12 +94,12 @@
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="index.html">
+  <a class="reference internal" href="../extensions/index.html">
    JupyterLab Extensions
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../widgets/index.html">
+  <a class="reference internal" href="index.html">
    Jupyter Widgets
   </a>
  </li>
@@ -149,7 +149,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/extensions/mol_visualizer.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/widgets/molecular_rendering.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -169,7 +169,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/osscar-org/osscar-book/issues/new?title=Issue%20on%20page%20%2Fextensions/mol_visualizer.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/osscar-org/osscar-book/issues/new?title=Issue%20on%20page%20%2Fwidgets/molecular_rendering.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -196,41 +196,14 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#try-it-with-binder">
-   Try it with Binder
+  <a class="reference internal nav-link" href="#web-apps-at-materials-cloud">
+   Web apps at Materials Cloud
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#requirements">
-   Requirements
+  <a class="reference internal nav-link" href="#gallery">
+   Gallery
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#install">
-   Install
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#uninstall">
-   Uninstall
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#contributing">
-   Contributing
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#development-install">
-     Development install
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#development-uninstall">
-     Development uninstall
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -243,78 +216,35 @@
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="molecular-orbital-visualizer-jupyterlab-extension-to-visualize-molecular-orbitals-and-structure">
-<h1><code class="docutils literal notranslate"><span class="pre">Molecular</span> <span class="pre">orbital</span> <span class="pre">visualizer</span></code>: JupyterLab Extension to Visualize Molecular Orbitals and Structure<a class="headerlink" href="#molecular-orbital-visualizer-jupyterlab-extension-to-visualize-molecular-orbitals-and-structure" title="Permalink to this headline">¶</a></h1>
-<section id="try-it-with-binder">
-<h2>Try it with Binder<a class="headerlink" href="#try-it-with-binder" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://mybinder.org/v2/gh/osscar-org/jupyterlab-mol-visualizer/master?urlpath=lab"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
-<p>A JupyterLab launcher extension to view the molecular orbitals.</p>
-<p><img alt="demo" src="../_images/mol_vis_demo.gif" /></p>
-</section>
-<section id="requirements">
-<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="molecular-rendering-a-collection-of-tools-to-render-high-quality-molecular-images-and-videos-using-povray-it-supports-the-plotting-of-molecular-structures-isosurfaces-and-isosurfaces-with-colormap">
+<h1><strong>Molecular Rendering</strong>: A collection of tools to render high quality molecular images and videos using POVRAY. It supports the plotting of molecular structures, isosurfaces, and isosurfaces with colormap.<a class="headerlink" href="#molecular-rendering-a-collection-of-tools-to-render-high-quality-molecular-images-and-videos-using-povray-it-supports-the-plotting-of-molecular-structures-isosurfaces-and-isosurfaces-with-colormap" title="Permalink to this headline">¶</a></h1>
+<section id="web-apps-at-materials-cloud">
+<h2>Web apps at Materials Cloud<a class="headerlink" href="#web-apps-at-materials-cloud" title="Permalink to this headline">¶</a></h2>
+<p><strong>Due to the limitation of the computing power provided by BinderHub, we are only presenting the apps at Materials Cloud here.
+However, it could still take hours to obtain the rendered images and videos.</strong></p>
 <ul class="simple">
-<li><p>JupyterLab &gt;= 3.0</p></li>
+<li><p>Index
+<a class="reference external" href="https://mrender.matcloud.xyz"><img alt="Materials Cloud Tool" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p>
+<ul>
+<li><p>Render molecular strcutures to high quality images
+<a class="reference external" href="https://mrender.matcloud.xyz/voila/render/molecular_rendering.ipynb"><img alt="Materials Cloud Tool" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p></li>
+<li><p>Render molecular trajectories to high quality movies
+<a class="reference external" href="https://mrender.matcloud.xyz/voila/render/trajectory_rendering.ipynb"><img alt="Materials Cloud Tool" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p></li>
+<li><p>Plot electrostatic colormap from VASP calculations
+<a class="reference external" href="https://mrender.matcloud.xyz/voila/render/isosurface_rendering.ipynb"><img alt="Materials Cloud Tool" src="https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg" /></a></p></li>
+</ul>
+</li>
 </ul>
 </section>
-<section id="install">
-<h2>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h2>
-<p>To install the extension, execute:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install jupyterlab-mol-visualizer
-</pre></div>
+<section id="gallery">
+<h2>Gallery<a class="headerlink" href="#gallery" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The electrostatic colormap of the benzene (C6H6) molecule</p></li>
+</ul>
+<div>
+<img src="./images/electrostatic_colormap.png" alt="drawing" width="350"/>
+<img src="./images/electrostatic_trans.png" alt="drawing" width="350"/>
 </div>
-<p>or</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter labextension install jupyterlab-mol-visualizer
-</pre></div>
-</div>
-</section>
-<section id="uninstall">
-<h2>Uninstall<a class="headerlink" href="#uninstall" title="Permalink to this headline">¶</a></h2>
-<p>To remove the extension, execute:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip uninstall jupyterlab-mol-visualizer
-</pre></div>
-</div>
-</section>
-<section id="contributing">
-<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h2>
-<section id="development-install">
-<h3>Development install<a class="headerlink" href="#development-install" title="Permalink to this headline">¶</a></h3>
-<p>Note: You will need NodeJS to build the extension package.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">jlpm</span></code> command is JupyterLab’s pinned version of
-<a class="reference external" href="https://yarnpkg.com/">yarn</a> that is installed with JupyterLab. You may use
-<code class="docutils literal notranslate"><span class="pre">yarn</span></code> or <code class="docutils literal notranslate"><span class="pre">npm</span></code> in lieu of <code class="docutils literal notranslate"><span class="pre">jlpm</span></code> below.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clone the repo to your local environment</span>
-<span class="c1"># Change directory to the jupyterlab_mol_visualizer directory</span>
-<span class="c1"># Install package in development mode</span>
-pip install -e .
-<span class="c1"># Link your development version of the extension with JupyterLab</span>
-jupyter labextension develop . --overwrite
-<span class="c1"># Rebuild extension Typescript source after making changes</span>
-jlpm run build
-</pre></div>
-</div>
-<p>You can watch the source directory and run JupyterLab at the same time in different terminals to watch for changes in the extension’s source and automatically rebuild the extension.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Watch the source directory in one terminal, automatically rebuilding when needed</span>
-jlpm run watch
-<span class="c1"># Run JupyterLab in another terminal</span>
-jupyter lab
-</pre></div>
-</div>
-<p>With the watch command running, every saved change will immediately be built locally and available in your running JupyterLab. Refresh JupyterLab to load the change in your browser (you may need to wait several seconds for the extension to be rebuilt).</p>
-<p>By default, the <code class="docutils literal notranslate"><span class="pre">jlpm</span> <span class="pre">run</span> <span class="pre">build</span></code> command generates the source maps for this extension to make it easier to debug using the browser dev tools. To also generate source maps for the JupyterLab core extensions, you can run the following command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter lab build --minimize<span class="o">=</span>False
-</pre></div>
-</div>
-</section>
-<section id="development-uninstall">
-<h3>Development uninstall<a class="headerlink" href="#development-uninstall" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip uninstall jupyterlab_mol_visualizer
-</pre></div>
-</div>
-<p>In development mode, you will also need to remove the symlink created by <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">develop</span></code>
-command. To find its location, you can run <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">list</span></code> to figure out where the <code class="docutils literal notranslate"><span class="pre">labextensions</span></code>
-folder is located. Then you can remove the symlink named <code class="docutils literal notranslate"><span class="pre">jupyterlab-mol-visualizer</span></code> within that folder.</p>
-</section>
 </section>
 </section>
 
@@ -331,7 +261,7 @@ folder is located. Then you can remove the symlink named <code class="docutils l
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./extensions"
+            path: "./widgets"
         },
         predefinedOutput: true
     }

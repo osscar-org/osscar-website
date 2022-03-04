@@ -52,3 +52,48 @@ and physics.
       :type: ref
       :text: To the instruction
       :classes: btn-outline-primary btn-block stretched-link
+
+ ----------------------------------------------
+
+   :fa:`atom,mr-1` **Widget JSmol**
+
+   A Jupyter widget to use Jmol/Jsmol.
+
+   .. image:: images/widget_jsmol.png
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: widget_jsmol
+      :type: ref
+      :text: To the instruction
+      :classes: btn-outline-primary btn-block stretched-link
+
+ ----------------------------------------------
+
+   :fa:`atom,mr-1` **Widget Code Input**
+
+   A widget to allow input of a python function, with syntax highlighting.
+
+   .. image:: images/widget_code_input.png
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: widget_code_input
+      :type: ref
+      :text: To the instruction
+      :classes: btn-outline-primary btn-block stretched-link
+
+ ----------------------------------------------
+
+   :fa:`atom,mr-1` **Molecular rendering with POVRAY**
+
+   A collection of tools to render molecular structures into high quality images or videos using the POVRAY engine.
+
+   .. image:: images/electrostatic_colormap.png
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: molecular_rendering
+      :type: ref
+      :text: To the instruction
+      :classes: btn-outline-primary btn-block stretched-link

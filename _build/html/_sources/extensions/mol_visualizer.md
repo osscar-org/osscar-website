@@ -82,9 +82,6 @@ command. To find its location, you can run `jupyter labextension list` to figure
 folder is located. Then you can remove the symlink named `jupyterlab-mol-visualizer` within that folder.
 
 
-# Acknowledgements
-
-We acknowledge support from the EPFL Open Science Fund via the [OSSCAR](http://www.osscar.org) project.
 
 
 
