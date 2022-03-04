@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Open Software Services for Classrooms and Research
-author: The OSSCAR Develop Team
+author: The OSSCAR Development Team
 logo: osscar-log.svg
 
 # Force re-execution of notebooks on each build.
