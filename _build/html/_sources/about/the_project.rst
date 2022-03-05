@@ -15,6 +15,6 @@ You can watch a 2-minute introduction to the project in the following video.
 
 
 	    
-Tools are provided as apps, enabling educational functionalities either directly or wrapped around existing open-source simulation codes, and implementing Software-as-a-Service tools with interactive Graphical User Interfaces (GUIs) easy to develop and deploy (for researchers and classroom instructors), and to use and interact with (for students).
+Tools are provided as web applications, generated from Jupyter notebooks. This facilitates access to educational functionality either directly or wrapped around existing open-source simulation codes. Implementing Software-as-a-Service tools alongside interactive Graphical User Interfaces (GUIs) engenders easy development and deployment (for researchers and classroom instructors), and interaction (for students).
 
 OSSCAR’s goal is to become a support tool for a diverse range of computational classes and research areas, both in terms of content and of easy-to-deploy models.
