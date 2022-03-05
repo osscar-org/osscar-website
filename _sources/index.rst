@@ -8,25 +8,17 @@ OSSCAR targets both research and education: it provides some of the core tools
 needed for “computational thinking”, first targeting physics, chemistry,
 materials science, mechanical and chemical engineering. 
 
-OSSCAR develops original educational content, offered exploiting the
+OSSCAR develops original educational content such as the pedagogical web application demonstrated in the animation below. This content is offered by exploiting the
 infrastructural resources developed for `Materials Cloud <https://www.materialscloud.org>`_, and disseminated
-widely through the `CECAM`_ network and beyond.
-OSSCAR started in 2019 and is funded by the EPFL Open Science Fund until 2022.
+widely through the `CECAM`_ network and beyond. 
 
-In the OSSCAR project, we have developed a collection of interactive web applications for quantum mechanics and computational materials science education.
-
-The web applications (like that shown, for example, in the animation below) demonstrate concepts through high-quality interactive
-visualization.
-
+|
 .. image:: images/osscar-demo.gif
   :width: 600
   :alt: osscar demo
   :align: center
-
-Our web applications are generated from Jupyter notebooks, which are popular for
-educational purposes among the scientific community. Our technologies are reusable
-and we encourage teachers and students to develop their educational web
-applications with OSSCAR technologies.
+	  
+|
 
 .. panels::
    :body: bg-light text-center

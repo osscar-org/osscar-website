@@ -21,7 +21,7 @@ About OSSCAR
 
    ----------------------------------------------
 
-   :fa:`tools,mr-1` **The Team**
+   :fa:`users,mr-1` **The Team**
 
    Get to know the OSSCAR team.
 

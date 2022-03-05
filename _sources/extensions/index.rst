@@ -23,7 +23,7 @@ We have developed JupyterLab extensions to help with development and education.
 
    ----------------------------------------------
 
-   :fa:`tools,mr-1` **Extension to Visaulize Molecular Orbitals**
+   :fa:`tools,mr-1` **Extension to Visualize Molecular Orbitals**
 
    A JupyterLab launcher extension to visualize Gaussian cube files.
 
