@@ -1,5 +1,7 @@
 # `widget-code-input`: A widget to allow input of a python function, with syntax highlighting.
 
+**Source code:** https://github.com/osscar-org/widget-code-input
+
 **Introduction**: This is a widget which allows users to implement small python functions dynamically and interactively. It uses the codemirror library to create the input area. The goal of this widget is to let students implement functions that can be given by tutors as assignments. The function becomes an actual python function that can be immediately run (and that it is run in a sandboxed environment, without access to the jupyter notebook global variables). It is also possible to select a custom code theme. This widget is particularly useful in combination with AppMode and/or voila.
 
 

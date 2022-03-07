@@ -1,6 +1,6 @@
 # `widget-jsmol`: A Jupyter widget to use Jmol/Jsmol.
 
-**Source code:** https://github.com/osscar-org/widget-jsmol
+# Source code:# 
 
 ## Try it on Binder
 

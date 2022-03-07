@@ -1,5 +1,7 @@
 # **Molecular Rendering**: A collection of tools to render high quality molecular images and videos using POVRAY. It supports the plotting of molecular structures, isosurfaces, and isosurfaces with colormap.
 
+**Source code**: https://github.com/osscar-org/molecular-rendering
+
 ## Web apps at Materials Cloud
 **Due to the limitation of the computing power provided by BinderHub, we are only presenting the apps at Materials Cloud here.
 However, it could still take hours to obtain the rendered images and videos.**
@@ -20,9 +22,14 @@ However, it could still take hours to obtain the rendered images and videos.**
 ## Gallery
 
 * The electrostatic colormap of the benzene (C6H6) molecule
+```{image} ./images/electrostatic_colormap.png
+  :height: 250px
+```
 
-<div>
-<img src="./images/electrostatic_colormap.png" alt="drawing" width="350"/>
-<img src="./images/electrostatic_trans.png" alt="drawing" width="350"/>
-</div>
+```{image} ./images/electrostatic_trans.png
+  :height: 250px
+```
+% <img src='/images/electrostatic_colormap.png'/>
+% <img src="images/electrostatic_trans.png" alt="drawing" width="350"/>
+
 

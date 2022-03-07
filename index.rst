@@ -13,6 +13,7 @@ infrastructural resources developed for `Materials Cloud <https://www.materialsc
 widely through the `CECAM`_ network and beyond. 
 
 |
+
 .. image:: images/osscar-demo.gif
   :width: 600
   :alt: osscar demo

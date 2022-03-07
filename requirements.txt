@@ -4,3 +4,7 @@ numpy
 scipy
 ase
 widget-bzvisualizer
+widget-code-input
+widget-periodictable
+widget-bandsplot
+widget-jsmol
