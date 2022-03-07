@@ -52,6 +52,18 @@ widely through the `CECAM`_ network and beyond.
 
    ----------------------------------------------
 
+   :fa:`file-code,mr-1` **OSSCAR Source Code**
+
+    Check out all (open-source!) code developed by OSSCAR (courses, widgets, ...).
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: https://github.com/osscar-org/
+      :text: To GitHub
+      :classes: btn-outline-primary btn-block stretched-link
+
+   ----------------------------------------------
+
    :fa:`users,mr-1` **About OSSCAR**
 
    Information about the OSSCAR project.
@@ -63,18 +75,6 @@ widely through the `CECAM`_ network and beyond.
       :text: To about section
       :classes: btn-outline-primary btn-block stretched-link
 
-   ----------------------------------------------
-
-   :fa:`file-code,mr-1` **OSSCAR Source Code**
-
-    Check out all (open-source!) code developed by OSSCAR (courses, widgets, ...).
-
-   +++++++++++++++++++++++++++++++++++++++++++++
-
-   .. link-button:: https://github.com/osscar-org/
-      :text: To GitHub
-      :classes: btn-outline-primary btn-block stretched-link
-		
 
 Acknowledgements
 *****************

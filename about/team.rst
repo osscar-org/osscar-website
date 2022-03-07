@@ -48,7 +48,7 @@ OSSCAR Team
 
    :fa:`atom,mr-1` **Team Member**
 
-   .. image:: images/Baird.jpg
+   .. image:: images/baird.jpg
 
    `Taylor Baird <https://people.epfl.ch/taylor.baird>`_	      
 
