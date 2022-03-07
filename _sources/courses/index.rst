@@ -66,4 +66,19 @@ Below is a compilation of educational web applications for a range of different 
       :text: To the collection
       :classes: btn-outline-primary btn-block stretched-link
 
+.. ----------------------------------------------		
+..		
+..   :fa:`book,mr-1` **Materials Science**
+..
+..   A collection of web applications for materials science.
+..
+..   .. image:: images/materials_science.png
+..
+..   +++++++++++++++++++++++++++++++++++++++++++++
+..
+..   .. link-button:: materials_science
+..      :type: ref
+..      :text: To the collection
+..      :classes: btn-outline-primary btn-block stretched-link
+
 
