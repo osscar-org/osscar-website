@@ -3,6 +3,7 @@ matplotlib
 numpy
 scipy
 ase
+ipympl
 widget-bzvisualizer
 widget-code-input
 widget-periodictable
