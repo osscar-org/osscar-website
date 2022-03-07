@@ -24,41 +24,11 @@ from ase.dft.kpoints import *
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-Input [0;32mIn [1][0m, in [0;36m<cell line: 1>[0;34m()[0m
-[0;32m----> 1[0m [38;5;28;01mfrom[39;00m [38;5;21;01mwidget_bzvisualizer[39;00m [38;5;28;01mimport[39;00m BZVisualizer
+Input [0;32mIn [1][0m, in [0;36m<cell line: 3>[0;34m()[0m
+[1;32m      1[0m [38;5;28;01mfrom[39;00m [38;5;21;01mwidget_bzvisualizer[39;00m [38;5;28;01mimport[39;00m BZVisualizer
 [1;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mnumpy[39;00m [38;5;28;01mas[39;00m [38;5;21;01mnp[39;00m
-[1;32m      3[0m [38;5;28;01mfrom[39;00m [38;5;21;01mase[39;00m[38;5;21;01m.[39;00m[38;5;21;01mdft[39;00m[38;5;21;01m.[39;00m[38;5;21;01mkpoints[39;00m [38;5;28;01mimport[39;00m [38;5;241m*[39m
+[0;32m----> 3[0m [38;5;28;01mfrom[39;00m [38;5;21;01mase[39;00m[38;5;21;01m.[39;00m[38;5;21;01mdft[39;00m[38;5;21;01m.[39;00m[38;5;21;01mkpoints[39;00m [38;5;28;01mimport[39;00m [38;5;241m*[39m
 
-File [0;32m/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/widget_bzvisualizer/__init__.py:3[0m, in [0;36m<module>[0;34m[0m
-[1;32m      1[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m[38;5;21;01m_version[39;00m [38;5;28;01mimport[39;00m version_info, __version__
-[0;32m----> 3[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m[38;5;21;01mexample[39;00m [38;5;28;01mimport[39;00m [38;5;241m*[39m
-[1;32m      6[0m [38;5;28;01mdef[39;00m [38;5;21m_jupyter_labextension_paths[39m():
-[1;32m      7[0m     [38;5;124;03m"""Called by Jupyter Lab Server to detect if it is a valid labextension and[39;00m
-[1;32m      8[0m [38;5;124;03m    to install the widget[39;00m
-[1;32m      9[0m 
-[0;32m   (...)[0m
-[1;32m     17[0m [38;5;124;03m        during widget installation[39;00m
-[1;32m     18[0m [38;5;124;03m    """[39;00m
-
-File [0;32m/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/widget_bzvisualizer/example.py:4[0m, in [0;36m<module>[0;34m[0m
-[1;32m      2[0m [38;5;28;01mfrom[39;00m [38;5;21;01mtraitlets[39;00m [38;5;28;01mimport[39;00m Unicode, Dict, List, Bool, Int, observe
-[1;32m      3[0m [38;5;28;01mimport[39;00m [38;5;21;01mseekpath[39;00m
-[0;32m----> 4[0m [38;5;28;01mfrom[39;00m [38;5;21;01mseekpath[39;00m[38;5;21;01m.[39;00m[38;5;21;01mbrillouinzone[39;00m[38;5;21;01m.[39;00m[38;5;21;01mbrillouinzone[39;00m [38;5;28;01mimport[39;00m get_BZ
-[1;32m      5[0m [38;5;28;01mimport[39;00m [38;5;21;01mnumpy[39;00m [38;5;28;01mas[39;00m [38;5;21;01mnp[39;00m
-[1;32m      6[0m [38;5;28;01mimport[39;00m [38;5;21;01mjson[39;00m
-
-File [0;32m/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/seekpath/brillouinzone/brillouinzone.py:5[0m, in [0;36m<module>[0;34m[0m
-[1;32m      2[0m [38;5;28;01mfrom[39;00m [38;5;21;01mcollections[39;00m [38;5;28;01mimport[39;00m defaultdict
-[1;32m      4[0m [38;5;28;01mimport[39;00m [38;5;21;01mnumpy[39;00m [38;5;28;01mas[39;00m [38;5;21;01mnp[39;00m
-[0;32m----> 5[0m [38;5;28;01mfrom[39;00m [38;5;21;01mscipy[39;00m[38;5;21;01m.[39;00m[38;5;21;01mspatial[39;00m [38;5;28;01mimport[39;00m Voronoi, ConvexHull, Delaunay
-[1;32m      8[0m [38;5;28;01mdef[39;00m [38;5;21mget_missing_point[39m(tr, p1, p2):
-[1;32m      9[0m     [38;5;124;03m"""[39;00m
-[1;32m     10[0m [38;5;124;03m    tr is a list of 3 indices (the indices of the vertices of a given triangle).[39;00m
-[1;32m     11[0m [38;5;124;03m    p1 and p2 must be in the tr list, the third index is returned.[39;00m
-[0;32m   (...)[0m
-[1;32m     14[0m [38;5;124;03m    or if all points are among p1 and p2 (e.g. a point repeated twice)[39;00m
-[1;32m     15[0m [38;5;124;03m    """[39;00m
-
-[0;31mModuleNotFoundError[0m: No module named 'scipy'
-ModuleNotFoundError: No module named 'scipy'
+[0;31mModuleNotFoundError[0m: No module named 'ase'
+ModuleNotFoundError: No module named 'ase'
 
