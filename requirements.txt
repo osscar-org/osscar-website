@@ -1,4 +1,6 @@
 jupyter-book
 matplotlib
 numpy
-
+scipy
+ase
+widget-bzvisualizer
