@@ -1,6 +1,6 @@
-###################################
-Welcome to the OSSCAR homepage!
-###################################
+########
+Homepage
+########
 
 The OSSCAR (Open Software Services for Classrooms and Research) platform is a collaborative environment targeted at enhancing awareness and adoption of best practises in Open Science.
 

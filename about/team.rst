@@ -2,6 +2,9 @@
 OSSCAR Team 
 ================
 
+Main Team
++++++++++
+
 .. panels::
    :body: bg-light text-center
    :footer: bg-light border-0
@@ -53,3 +56,9 @@ OSSCAR Team
    `Taylor Baird <https://people.epfl.ch/taylor.baird>`_	      
 
    +++++++++++++++++++++++++++++++++++++++++++++
+
+
+Steering Committee
+++++++++++++++++++
+
+The Steering Committee is composed by the members of the Managing Team together with `Prof. Nicola Marzari <https://people.epfl.ch/nicola.marzari>`_ and `Prof. Berend Smit <https://people.epfl.ch/berend.smit>`_.
