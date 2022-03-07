@@ -86,4 +86,5 @@ and is developed in collaboration between
 `NCCR MARVEL <https://nccr-marvel.ch>`_.
 
 .. image:: logos.png
-  :width: 400
+  :width: 600
+  :align: center
