@@ -24,7 +24,7 @@ developed JupyterLab extensions, which can help development.
 
    ----------------------------------------------
 
-   :fa:`tools,mr-1` **Extensions**
+   :opticon:`plus-circle,mr-1` **Extensions**
 
    JupyterLab extensions
 

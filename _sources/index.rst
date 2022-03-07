@@ -53,7 +53,7 @@ widely through the `CECAM`_ network and beyond.
 
    ----------------------------------------------
 
-   :fa:`file-code,mr-1` **OSSCAR Source Code**
+   :opticon:`mark-github,mr-1` **OSSCAR Source Code**
 
     Check out all (open-source!) code developed by OSSCAR (courses, widgets, ...).
 

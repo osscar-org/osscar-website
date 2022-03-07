@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jupyterlab-hide-code: A JupyterLab Extension to Run and Hide Source Code &#8212; Open Software Services for Classrooms and Research</title>
+    <title>Materials Science &#8212; Open Software Services for Classrooms and Research</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -101,7 +101,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="index.html">
+  <a class="reference internal" href="../extensions/index.html">
    JupyterLab Extensions
   </a>
  </li>
@@ -111,7 +111,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../courses/index.html">
+  <a class="reference internal" href="index.html">
    Course Applications
   </a>
  </li>
@@ -156,7 +156,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/extensions/jupyterlab_hide_code.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/courses/materials_science.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -188,7 +188,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>jupyterlab-hide-code: A JupyterLab Extension to Run and Hide Source Code</h1>
+                <h1>Materials Science</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -199,23 +199,9 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="jupyterlab-hide-code-a-jupyterlab-extension-to-run-and-hide-source-code">
-<h1><code class="docutils literal notranslate"><span class="pre">jupyterlab-hide-code</span></code>: A JupyterLab Extension to Run and Hide Source Code<a class="headerlink" href="#jupyterlab-hide-code-a-jupyterlab-extension-to-run-and-hide-source-code" title="Permalink to this headline">¶</a></h1>
-<p><strong>Source code:</strong> <a class="reference external" href="https://github.com/osscar-org/widget-code-input">https://github.com/osscar-org/widget-code-input</a></p>
-<p>This extension adds a button in JupyterLab which enables one to run the code cells of a notebook and have them subsequently be hidden from view.
-This JupyterLab extension was inspired by the
-<a class="reference external" href="https://github.com/AixViPMaP/jlab-hide-code"><code class="docutils literal notranslate"><span class="pre">jlab-hide-code</span></code></a> JupyterLab
-extension from Aachen (Aix) Virtual Platform for Materials Processing.</p>
-<p>Clicking the button for a first time will run all code cells before hiding their contents (displaying only the output of the cells). It allows
-users to check the layout of the output cells in an efficient way. One call toggle
-back the content of the code cells by clicking the button again.</p>
-<div class="admonition-installation admonition">
-<p class="admonition-title">Installation</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install jupyterlab-hide-code
-</pre></div>
-</div>
-</div>
-<p><img alt="image hide code" src="../_images/hide-input.gif" /></p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="materials-science">
+<h1><strong>Materials Science</strong><a class="headerlink" href="#materials-science" title="Permalink to this headline">¶</a></h1>
+<p>A small selection of course material inspired by the Mathematica notebooks used in the EPFL course <a class="reference external" href="https://edu.epfl.ch/coursebook/en/materials-from-chemistry-to-properties-MSE-101-A">MSE-101(a) “Materials: from chemistry to properties”</a>, focusing on essential concepts on the structure of materials in connection with the mechanical, thermal, electrical, magnetic and optical properties of materials. Currently, the available jupyter notebooks cover the following topics: Lennard-Jones potential, Miller indices and cubic crystal structures. They are intended as a demonstrator of the capabilities of the OSSCAR and jupyter technology, as a starting point to add more content.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -231,7 +217,7 @@ back the content of the code cells by clicking the button again.</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./extensions"
+            path: "./courses"
         },
         predefinedOutput: true
     }

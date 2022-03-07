@@ -25,7 +25,7 @@ extensions to help in the development process. More information on these tools c
 
    ----------------------------------------------
 
-   :fa:`tools,mr-1` **OSSCAR Tools**
+   :opticon:`tools,mr-1` **OSSCAR Tools**
 
    Jupyter widgets and JupyterLab extensions.
 
