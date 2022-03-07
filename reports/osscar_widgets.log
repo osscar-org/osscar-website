@@ -25,12 +25,12 @@ from widget_periodictable import PTableWidget
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-Input [0;32mIn [1][0m, in [0;36m<cell line: 2>[0;34m()[0m
+Input [0;32mIn [1][0m, in [0;36m<cell line: 3>[0;34m()[0m
 [1;32m      1[0m [38;5;28;01mfrom[39;00m [38;5;21;01mipywidgets[39;00m [38;5;28;01mimport[39;00m HBox, VBox, Textarea, Button, Layout
-[0;32m----> 2[0m [38;5;28;01mfrom[39;00m [38;5;21;01mase[39;00m[38;5;21;01m.[39;00m[38;5;21;01mbuild[39;00m [38;5;28;01mimport[39;00m molecule
-[1;32m      3[0m [38;5;28;01mimport[39;00m [38;5;21;01mnglview[39;00m [38;5;28;01mas[39;00m [38;5;21;01mnv[39;00m
+[1;32m      2[0m [38;5;28;01mfrom[39;00m [38;5;21;01mase[39;00m[38;5;21;01m.[39;00m[38;5;21;01mbuild[39;00m [38;5;28;01mimport[39;00m molecule
+[0;32m----> 3[0m [38;5;28;01mimport[39;00m [38;5;21;01mnglview[39;00m [38;5;28;01mas[39;00m [38;5;21;01mnv[39;00m
 [1;32m      4[0m [38;5;28;01mfrom[39;00m [38;5;21;01mwidget_periodictable[39;00m [38;5;28;01mimport[39;00m PTableWidget
 
-[0;31mModuleNotFoundError[0m: No module named 'ase'
-ModuleNotFoundError: No module named 'ase'
+[0;31mModuleNotFoundError[0m: No module named 'nglview'
+ModuleNotFoundError: No module named 'nglview'
 
