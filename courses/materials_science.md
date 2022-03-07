@@ -1,0 +1,3 @@
+# **Materials Science**
+
+A small selection of course material inspired by the Mathematica notebooks used in the EPFL course [MSE-101(a) “Materials: from chemistry to properties”](https://edu.epfl.ch/coursebook/en/materials-from-chemistry-to-properties-MSE-101-A), focusing on essential concepts on the structure of materials in connection with the mechanical, thermal, electrical, magnetic and optical properties of materials. Currently, the available jupyter notebooks cover the following topics: Lennard-Jones potential, Miller indices and cubic crystal structures. They are intended as a demonstrator of the capabilities of the OSSCAR and jupyter technology, as a starting point to add more content.

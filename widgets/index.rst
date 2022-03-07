@@ -5,8 +5,7 @@ Jupyter Widgets
 We developed Jupyter widgets related to computational chemistry
 and physics.
 
-.. panels::
-	    
+.. panels::	    
    :fa:`atom,mr-1` **Widget Periodic Table**
 
    A Jupyter widget for an interactive periodic table.
@@ -21,7 +20,6 @@ and physics.
       :classes: btn-outline-primary btn-block stretched-link
 
    ----------------------------------------------
-
    :fa:`atom,mr-1` **Widget DOS and Bandstructure Plot**
 
    A Jupyter widget to plot bandstructures and density of states.

@@ -1,5 +1,7 @@
 # `Molecular orbital visualizer`: JupyterLab Extension to Visualize Molecular Orbitals and Structure
 
+**Source code:** https://github.com/osscar-org/jupyterlab-mol-visualizer
+
 ## Try it with Binder
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/jupyterlab-mol-visualizer/master?urlpath=lab)
