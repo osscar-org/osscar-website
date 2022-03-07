@@ -6,7 +6,7 @@ We developed Jupyter widgets related to computational chemistry
 and physics.
 
 .. panels::	    
-   :fa:`atom,mr-1` **Widget Periodic Table**
+   :opticon:`triangle-right` **Widget Periodic Table**
 
    A Jupyter widget for an interactive periodic table.
 
@@ -20,7 +20,7 @@ and physics.
       :classes: btn-outline-primary btn-block stretched-link
 
    ----------------------------------------------
-   :fa:`atom,mr-1` **Widget DOS and Bandstructure Plot**
+   :opticon:`triangle-right` **Widget DOS and Bandstructure Plot**
 
    A Jupyter widget to plot bandstructures and density of states.
 
@@ -35,7 +35,7 @@ and physics.
 
    ----------------------------------------------
 
-   :fa:`atom,mr-1` **Widget Brillouin Zone Visualizer**
+   :opticon:`triangle-right` **Widget Brillouin Zone Visualizer**
 
    A Jupyter widget to plot the 1st Brillouin zone and path for the
    band structure.
@@ -51,7 +51,7 @@ and physics.
 
  ----------------------------------------------
 
-   :fa:`atom,mr-1` **Widget JSmol**
+   :opticon:`triangle-right` **Widget JSmol**
 
    A Jupyter widget to use Jmol/Jsmol.
 
@@ -66,7 +66,7 @@ and physics.
 
  ----------------------------------------------
 
-   :fa:`atom,mr-1` **Widget Code Input**
+   :opticon:`triangle-right` **Widget Code Input**
 
    A widget to allow input of a python function, with syntax highlighting.
 
@@ -81,7 +81,7 @@ and physics.
 
  ----------------------------------------------
 
-   :fa:`atom,mr-1` **Molecular rendering with POVRAY**
+   :opticon:`triangle-right` **Molecular rendering with POVRAY**
 
    A collection of tools to render molecular structures into high quality images or videos using the POVRAY engine.
 

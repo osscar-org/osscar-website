@@ -4,6 +4,9 @@
 format: jb-book
 root: index
 chapters:
-- file: extensions/index
-- file: widgets/index
 - file: courses/index
+- file: tutorial/index
+- title: Source Code
+  url: https://github.com/osscar-org
+  external: true
+- file: about/index
