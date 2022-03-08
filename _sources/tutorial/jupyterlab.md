@@ -13,10 +13,6 @@ JupyterLab can be easily installed via pip:
 pip install --upgrade jupyterlab
 ```
 
-Otherwise, you can alternatively use the
-EPFL <a href="https://noto.epfl.ch">NOTO platform</a>, which offers JupyterLab
-as a cloud webpage.
-
 ## 2. JupyterLab extensions
 
 JupyterLab allows for the development and installation of extensions. For the development of the

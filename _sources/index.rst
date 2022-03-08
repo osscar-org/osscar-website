@@ -2,11 +2,7 @@
 Homepage
 ########
 
-The OSSCAR (Open Software Services for Classrooms and Research) platform is a collaborative environment targeted at enhancing awareness and adoption of best practises in Open Science.
-
-OSSCAR targets both research and education: it provides some of the core tools
-needed for “computational thinking”, first targeting physics, chemistry,
-materials science, mechanical and chemical engineering. 
+The OSSCAR (Open Software Services for Classrooms and Research) platform is a collaborative environment targeted at enhancing awareness and adoption of best practises in Open Science and computational thinking, focusing on education and research. 
 
 OSSCAR develops original educational content such as the pedagogical web application demonstrated in the animation below. This content is offered by exploiting the
 infrastructural resources developed for `Materials Cloud <https://www.materialscloud.org>`_, and disseminated
@@ -41,7 +37,7 @@ widely through the `CECAM`_ network and beyond.
 
    :fa:`file-code,mr-1` **Tutorials for Developers**
 
-   Tutorial: how to develop interactive web applications with Jupyter notebooks
+   How to develop interactive web applications with Jupyter notebooks
    by using OSSCAR technologies.
 
    +++++++++++++++++++++++++++++++++++++++++++++
