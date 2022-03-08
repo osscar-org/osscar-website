@@ -4,6 +4,7 @@ numpy
 scipy
 ase
 ipympl
+nglview
 widget-bzvisualizer
 widget-code-input
 widget-periodictable
