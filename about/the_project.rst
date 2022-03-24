@@ -21,6 +21,10 @@ OSSCAR's goal is to become a support tool for a diverse range of computational c
 
 OSSCAR started in 2019 and is funded by the EPFL Open Science Fund until 2022.
 
+If you use OSSCAR notebooks or technology, we would appreciate if you could cite the following paper:
+
+  \D. Du, T. J. Baird, S. Bonella, G. Pizzi, *OSSCAR, an open platform for collaborative development of computational tools for education in science*, `arXiv:2203.12019 <https://arxiv.org/abs/2203.12019>`_ (2022).
+
 |
 .. image:: images/osscar-loop.png
   :width: 600
