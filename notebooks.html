@@ -96,6 +96,13 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Homepage
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="courses/index.html">
    Course Applications
   </a>
@@ -121,7 +128,7 @@ const thebe_selector_output = ".output, .cell_output"
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
 </div>
 
 </div>
@@ -175,6 +182,23 @@ const thebe_selector_output = ".output, .cell_output"
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/osscar-org/osscar-book/master?urlpath=tree/./notebooks.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
 
         </div>
 
@@ -288,7 +312,7 @@ For example, here’s some sample Matplotlib code:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.pyplot._IonContext at 0x7f736c095310&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.pyplot._IonContext at 0x7fe43404ef70&gt;
 </pre></div>
 </div>
 </div>
