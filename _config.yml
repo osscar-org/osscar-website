@@ -35,6 +35,7 @@ html:
   favicon: "images/OSSCAR-favicon.png"
 
 sphinx:
+  recursive_update: true
   config:
     html_theme_options:
       search_bar_text: "Search this website..."
