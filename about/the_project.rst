@@ -13,6 +13,15 @@ You can watch a 2-minute introduction to the project in the following video.
 
 © EPFL | Video by Martin Boyer – nous.sc
 
+There is also a recorded video of an extended webinar which gives a more in-depth overview of the project: 
+
+.. raw:: html
+	 
+	 <iframe width="560" height="315" src="https://www.youtube.com/embed/OYl0Bs-xOMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Further information, along with the slides used in the webinar, can be found at the `event's webpage <https://www.cecam.org/workshop-details/1166>`_ on the CECAM website. 
+
+
 OSSCAR started in 2019 and is funded by the EPFL Open Science Fund until 2022.
 	    
 Tools are provided as web applications, generated from Jupyter notebooks. This facilitates access to educational functionality either directly or wrapped around existing open-source simulation codes. Implementing Software-as-a-Service tools alongside interactive Graphical User Interfaces (GUIs) engenders easy development and deployment (for researchers and classroom instructors), and interaction (for students).
@@ -24,6 +33,7 @@ following paper (and we would appreciate if you could cite it if you use OSSCAR 
   \D. Du, T. J. Baird, S. Bonella, G. Pizzi, *OSSCAR, an open platform for collaborative development of computational tools for education in science*, `arXiv:2203.12019 <https://arxiv.org/abs/2203.12019>`_ (2022).
 
 |
+
 .. image:: images/osscar-loop.png
   :width: 600
   :alt: osscar feedback loop
