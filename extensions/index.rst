@@ -8,7 +8,7 @@ We have developed JupyterLab extensions to help with development and education.
    :body: bg-light text-center
    :footer: bg-light border-0
 
-   :fa:`tools,mr-1` **Extension to Run and Hide Codes**
+   :opticon:`plus-circle,mr-1` **Extension to Run and Hide Codes**
 
    A JupyterLab extension to run and hide all codecells.
 
@@ -23,7 +23,7 @@ We have developed JupyterLab extensions to help with development and education.
 
    ----------------------------------------------
 
-   :fa:`tools,mr-1` **Extension to Visaulize Molecular Orbital**
+   :opticon:`plus-circle,mr-1` **Extension to Visualize Molecular Orbitals**
 
    A JupyterLab launcher extension to visualize Gaussian cube files.
 
@@ -31,8 +31,9 @@ We have developed JupyterLab extensions to help with development and education.
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: widget_periodictable
+   .. link-button:: mol_visualizer
       :type: ref
       :text: To the instruction
       :classes: btn-outline-primary btn-block stretched-link
+		
 

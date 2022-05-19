@@ -2,11 +2,14 @@
 OSSCAR Team 
 ================
 
+Main Team
++++++++++
+
 .. panels::
    :body: bg-light text-center
    :footer: bg-light border-0
 
-   :fa:`atom,mr-1` **Project Manager**
+    **Project Manager**
 
    .. image:: images/pizzi.jpg
 
@@ -16,7 +19,7 @@ OSSCAR Team
 
    ----------------------------------------------
 
-   :fa:`atom,mr-1` **Deputy Project Manager**
+    **Deputy Project Manager**
 
    .. image:: images/bonella.jpg
 
@@ -26,7 +29,7 @@ OSSCAR Team
 
    ----------------------------------------------
 
-   :fa:`atom,mr-1` **Deputy Project Manager**
+    **Deputy Project Manager**
 
    .. image:: images/pagonabarraga.jpg
 
@@ -36,7 +39,7 @@ OSSCAR Team
 
    ----------------------------------------------
 
-   :fa:`atom,mr-1` **Team Member**
+    **Team Member**
 
    .. image:: images/du.jpg
 
@@ -46,10 +49,16 @@ OSSCAR Team
    
    ----------------------------------------------
 
-   :fa:`atom,mr-1` **Team Member**
+    **Team Member**
 
-   .. image:: images/Baird.jpg
+   .. image:: images/baird.jpg
 
    `Taylor Baird <https://people.epfl.ch/taylor.baird>`_	      
 
    +++++++++++++++++++++++++++++++++++++++++++++
+
+
+Steering Committee
+++++++++++++++++++
+
+The Steering Committee is composed by the members of the Managing Team together with `Prof. Nicola Marzari <https://people.epfl.ch/nicola.marzari>`_ and `Prof. Berend Smit <https://people.epfl.ch/berend.smit>`_.

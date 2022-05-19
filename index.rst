@@ -1,35 +1,21 @@
-###################################
-Welcome to OSSCAR homepage!
-###################################
+########
+Homepage
+########
 
-.. The OSSCAR (Open Software Services for Classrooms and Research) platform is a
-.. collaborative environment targeted at enhancing awareness and adoption of best
-.. practises in Open Science.
+The OSSCAR (Open Software Services for Classrooms and Research) platform is a collaborative environment targeted at enhancing awareness and adoption of best practises in Open Science and computational thinking, focusing on education and research. 
 
-.. OSSCAR targets both research and education: it provides some of the core tools
-.. needed for “computational thinking”, first targeting physics, chemistry,
-.. materials science, mechanical and chemical engineering. 
+OSSCAR develops original educational content such as the pedagogical web application demonstrated in the animation below. This content is offered by exploiting the
+infrastructural resources developed for `Materials Cloud <https://www.materialscloud.org>`_, and disseminated
+widely through the `CECAM`_ network and beyond. 
 
-.. OSSCAR develops original educational content, offered exploiting the
-.. infrastructural resources developed for the `Materials Cloud`_, and disseminated
-.. widely through the `CECAM`_ network and beyond.
-
-.. OSSCAR started in 2019 and is funded by the EPFL Open Science Fund until 2022.
-
-In the OSSCAR project we have developed a collection of interactive web applications for quantum mechanics and
-computational materials science education. The web applications (like that shown, for example, in
-the animation below) demonstrate concepts through high-quality interactive
-visualization.
+|
 
 .. image:: images/osscar-demo.gif
   :width: 600
   :alt: osscar demo
   :align: center
-
-Our web applications are generated from Jupyter notebooks, which are popular for
-educational purposes among the scientific community. Our technologies are reusable
-and we encourage teachers and students to develop their educational web
-applications with OSSCAR technologies.
+	  
+|
 
 .. panels::
    :body: bg-light text-center
@@ -49,9 +35,9 @@ applications with OSSCAR technologies.
 
    ----------------------------------------------
 
-   :fa:`file-code,mr-1` **Tutorial for Developers**
+   :fa:`file-code,mr-1` **Tutorials for Developers**
 
-   Tutorial: how to develop interactive web applications with Jupyter notebooks
+   How to develop interactive web applications with Jupyter notebooks
    by using OSSCAR technologies.
 
    +++++++++++++++++++++++++++++++++++++++++++++
@@ -63,16 +49,29 @@ applications with OSSCAR technologies.
 
    ----------------------------------------------
 
-   :fa:`users,mr-1` **OSSCAR Team**
+   :opticon:`mark-github,mr-1` **OSSCAR Source Code**
 
-   Information about the OSSCAR team.
+    Check out all (open-source!) code developed by OSSCAR (courses, widgets, ...).
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: team/index
-      :type: ref
-      :text: To the team
+   .. link-button:: https://github.com/osscar-org/
+      :text: To GitHub
       :classes: btn-outline-primary btn-block stretched-link
+
+   ----------------------------------------------
+
+   :fa:`users,mr-1` **About OSSCAR**
+
+   Information about the OSSCAR project.
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: about/index
+      :type: ref
+      :text: To about section
+      :classes: btn-outline-primary btn-block stretched-link
+
 
 Acknowledgements
 *****************
@@ -83,5 +82,10 @@ and is developed in collaboration between
 `CECAM <https://www.cecam.org>`_ and 
 `NCCR MARVEL <https://nccr-marvel.ch>`_.
 
+If you use OSSCAR notebooks or technology, we would appreciate if you could cite the following paper:
+
+  \D. Du, T. J. Baird, S. Bonella, G. Pizzi, *OSSCAR, an open platform for collaborative development of computational tools for education in science*, `arXiv:2203.12019 <https://arxiv.org/abs/2203.12019>`_ (2022).
+
 .. image:: logos.png
-  :width: 400
+  :width: 600
+  :align: center

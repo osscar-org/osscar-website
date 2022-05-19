@@ -1,4 +1,12 @@
 jupyter-book
 matplotlib
 numpy
-
+scipy
+ase
+ipympl
+nglview
+widget-bzvisualizer
+widget-code-input
+widget-periodictable
+widget-bandsplot
+widget-jsmol

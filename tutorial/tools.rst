@@ -11,7 +11,7 @@ developed JupyterLab extensions, which can help development.
    :footer: bg-light border-0
 
 
-   :fa:`atom,mr-1` **Widgets**
+   :opticon:`triangle-right` **Widgets**
 
    Custom widgets for computational chemistry and physics
 
@@ -24,7 +24,7 @@ developed JupyterLab extensions, which can help development.
 
    ----------------------------------------------
 
-   :fa:`tools,mr-1` **Extensions**
+   :opticon:`plus-circle,mr-1` **Extensions**
 
    JupyterLab extensions
 

@@ -2,8 +2,7 @@
 
 ## 1. [Verlet Integration](https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/molecular-dynamics/verlet_integration.ipynb)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fmolecular_dynamics%2Fverlet_integration.ipynb)
-[![Materials Cloud Tool osscar-qmcourse](https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg)](https://osscar-quantum-mechanics.matcloud.xyz/voila/render/molecular-dynamics/verlet_integration.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/master?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fmolecular-dynamics%2Fverlet_integration.ipynb) | [![Materials Cloud Tool osscar-qmcourse](https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg)](https://osscar-quantum-mechanics.materialscloud.io/voila/render/molecular-dynamics/verlet_integration.ipynb) 
 
 In classical molecular dynamics simulations, molecular motions are
 computed via Newton's equations. A numerical approximation is
