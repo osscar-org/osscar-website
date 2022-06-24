@@ -35,10 +35,10 @@ widely through the `CECAM`_ network and beyond.
 
    ----------------------------------------------
 
-   :fa:`file-code,mr-1` **Tutorials for Developers**
+   :fa:`file-code,mr-1` **OSSCAR tools**
 
    How to develop interactive web applications with Jupyter notebooks
-   by using OSSCAR technologies.
+   using OSSCAR technologies and a collection of widgets and extensions for use in the applications.
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
@@ -49,14 +49,15 @@ widely through the `CECAM`_ network and beyond.
 
    ----------------------------------------------
 
-   :opticon:`mark-github,mr-1` **OSSCAR Source Code**
+   :opticon:`mark-github,mr-1` **OSSCAR Code**
 
-    Check out all (open-source!) code developed by OSSCAR (courses, widgets, ...).
+    Check out all (open-source!) code developed by OSSCAR (courses, widgets, ...) and learn how to contribute to the project.
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: https://github.com/osscar-org/
-      :text: To GitHub
+   .. link-button:: code/index
+      :type: ref
+      :text: To OSSCAR source and contribution guide
       :classes: btn-outline-primary btn-block stretched-link
 
    ----------------------------------------------
