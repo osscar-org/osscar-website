@@ -10,4 +10,5 @@ chapters:
   url: https://github.com/osscar-org
   external: true
 - file: about/index
+- file: about/roadmap
 
