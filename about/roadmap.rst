@@ -19,7 +19,7 @@ Timeline
 ---------
 
 .. image:: images/osscar-timeline.png
-  :width: 600
+  :width: 800
   :alt: osscar timeline
   :align: center
 
@@ -63,6 +63,13 @@ world's top universities' classrooms (such Harvard and MIT).
 Milestone
 ----------
 
+* **2020.07.10**: OSSCAR project was presented for the 1st time by Dr. Dou Du in "2022 AiiDA tutorial week - virtual edition" workshop. 
+* **2021.01.11**: Dr. Giovanni Pizzi and Dr. Dou Du were awarded the Digital Resources for Instruction and Learning fund.
+* **2021.03**: OSSCAR web applications for quantum mechanics and computational materials science were introduced to EPFL classroom by Dr. Giovanni Pizzi in the "atomisitc and quantum simulations of materials" course.
+* **2021.07.09**: OSSCAR project was presented by Dr. Dou Du in "2021 AiiDA tutorial week - virtual edition" workshop. 
+* **2022.03.09**: `CECAM workshop`_: Presenting an OSSCAR…collaborative platform for Open Software Services for Classroom and Research.
+* **2022.03.22**: submitted paper_ "OSSCAR, an open platform for collaborative development of computational tools for education in science"
+
 .. _appmode: https://github.com/oschuett/appmode
 .. _Jmol: http://jmol.sourceforge.net
 .. _Voila: https://github.com/voila-dashboards/voila
@@ -74,6 +81,9 @@ Milestone
 .. _widget-code-input: https://github.com/osscar-org/widget-code-input
 .. _dokku: https://dokku.com
 .. _CSCS: https://www.cscs.ch
+.. _CECAM workshop: https://www.cecam.org/workshop-details/1166
+.. _paper: https://arxiv.org/abs/2203.12019
+
 
 
 
