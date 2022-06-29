@@ -1,6 +1,6 @@
-#############
-OSSCAR Tools
-#############
+#######################################
+OSSCAR widgets and extensions
+#######################################
 
 We have developed custom widgets related to computational chemistry and physics.
 For instance, we developed a interactive periodic table. Besides, we also
@@ -96,7 +96,7 @@ Extensions
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: ../extensions/molecular_rendering
+   .. link-button:: ../extensions/mol_visualizer
       :type: ref
       :text: To the instruction
       :classes: btn-outline-primary btn-block stretched-link

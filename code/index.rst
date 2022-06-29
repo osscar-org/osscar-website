@@ -20,7 +20,7 @@ OSSCAR source and contributing
 
    ----------------------------------------------
 
-   :fa:`book,mr-1` **Contributing guide**
+   :fa:`book,mr-1` **How to contribute**
 
        Guidance on how to contribute new content to the OSSCAR project.
 

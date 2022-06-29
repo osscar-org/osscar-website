@@ -7,14 +7,36 @@ Goals
 
 In the OSSCAR (Open Software Services for Classrooms and Research) project, we
 developed tools and materials for computational chemistry and computational
-physics research and education. We are mainly focusing on four different
-sections.
+physics research and education. Within the project with focus of 4 main objectives:
 
-1. Develop custom advanced visualizations web applications for education.
-2. Jupyter custom widgets for computational chemistry and computational physics.
-3. JupyterLab extensions and tools for research and development.
-4. Offer documents and tutorials to developers to use the OSSCAR technologies.
+1. Develop custom advanced visualizations as web applications for education.
+2. Create custom Jupyter widgets for computational chemistry and computational physics.
+3. Author JupyterLab extensions and tools for research and development.
+4. Offer documents and tutorials to developers who wish to use OSSCAR technologies.
 
+
+How you can contribute to OSSCAR
+--------------------------------
+
+Contributions to the project are most welcome and could take different forms. If you have an idea in mind for a new notebook that would fit into one of the existing domains covered in OSSCAR (the various sections that can be found at https://github.com/osscar-org/quantum-mechanics), check out the `"How to contribute" <../code/contributing.html>`_ page for more information.
+
+
+Future plans for the project
+----------------------------
+
+The path envisioned for advancing the OSSCAR project consists of a joint bottom-up and top-down approach.
+In the near-term future, we intend to host several workshops/tutorials with the goal of introducing interested members of the community to OSSCAR, its concomitant technologies, and provide instruction on how to develop new lessons and tools for use in classroom environments.
+
+We hope to further expand the portfolio of core notebooks available at https://github.com/osscar-org/quantum-mechanics. Work on various new notebooks within the domains of quantum mechanics, band theory, statistical mechanics, etc., is already underway in-house. However, as discussed in the next section, any contributions to this collection are more than welcome.
+
+Another feature that we intend to eventually integrate into the OSSCAR ecosystem is that of a registry of applications which either directly make use of OSSCAR technologies, or which also constitute e-learning content analogous to the content in https://github.com/osscar-org/quantum-mechanics and which may benefit from the visibility of being advertised within the project. In such a way, our ambition is to evolve into a hub for educational resources that may be shared openly.
+..
+ Possible topics for new additions could, for instance, be
+ (1) Within the quantum mechanics section, a notebook which investigates the time-independent solutions of the hydrogen atom.
+ (2)
+
+
+   
 Timeline
 ---------
 
@@ -23,42 +45,40 @@ Timeline
   :alt: osscar timeline
   :align: center
 
-OSSCAR project started from October, 2019. During the 1st year (2019-2020), we
-were focusing on developing components for the framework of the OSSCAR web
-applications. We were trying several different tools such as appmode_ for
-rendering the notebooks and Jmol_ for the molecular visualization. However, we
-chose the Voila_ program to render the interactive notebooks into web apps. We
-developed OSSCAR style template (`voila-osscar-template`_)for the Voila web
+The OSSCAR project started in October, 2019. During the 1st year (2019-2020), our 
+focus was primarily on the development of components for the OSSCAR web
+applications framework. We experimented with several different tools such as appmode_ for
+rendering the notebooks and Jmol_ for the molecular visualizations. We
+opted to leverage the Voila_ Jupyter extension to render the interactive notebooks as web apps. We subsequently developed an OSSCAR style template (`voila-osscar-template`_) for the Voila web
 apps. 
 
-In the 2nd year (2020-2021), we were starting developing interactive notebooks
+In the 2nd year (2020-2021), we began developing interactive notebooks
 for computational chemistry and computational physics education. We developed
-several interactive notebooks for quantum mechanics education. We were using the
+several interactive notebooks for quantum mechanics education. At the time, we were using the
 free cloud server `mybinder.org`_ to deliver the notebooks as web apps. The
-proof of concept of web apps turn to work well. However, we also found there was
-a major drawback using the mybinder server, which the loading process was very
+proof-of-concept web apps proved to work well. However, we found that there was
+a major drawback using the mybinder server, with the loading process proving to be very
 slow. We were also starting to develop custom Jupyter widgets for computational
-chemistry and computational physics, like the `widget-periodictable`_ (a
+chemistry and computational physics, like the `widget-periodictable`_ (an
 interactive periodic table as Jupyter widget).
 
-In the 3rd year (2021-2022), we were developing several custom Jupyter widgets
+In the 3rd year (2021-2022), we have developed several custom Jupyter widgets
 for computational chemistry and physics, like `widget-bzvisualizer`_ (a Jupyter
 widget to visualize the 1st Brillouin zone and band path), `widget-bandsplot`_
 (a widget to plot bandstructure and density of states), `widget-code-input`_ (a
-widget to allow users to define Python function interactively). We created a
+widget to allow users to define interactive Python functions). We created a
 collection of interactive and educational web apps for quantum mechanics and
 computational materials science, which contains sections such as "quantum
 mechanics", "band theory", "statistical mechanics" and "molecular dynamics". We
 set up two dokku_ servers under the Materials Cloud project at Swiss
-supercomputing infrastructure at CSCS_. Our web apps have been deployed on dokku
+supercomputing infrastructure at CSCS_. Our web apps have since been successfully deployed on dokku
 servers with lower latency.
 
 In the 4th year (2022-2023), we are planning to make more high quality
-interactive web apps and introduce new technologies for interaction. We are
-going to present and promote OSSCAR project in conferences and workshops.  We
-will encourage more people both from EPFL and outside to contribute and use
-OSSCAR web apps and technologies. We are aiming to introduce OSSCAR project to
-world's top universities' classrooms (such as Harvard and MIT). 
+interactive web apps and introduce new technologies to support them. We are
+going to present and promote the OSSCAR project in conferences and workshops. Moreover, we
+will encourage more instructors and students, both from EPFL and outside, to contribute and use
+OSSCAR web apps and technologies, with the hope that they shall provide a powerful educational tool in classrooms across a breadth of academic institutions.
 
 Milestone
 ----------

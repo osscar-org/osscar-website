@@ -3,6 +3,7 @@
 
 format: jb-book
 root: index
+
 chapters:
 - file: courses/index
 - file: tutorial/index
@@ -10,5 +11,6 @@ chapters:
   url: https://github.com/osscar-org
   external: true
 - file: about/index
+- file: tutorial/tools
+  title: Widgets
 - file: about/roadmap
-
