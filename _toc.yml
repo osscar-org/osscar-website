@@ -14,3 +14,5 @@ chapters:
 - file: tutorial/tools
   title: Widgets
 - file: about/roadmap
+- file: code/contributing
+  title: How to contribute
