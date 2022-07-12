@@ -4,6 +4,7 @@ OSSCAR source and contributing
 
 
 .. panels::
+
    :body: bg-light text-center
    :footer: bg-light border-0
 
@@ -31,4 +32,17 @@ OSSCAR source and contributing
       :text: To contribution guide
       :classes: btn-outline-primary btn-block stretched-link
 
+   ----------------------------------------------
+
+   :fa:`book,mr-1` **Sample notebook template**
+
+       A notebook template employing the standardized OSSCAR structure.
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: sample_notebook
+      :type: ref		 
+      :text: To sample notebook
+      :classes: btn-outline-primary btn-block stretched-link
+                
 

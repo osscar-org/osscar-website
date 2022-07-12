@@ -13,7 +13,7 @@ git clone https://github.com/YOUR-USERNAME/quantum-mechanics.git
 
 Then you can develop your notebook in the appropriate section. For now, only notebooks falling within the existing categories (band theory, quantum mechanics, etc.) are those that shall be accepted as contributions to the project. 
 
-Ideally, prior to opening a pull request, you should format the notebook so as to adhere to the standardised structure which has been implemented in the existing notebooks (sub-sections for goals, tasks and solutions, a visualization section and legend). Information and guidance is provided in a `sample notebook <./sample_notebook.html>`_ on how to create a notebook with this structure. The design choices for this standardized notebook template were made so as to simultaneously maximize the notebooks' educational efficacy whilst observing the guiding principles of open science).
+Ideally, prior to opening a pull request, you should format the notebook so as to adhere to the standardised structure which has been implemented in the existing notebooks (sub-sections for goals, tasks and solutions, a visualization section and legend). Information and guidance is provided in a `sample notebook <./sample_notebook.html>`_ on how to create a notebook with this structure. The design choices for this standardized notebook template were made so as to simultaneously maximize the notebooks' educational efficacy whilst observing the guiding principles of open science.
 
 After doing this, go ahead and open a PR and we shall review your notebook and iterate until it is ready to be published. 
 
