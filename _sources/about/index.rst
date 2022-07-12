@@ -21,6 +21,19 @@ About OSSCAR
 
    ----------------------------------------------
 
+   :fa:`road,mr-1` **Roadmap**
+
+   The roadmap of OSSCAR project.
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: roadmap
+      :type: ref
+      :text: About the project
+      :classes: btn-outline-primary btn-block stretched-link
+
+   ----------------------------------------------
+
    :fa:`users,mr-1` **The Team**
 
    Get to know the OSSCAR team.

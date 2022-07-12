@@ -26,3 +26,10 @@ for the web applications.
 
 - :doc:`Voila: convert notebooks into web applications <./voila>`
 
+If you wish to develop notebooks specifically for the OSSCAR project, you may read more about how to do so in the "how to contribute" page.
+
+- :doc:`Tutorial on how to contribute a new notebook to OSSCAR. <../code/contributing>`
+
+Specifically, you may wish to download the example template notebook which contains an outline of the standardized notebook format employed in OSSCAR along with a discussion of the motivation for these design choices.
+
+- :doc:`Example template notebook. <../code/sample_notebook>`
