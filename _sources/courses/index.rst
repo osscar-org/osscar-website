@@ -38,15 +38,16 @@ Below is a compilation of educational web applications for a range of different 
 
    ----------------------------------------------
 
-   :fa:`book,mr-1` **Statistical Mechanics**
+   :fa:`book,mr-1` **Molecular and Lattice Vibration**
 
-   A collection of web applications for statistical mechanics.
+   A collection of web applications for molecule and lattice vibration (phonon 1D and 2D).
 
-   .. image:: images/ising_model.png
+   .. image:: images/phonon_2D.png
+      :width: 200
 
    +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: statistical_mechanics
+   .. link-button:: lattice_vibration
       :type: ref
       :text: To the collection
       :classes: btn-outline-primary btn-block stretched-link
@@ -66,19 +67,17 @@ Below is a compilation of educational web applications for a range of different 
       :text: To the collection
       :classes: btn-outline-primary btn-block stretched-link
 
-.. ----------------------------------------------		
-..		
-..   :fa:`book,mr-1` **Materials Science**
-..
-..   A collection of web applications for materials science.
-..
-..   .. image:: images/materials_science.png
-..
-..   +++++++++++++++++++++++++++++++++++++++++++++
-..
-..   .. link-button:: materials_science
-..      :type: ref
-..      :text: To the collection
-..      :classes: btn-outline-primary btn-block stretched-link
+   ----------------------------------------------
 
+   :fa:`book,mr-1` **Statistical Mechanics**
 
+   A collection of web applications for statistical mechanics.
+
+   .. image:: images/ising_model.png
+
+   +++++++++++++++++++++++++++++++++++++++++++++
+
+   .. link-button:: statistical_mechanics
+      :type: ref
+      :text: To the collection
+      :classes: btn-outline-primary btn-block stretched-link
