@@ -19,7 +19,7 @@ lattice are discussed in *duo* with the interactive visualizer.
 
 ## 2. [2D Phonons Dispersion](https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/lattice-vibration/Phonon_2D.ipynb)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/master?urlpath=%2Fvoila%2Frender%2Fnotebook%2Flattice-vibration%2Phonon_2D.ipynb) | [![Materials Cloud Tool osscar-qmcourse](https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg)](https://osscar-quantum-mechanics.materialscloud.io/voila/render/statistical-mechanics/Phonon_2D.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/master?urlpath=%2Fvoila%2Frender%2Fnotebook%2Flattice-vibration%2Phonon_2D.ipynb) | [![Materials Cloud Tool osscar-qmcourse](https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg)](https://osscar-quantum-mechanics.materialscloud.io/voila/render/lattice-vibration/Phonon_2D.ipynb)
 
 This notebook extends the notion of phonons to the 2D case. In this notebook,
 the link between the reciprocal space and the band dispersion plot along certain
