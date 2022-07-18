@@ -2,7 +2,7 @@
 How to contribute
 #################
 
-It is our goal, within the OSSCAR project, to foster a community in which novel interactive and educational content is developed and shared in a manner which reflects the fundamental principles of Open Science (a nice summary of these principles is given `at this page <http://openscienceasap.org/open-science/>`).
+It is our goal, within the OSSCAR project, to foster a community in which novel interactive and educational content is developed and shared in a manner which reflects the fundamental principles of Open Science (a nice summary of these principles is given `at this page <http://openscienceasap.org/open-science/>`_).
 
 If you wish to contribute a notebook, the easiest way to proceed is to open a pull request on the main repository. 
 
