@@ -1,5 +1,4 @@
 jupyter-book==0.13.1
-jupyterlab==3.1.0
 matplotlib==3.6.0
 numpy==1.23.3
 scipy==1.9.1
