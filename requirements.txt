@@ -1,6 +1,5 @@
-jupyterlab
-jupyter_packaging
 jupyter-book==0.12.3
+jupyter_packaging
 matplotlib
 numpy
 scipy
