@@ -10,3 +10,4 @@ widget-code-input
 widget-periodictable
 widget-bandsplot
 widget-jsmol
+wheel
