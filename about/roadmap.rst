@@ -100,8 +100,8 @@ News
 .. _dokku: https://dokku.com
 .. _CSCS: https://www.cscs.ch
 .. _CECAM workshop: https://www.cecam.org/workshop-details/1166
-.. _paper: https://arxiv.org/abs/2203.12019
-.. _"OSSCAR, an open platform for collaborative development of computational tools for education in science": https://arxiv.org/abs/2203.12019
+.. _paper: https://doi.org/10.1016/j.cpc.2022.108546
+.. _"OSSCAR, an open platform for collaborative development of computational tools for education in science": https://doi.org/10.1016/j.cpc.2022.108546
 
 
 
