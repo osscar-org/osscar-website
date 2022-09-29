@@ -30,7 +30,8 @@ OSSCAR's goal is to become a support tool for a diverse range of computational c
 We described the goals, objectives and deliverables of OSSCAR in the
 following paper (and we would appreciate if you could cite it if you use OSSCAR notebooks or technology):
 
-  \D. Du, T. J. Baird, S. Bonella, G. Pizzi, *OSSCAR, an open platform for collaborative development of computational tools for education in science*, `arXiv:2203.12019 <https://arxiv.org/abs/2203.12019>`_ (2022).
+| **D. Du et al., Comput. Phys. Commun. 282, 108546 (2023)**
+| `https://doi.org/10.1016/j.cpc.2022.108546 <https://doi.org/10.1016/j.cpc.2022.108546>`_.
 
 |
 
