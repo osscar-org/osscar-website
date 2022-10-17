@@ -85,8 +85,9 @@ and is developed in collaboration between
 
 If you use OSSCAR notebooks or technology, we would appreciate if you could cite the following paper:
 
-| **D. Du et al., Comput. Phys. Commun. 282, 108546 (2023)**
-| `https://doi.org/10.1016/j.cpc.2022.108546 <https://doi.org/10.1016/j.cpc.2022.108546>`_.
+| D. Du, T. Baird, S. Bonella and G. Pizzi, OSSCAR, an open platform for collaborative development of computational tools for education in science, 
+  *Computer Physics Communications*, **282**, 108546 (2023).
+| `https://doi.org/10.1016/j.cpc.2022.108546 <https://doi.org/10.1016/j.cpc.2022.108546>`_
 
 .. image:: logos.png
   :width: 600
