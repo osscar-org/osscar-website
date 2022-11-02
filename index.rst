@@ -83,6 +83,9 @@ and is developed in collaboration between
 `CECAM <https://www.cecam.org>`_ and 
 `NCCR MARVEL <https://nccr-marvel.ch>`_.
 
+How to cite 
+************
+
 If you use OSSCAR notebooks or technology, we would appreciate if you could cite the following paper:
 
 | D. Du, T. Baird, S. Bonella and G. Pizzi, OSSCAR, an open platform for collaborative development of computational tools for education in science, 
