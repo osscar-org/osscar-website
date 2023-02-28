@@ -357,7 +357,7 @@ to use Voila locally.</p>
 <p>One can also run Voila as a standalone application through the terminal:</p>
 </li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>voila --template<span class="o">=</span>osscar --enable_nbextensions<span class="o">=</span>True your_notebook.ipynb
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>voila<span class="w"> </span>--template<span class="o">=</span>osscar<span class="w"> </span>--enable_nbextensions<span class="o">=</span>True<span class="w"> </span>your_notebook.ipynb
 </pre></div>
 </div>
 </div>
@@ -384,17 +384,17 @@ dokku server maintained by the Materials Cloud team. Here is the link for instru
 a new tool at Materials Cloud.</p>
 <p><a class="reference external" href="https://github.com/materialscloud-org/issues/wiki/Contributing-a-new-tool">https://github.com/materialscloud-org/issues/wiki/Contributing-a-new-tool</a></p>
 <p>For deploying apps with Voila for a single notebook, we need set the Procfile file as:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web: voila —-port<span class="o">=</span><span class="nv">$PORT</span> —-no-browser your_notebook.ipynb
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web:<span class="w"> </span>voila<span class="w"> </span>—-port<span class="o">=</span><span class="nv">$PORT</span><span class="w"> </span>—-no-browser<span class="w"> </span>your_notebook.ipynb
 </pre></div>
 </div>
 <p>For multiple notebooks, one can put them in a folder and use Voila to host the
 whole folder as:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web: voila —-port<span class="o">=</span><span class="nv">$PORT</span> —-no-browser your_folder/
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web:<span class="w"> </span>voila<span class="w"> </span>—-port<span class="o">=</span><span class="nv">$PORT</span><span class="w"> </span>—-no-browser<span class="w"> </span>your_folder/
 </pre></div>
 </div>
 <p>In order to save the computing resources and prevent idling kernels, one
 can set the timeout to kill idle kernels as:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web: voila —-port<span class="o">=</span><span class="nv">$PORT</span> —-no-browser your_notebook.ipynb --MappingKernelManager.cull_interval<span class="o">=</span><span class="m">60</span> --MappingKernelManager.cull_idle_timeout<span class="o">=</span><span class="m">120</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web:<span class="w"> </span>voila<span class="w"> </span>—-port<span class="o">=</span><span class="nv">$PORT</span><span class="w"> </span>—-no-browser<span class="w"> </span>your_notebook.ipynb<span class="w"> </span>--MappingKernelManager.cull_interval<span class="o">=</span><span class="m">60</span><span class="w"> </span>--MappingKernelManager.cull_idle_timeout<span class="o">=</span><span class="m">120</span>
 </pre></div>
 </div>
 </div>
@@ -412,11 +412,11 @@ One needs to put the “voila-osscar-template” into the <strong>requriments.tx
 For Binder, one also needs to specify the <strong>jupyter_config.json</strong> file in the GitHub
 repository. The content of this file is shown below:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">{</span>
-  <span class="s2">&quot;VoilaConfiguration&quot;</span>: <span class="o">{</span>
-    <span class="s2">&quot;enable_nbextensions&quot;</span>: true,  
-    <span class="s2">&quot;theme&quot;</span>: <span class="s2">&quot;light&quot;</span>,
-    <span class="s2">&quot;template&quot;</span>: <span class="s2">&quot;osscar&quot;</span>
-  <span class="o">}</span>
+<span class="w">  </span><span class="s2">&quot;VoilaConfiguration&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="s2">&quot;enable_nbextensions&quot;</span>:<span class="w"> </span>true,<span class="w">  </span>
+<span class="w">    </span><span class="s2">&quot;theme&quot;</span>:<span class="w"> </span><span class="s2">&quot;light&quot;</span>,
+<span class="w">    </span><span class="s2">&quot;template&quot;</span>:<span class="w"> </span><span class="s2">&quot;osscar&quot;</span>
+<span class="w">  </span><span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
 </div>
@@ -424,13 +424,13 @@ repository. The content of this file is shown below:</p>
 using custom widgets like the “widget-periodictable”. The <strong>theme</strong>
 has two options, <strong>light</strong> and <strong>dark</strong>.</p>
 <p>For dokku, we can modify the Procfile file as:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web: voila --template<span class="o">=</span>osscar --VoilaConfiguration.enable_nbextensions<span class="o">=</span>True --port<span class="o">=</span><span class="nv">$PORT</span> --no-browser your_notebook.ipynb
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web:<span class="w"> </span>voila<span class="w"> </span>--template<span class="o">=</span>osscar<span class="w"> </span>--VoilaConfiguration.enable_nbextensions<span class="o">=</span>True<span class="w"> </span>--port<span class="o">=</span><span class="nv">$PORT</span><span class="w"> </span>--no-browser<span class="w"> </span>your_notebook.ipynb
 </pre></div>
 </div>
 <p>For multiple notebooks, this template (special feature) will redirect the starting page
 from “index.ipynb”. One can create the “index.ipynb” file to link all
 other notebooks. The relevant input to the dokku Procfile is shown below:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web: voila --template<span class="o">=</span>osscar --VoilaConfiguration.enable_nbextensions<span class="o">=</span>True --port<span class="o">=</span><span class="nv">$PORT</span> --no-browser your_folder/
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web:<span class="w"> </span>voila<span class="w"> </span>--template<span class="o">=</span>osscar<span class="w"> </span>--VoilaConfiguration.enable_nbextensions<span class="o">=</span>True<span class="w"> </span>--port<span class="o">=</span><span class="nv">$PORT</span><span class="w"> </span>--no-browser<span class="w"> </span>your_folder/
 </pre></div>
 </div>
 </div>
