@@ -77,7 +77,7 @@ OSSCAR web apps and technologies, with the hope that they shall provide a powerf
 News
 ----------
 
-* **2022.03.22**: submitted paper `"OSSCAR, an open platform for collaborative development of computational tools for education in science"`_.
+* **2023.01.01**: 1st OSSCAR paper `"OSSCAR, an open platform for collaborative development of computational tools for education in science"`_ published on Computer Physics Communications.
 * **2022.03.09**: `CECAM workshop`_: Presenting an OSSCAR…collaborative platform for Open Software Services for Classroom and Research.
 * **2021.07.09**: OSSCAR project was presented by Dr. Dou Du in `"2021 AiiDA tutorial week - virtual edition"`_ workshop. 
 * **2021.03**: OSSCAR web applications for quantum mechanics and computational materials science were introduced to EPFL classroom by Dr. Giovanni Pizzi in the `"atomisitc and quantum simulations of materials"`_ course.
