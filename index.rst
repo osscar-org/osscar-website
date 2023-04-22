@@ -48,16 +48,16 @@ widely through the `CECAM`_ network and beyond.
 
       +++++++++++++++++++++++++++++++++++++++++++++
 
-       .. button-ref:: courses/index
-          :ref-type: doc
-          :click-parent:
-          :expand:
-          :color: primary
-          :outline:
+      .. button-ref:: courses/index
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
 
           To the tutorial
 
-   .. grid-item-card:: :fa:`fa-github;mr-1` **OSSCAR code**
+   .. grid-item-card:: :fa:`code;mr-1` **OSSCAR code**
       :text-align: center
       :shadow: md
 
