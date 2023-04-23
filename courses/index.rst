@@ -4,80 +4,103 @@ Course Applications
 
 Below is a compilation of educational web applications for a range of different courses in the domains of quantum mechanics and materials science. 
 
-.. panels::
-   :body: bg-light text-center
-   :footer: bg-light border-0
 
-   :fa:`book,mr-1` **Quantum Mechanics**
+.. grid:: 1 2 2 2
+   :gutter: 3
 
-   A collection of web applications for quantum mechanics.
+   .. grid-item-card:: :fa:`book;mr-1` **Quantum Mechanics**
+      :text-align: center
+      :shadow: md
 
-   .. image:: images/avoided_crossing.png
+      A collection of web applications for quantum mechanics.
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      .. image:: images/avoided_crossing.png
 
-   .. link-button:: quantum_mechanics
-      :type: ref
-      :text: To the collection
-      :classes: btn-outline-primary btn-block stretched-link
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   ----------------------------------------------
+      .. button-ref:: quantum_mechanics 
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
 
-   :fa:`book,mr-1` **Band Theory of Crystals**
+         To the collection
+         
+   .. grid-item-card:: :fa:`book;mr-1` **Band Theory of Crystals**
+      :text-align: center
+      :shadow: md
 
-   A collection of web applications for band theory.
+      A collection of web applications for band theory.
 
-   .. image:: images/free_electron.png
+      .. image:: images/free_electron.png
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: band_theory
-      :type: ref
-      :text: To the collection
-      :classes: btn-outline-primary btn-block stretched-link
+      .. button-ref:: quantum_mechanics 
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
 
-   ----------------------------------------------
+         To the collection
 
-   :fa:`book,mr-1` **Molecular and Lattice Vibration**
+   .. grid-item-card:: :fa:`book;mr-1` **Molecular and Lattice Vibration**
+      :text-align: center
+      :shadow: md
 
-   A collection of web applications for molecule and lattice vibration (phonon 1D and 2D).
+      A collection of web applications for molecular and lattice vibration (phonon 1D and 2D).
 
-   .. image:: images/phonon_2D.png
-      :width: 200
+      .. image:: images/phonon_2D.png
+         :width: 200
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: lattice_vibration
-      :type: ref
-      :text: To the collection
-      :classes: btn-outline-primary btn-block stretched-link
+      .. button-ref:: lattice_vibration
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
 
-   ----------------------------------------------
+         To the collection
 
-   :fa:`book,mr-1` **Molecular Dynamics**
+   .. grid-item-card:: :fa:`book;mr-1` **Molecular Dynamics**
+      :text-align: center
+      :shadow: md
 
-   A collection of web applications for molecular dynamics (MD) simulations.
+      A collection of web applications for molecular dynamics (MD) simulations.
 
-   .. image:: images/verlet_integration.png
+      .. image:: images/verlet_integration.png
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: molecular_dynamics
-      :type: ref
-      :text: To the collection
-      :classes: btn-outline-primary btn-block stretched-link
+      .. button-ref:: molecular_dynamics
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
 
-   ----------------------------------------------
+         To the collection
 
-   :fa:`book,mr-1` **Statistical Mechanics**
+   .. grid-item-card:: :fa:`book;mr-1` **Statistical Mechanics**
+      :text-align: center
+      :shadow: md
 
-   A collection of web applications for statistical mechanics.
+      A collection of web applications for statistical mechanics.
 
-   .. image:: images/ising_model.png
+      .. image:: images/ising_model.png
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: statistical_mechanics
-      :type: ref
-      :text: To the collection
-      :classes: btn-outline-primary btn-block stretched-link
+      .. button-ref:: statistical_mechanics 
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+
+         To the collection
+
