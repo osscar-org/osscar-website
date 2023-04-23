@@ -7,31 +7,41 @@ cloud solution. Furthermore, we have developed Jupyter widgets related to comput
 chemistry and physics under the OSSCAR project. We have also developed JupyterLab
 extensions to help in the development process. More information on these tools can be found in the `OSSCAR Tools` section. 
 
-.. panels::
-   :body: bg-light text-center
-   :footer: bg-light border-0
 
+.. grid:: 1 2 2 2
+   :gutter: 3
 
-   :fa:`book,mr-1` **Tutorials**
+   .. grid-item-card:: :fa:`book;mr-1` **Tutorials**
+      :text-align: center
+      :shadow: md
 
-   Tutorials: how to develop web applications
+      Tutorials: how to develop web applications
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: tutorials
-      :type: ref
-      :text: To the tutorials
-      :classes: btn-outline-primary btn-block stretched-link
+      .. button-ref:: tutorials 
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To the tutorials 
 
-   ----------------------------------------------
+   .. grid-item-card:: :fa:`tools;mr-1` **OSSCAR Tools**
+      :text-align: center
+      :shadow: md
 
-   :opticon:`tools,mr-1` **OSSCAR Tools**
+      Tutorials: how to develop web applications
 
-   Jupyter widgets and JupyterLab extensions.
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      .. button-ref:: tools
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To the tools
 
-   .. link-button:: tools
-      :type: ref
-      :text: To the tools
-      :classes: btn-outline-primary btn-block stretched-link
