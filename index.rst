@@ -11,7 +11,7 @@ widely through the `CECAM`_ network and beyond.
 |
 
 .. image:: images/osscar-demo.gif
-  :width: 600
+  :width: 750
   :alt: osscar demo
   :align: center
 	  
@@ -48,7 +48,7 @@ widely through the `CECAM`_ network and beyond.
 
       +++++++++++++++++++++++++++++++++++++++++++++
 
-      .. button-ref:: courses/index
+      .. button-ref:: tutorial/index
          :ref-type: doc
          :click-parent:
          :expand:
@@ -65,7 +65,7 @@ widely through the `CECAM`_ network and beyond.
 
       +++++++++++++++++++++++++++++++++++++++++++++
 
-      .. button-ref:: courses/index
+      .. button-ref:: code/index
          :ref-type: doc
          :click-parent:
          :expand:
@@ -82,7 +82,7 @@ widely through the `CECAM`_ network and beyond.
 
       +++++++++++++++++++++++++++++++++++++++++++++
 
-      .. button-ref:: courses/index
+      .. button-ref:: about/index
          :ref-type: doc
          :click-parent:
          :expand:
@@ -110,5 +110,5 @@ If you use OSSCAR notebooks or technology, we would appreciate if you could cite
 | `https://doi.org/10.1016/j.cpc.2022.108546 <https://doi.org/10.1016/j.cpc.2022.108546>`_
 
 .. image:: logos.png
-  :width: 600
+  :width: 800
   :align: center
