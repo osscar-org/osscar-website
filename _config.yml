@@ -35,6 +35,8 @@ html:
   favicon: "images/OSSCAR-favicon.png"
 
 sphinx:
+  html_context:
+    default_mode: light
   recursive_update: true
   config:
     html_theme_options:
