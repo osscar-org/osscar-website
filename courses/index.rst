@@ -37,7 +37,7 @@ Below is a compilation of educational web applications for a range of different 
 
       +++++++++++++++++++++++++++++++++++++++++++++
 
-      .. button-ref:: quantum_mechanics 
+      .. button-ref:: band_theory 
          :ref-type: doc
          :click-parent:
          :expand:

@@ -2,47 +2,57 @@
 OSSCAR source and contributing 
 ##############################
 
+.. grid:: 1 2 2 2
+   :gutter: 3
 
-.. panels::
+   .. grid-item-card:: :fa:`code;mr-1` **OSSCAR Source**
+      :text-align: center
+      :shadow: md
 
-   :body: bg-light text-center
-   :footer: bg-light border-0
+      The main GitHub repository for the OSSCAR project.
 
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   :opticon:`mark-github,mr-1` **OSSCAR Source**
+      .. button-ref:: https://github.com/osscar-org
+         :ref-type: ref
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To GitHub
 
-   The main GitHub repository for the OSSCAR project.
+   .. grid-item-card:: :fa:`book;mr-1` **How to contribute**
+      :text-align: center
+      :shadow: md
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      Guidance on how to contribute new content to the OSSCAR project.
 
-   .. link-button:: https://github.com/osscar-org/
-      :text: To GitHub
-      :classes: btn-outline-primary btn-block stretched-link
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   ----------------------------------------------
+      .. button-ref:: contributing
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To contribution guide
 
-   :fa:`book,mr-1` **How to contribute**
+   .. grid-item-card:: :fa:`book;mr-1` **Sample notebook templates**
+      :text-align: center
+      :shadow: md
 
-       Guidance on how to contribute new content to the OSSCAR project.
+      A notebook template employing the standardized OSSCAR structure.
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: contributing
-      :type: ref		 
-      :text: To contribution guide
-      :classes: btn-outline-primary btn-block stretched-link
-
-   ----------------------------------------------
-
-   :fa:`book,mr-1` **Sample notebook template**
-
-       A notebook template employing the standardized OSSCAR structure.
-
-   +++++++++++++++++++++++++++++++++++++++++++++
-
-   .. link-button:: sample_notebook
-      :type: ref		 
-      :text: To sample notebook
-      :classes: btn-outline-primary btn-block stretched-link
-                
+      .. button-ref:: sample_notebook 
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To sample notebook
 
