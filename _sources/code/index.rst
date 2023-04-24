@@ -13,7 +13,7 @@ OSSCAR source and contributing
 
       +++++++++++++++++++++++++++++++++++++++++++++
 
-      .. button-ref:: https://github.com/osscar-org/
+      .. button-link:: https://github.com/osscar-org/
          :ref-type: ref
          :click-parent:
          :expand:
