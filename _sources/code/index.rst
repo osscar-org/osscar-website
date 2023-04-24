@@ -5,7 +5,7 @@ OSSCAR source and contributing
 .. grid:: 1 2 2 2
    :gutter: 3
 
-   .. grid-item-card:: :fa:`code;mr-1` **OSSCAR Source**
+   .. grid-item-card:: :octicon:`mark-github;2em;sd-text-info` **OSSCAR Source**
       :text-align: center
       :shadow: md
 
@@ -22,7 +22,7 @@ OSSCAR source and contributing
          
          To GitHub
 
-   .. grid-item-card:: :fa:`book;mr-1` **How to contribute**
+   .. grid-item-card:: :octicon:`gift;2em;sd-text-info` **How to contribute**
       :text-align: center
       :shadow: md
 
@@ -39,7 +39,7 @@ OSSCAR source and contributing
          
          To contribution guide
 
-   .. grid-item-card:: :fa:`book;mr-1` **Sample notebook templates**
+   .. grid-item-card:: :octicon:`book;2em;sd-text-info` **Sample notebook templates**
       :text-align: center
       :shadow: md
 
