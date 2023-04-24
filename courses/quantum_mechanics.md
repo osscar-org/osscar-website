@@ -78,3 +78,17 @@ potentials.
 :width: 500px
 :align: center
 ```
+## 6. [The Multiple Split Operator Fourier Transform (MSOFT) method](https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/quantum-mechanics/msoft.ipynb)
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/master?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fquantum-mechanics%2Fmsoft.ipynb) | [![Materials Cloud Tool osscar-qmcourse](https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg)](https://osscar-quantum-mechanics.materialscloud.io/voila/render/quantum-mechanics/msoft.ipynb)
+
+This notebook carries out the numerical solution of the 1D time-dependent Schrödinger equation for nuclear evolution on multiple electronic potential 
+energy surfaces via the Multiple Split Operator Fourier Transform (MSOFT) method.
+
+```{image} ./images/msoft.png
+:alt: msoft
+:class: bg-primary mb-1
+:width: 500px
+:align: center
+```
+
