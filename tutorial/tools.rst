@@ -1,133 +1,182 @@
-#######################################
-OSSCAR widgets and extensions
-#######################################
+##############################################################
+OSSCAR Jupyter widgets, JupyterLab extensions and other tools
+##############################################################
 
-We have developed custom widgets related to computational chemistry and physics.
-For instance, we developed a interactive periodic table. Besides, we also
-developed JupyterLab extensions, which can help development.
+We have developed custom Jupyter widgets related to computational chemistry 
+and physics. For instance, we developed a interactive periodic table. 
+Besides, we also developed JupyterLab extensions, which can help development.
 
-.. panels::	    
-   :opticon:`triangle-right` **Widget Periodic Table**
+######################
+Jupyter widgets
+######################
 
-   A Jupyter widget for an interactive periodic table.
+.. grid:: 1 2 2 2
+   :gutter: 3
 
-   .. image:: ../widgets/images/widget_periodictable.png
+   .. grid-item-card:: :fa:`tools;mr-1` **Widget Periodic Table**
+      :text-align: center
+      :shadow: md
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      A Jupyter widget for an interactive periodic table.
 
-   .. link-button:: ../widgets/widget_periodictable
-      :type: ref
-      :text: To the instruction
-      :classes: btn-outline-primary btn-block stretched-link
+      .. image:: ../widgets/images/widget_periodictable.png
 
-   ----------------------------------------------
-   :opticon:`triangle-right` **Widget DOS and Bandstructure Plot**
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   A Jupyter widget to plot bandstructures and density of states.
+      .. button-ref:: ../widgets/widget_periodictable 
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To the instruction 
 
-   .. image:: ../widgets/images/widget_bandsplot.png
+   .. grid-item-card:: :fa:`tools;mr-1` **Widget DOS and Bandstructure Plot**
+      :text-align: center
+      :shadow: md
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      A Jupyter widget to plot bandstructures and density of states.
 
-   .. link-button:: ../widgets/widget_bandsplot
-      :type: ref
-      :text: To the instruction
-      :classes: btn-outline-primary btn-block stretched-link
+      .. image:: ../widgets/images/widget_bandsplot.png
 
-   ----------------------------------------------
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   :opticon:`triangle-right` **Widget Brillouin Zone Visualizer**
+      .. button-ref:: ../widgets/widget_bandsplot 
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To the instruction 
 
-   A Jupyter widget to plot the 1st Brillouin zone and path for the
-   band structure.
+   .. grid-item-card:: :fa:`tools;mr-1` **Widget Brillouin Zone Visualizer**
+      :text-align: center
+      :shadow: md
 
-   .. image:: ../widgets/images/widget_bzvisualizer.png
+      A Jupyter widget to plot the 1st Brillouin zone and path for the
+      band structure.
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      .. image:: ../widgets/images/widget_bzvisualizer.png
 
-   .. link-button:: ../widgets/widget_bzvisualizer
-      :type: ref
-      :text: To the instruction
-      :classes: btn-outline-primary btn-block stretched-link
+      +++++++++++++++++++++++++++++++++++++++++++++
 
- ----------------------------------------------
+      .. button-ref:: ../widgets/widget_bzvisualizer 
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To the instruction 
 
-   :opticon:`triangle-right` **Widget JSmol**
+   .. grid-item-card:: :fa:`tools;mr-1` **Widget Jsmol**
+      :text-align: center
+      :shadow: md
 
-   A Jupyter widget to use Jmol/Jsmol.
+      A Jupyter widget to use Jmol/Jsmol.
 
-   .. image:: ../widgets/images/widget_jsmol.png
+      .. image:: ../widgets/images/widget_jsmol.png
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: ../widgets/widget_jsmol
-      :type: ref
-      :text: To the instruction
-      :classes: btn-outline-primary btn-block stretched-link
+      .. button-ref:: ../widgets/widget_jsmol 
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To the instruction 
 
- ----------------------------------------------
+   .. grid-item-card:: :fa:`tools;mr-1` **Widget Code Input**
+      :text-align: center
+      :shadow: md
 
-   :opticon:`triangle-right` **Widget Code Input**
+      A widget to allow input of a python function, with syntax highlighting.
 
-   A widget to allow input of a python function, with syntax highlighting.
+      .. image:: ../widgets/images/widget_code_input.png
 
-   .. image:: ../widgets/images/widget_code_input.png
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      .. button-ref:: ../widgets/widget_code_input
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To the instruction 
 
-   .. link-button:: ../widgets/widget_code_input
-      :type: ref
-      :text: To the instruction
-      :classes: btn-outline-primary btn-block stretched-link
+######################
+JupyterLab extensions
+######################
 
- ----------------------------------------------
+.. grid:: 1 2 2 2
+   :gutter: 3
 
- 
-#############
-Extensions
-#############
+   .. grid-item-card:: :fa:`tools;mr-1` **Extension to Run and Hide Code Cells**
+      :text-align: center
+      :shadow: md
 
-.. panels::	    
-   :opticon:`triangle-right` **Molecular rendering with POVRAY**
+      A JupyterLab extension to run and hide all codecells.
 
-   A collection of tools to render molecular structures into high quality images or videos using the POVRAY engine.
+      .. image:: ../extensions/images/hide-input.gif
 
-   .. image:: ../widgets/images/electrostatic_colormap.png
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      .. button-ref:: ../extensions/jupyterlab_hide_code 
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To the instruction 
 
-   .. link-button:: ../extensions/mol_visualizer
-      :type: ref
-      :text: To the instruction
-      :classes: btn-outline-primary btn-block stretched-link
-		
- ----------------------------------------------
-   :opticon:`plus-circle,mr-1` **Extension to Run and Hide Codes**
+   .. grid-item-card:: :fa:`tools;mr-1` **Extension to Visulize Molecular Orbitals**
+      :text-align: center
+      :shadow: md
 
-   A JupyterLab extension to run and hide all codecells.
+      A JupyterLab launcher extension to visualize Gaussian cube files.
 
-   .. image:: ../extensions/images/hide-input.gif
+      .. image:: ../extensions/images/mol-visualizer.gif
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: ../extensions/jupyterlab_hide_code
-      :type: ref
-      :text: To the instruction
-      :classes: btn-outline-primary btn-block stretched-link
+      .. button-ref:: ../extensions/mol_visualizer 
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To the instruction 
 
-   ----------------------------------------------
+######################
+Other tools
+######################
 
-   :opticon:`plus-circle,mr-1` **Extension to Visualize Molecular Orbitals**
+.. grid:: 1 2 2 2
+   :gutter: 3
 
-   A JupyterLab launcher extension to visualize Gaussian cube files.
+   .. grid-item-card:: :fa:`tools;mr-1` **Molecular Rendering with POVRAY**
+      :text-align: center
+      :shadow: md
 
-   .. image:: ../extensions/images/mol-visualizer.gif
+      A collection of tools to render molecular structures into high quality images or videos using the POVRAY engine.
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      .. image:: ../widgets/images/electrostatic_colormap.png
 
-   .. link-button:: ../extensions/mol_visualizer
-      :type: ref
-      :text: To the instruction
-      :classes: btn-outline-primary btn-block stretched-link
-		
- ----------------------------------------------
+      +++++++++++++++++++++++++++++++++++++++++++++
+
+      .. button-ref:: ../extensions/mol_visualizer
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To the instruction 
+
