@@ -11,68 +11,85 @@ widely through the `CECAM`_ network and beyond.
 |
 
 .. image:: images/osscar-demo.gif
-  :width: 600
+  :width: 750
   :alt: osscar demo
   :align: center
 	  
 |
 
-.. panels::
-   :body: bg-light text-center
-   :footer: bg-light border-0
+.. grid:: 1 2 2 2
+   :gutter: 3
 
-   :fa:`book,mr-1` **Course Applications**
+   .. grid-item-card:: :fa:`book;mr-1` **Course Applications**
+      :text-align: center
+      :shadow: md
 
-   Browse OSSCAR-developed applications for courses in quantum mechanics and
-   computational materials science.
+      Browse OSSCAR-developed applications for courses in quantum mechanics and
+      computational materials science.
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   .. link-button:: courses/index
-      :type: ref
-      :text: To the course applications
-      :classes: btn-outline-primary btn-block stretched-link
+      .. button-ref:: courses/index
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To the course applications
 
-   ----------------------------------------------
+   .. grid-item-card:: :fa:`file-code;mr-1` **OSSCAR tools**
+      :text-align: center
+      :shadow: md
 
-   :fa:`file-code,mr-1` **OSSCAR tools**
+      How to develop interactive web applications with Jupyter notebooks
+      using OSSCAR technologies and a collection of widgets and 
+      extensions for use in the applications.
 
-   How to develop interactive web applications with Jupyter notebooks
-   using OSSCAR technologies and a collection of widgets and extensions for use in the applications.
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      .. button-ref:: tutorial/index
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
 
-   .. link-button:: tutorial/index
-      :type: ref
-      :text: To the tutorial
-      :classes: btn-outline-primary btn-block stretched-link
+          To the tutorial
 
-   ----------------------------------------------
+   .. grid-item-card:: :fa:`code;mr-1` **OSSCAR code**
+      :text-align: center
+      :shadow: md
 
-   :opticon:`mark-github,mr-1` **OSSCAR Code**
+      Check out all (open-source!) code developed by OSSCAR (courses, widgets, ...) and learn how to contribute to the project.
 
-    Check out all (open-source!) code developed by OSSCAR (courses, widgets, ...) and learn how to contribute to the project.
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      .. button-ref:: code/index
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
 
-   .. link-button:: code/index
-      :type: ref
-      :text: To OSSCAR source and contribution guide
-      :classes: btn-outline-primary btn-block stretched-link
+         To OSSCAR source and contribution guide
 
-   ----------------------------------------------
+   .. grid-item-card:: :fa:`users;mr-1` **About OSSCAR**
+      :text-align: center
+      :shadow: md
 
-   :fa:`users,mr-1` **About OSSCAR**
+      Information about the OSSCAR project.
 
-   Information about the OSSCAR project.
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      .. button-ref:: about/index
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
 
-   .. link-button:: about/index
-      :type: ref
-      :text: To about section
-      :classes: btn-outline-primary btn-block stretched-link
-
+         To about section
 
 Acknowledgements
 *****************
@@ -93,5 +110,5 @@ If you use OSSCAR notebooks or technology, we would appreciate if you could cite
 | `https://doi.org/10.1016/j.cpc.2022.108546 <https://doi.org/10.1016/j.cpc.2022.108546>`_
 
 .. image:: logos.png
-  :width: 600
+  :width: 800
   :align: center
