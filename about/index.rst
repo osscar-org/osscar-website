@@ -3,44 +3,57 @@ About OSSCAR
 ###################################
 
 
-.. panels::
-   :body: bg-light text-center
-   :footer: bg-light border-0
+.. grid:: 1 2 2 2
+   :gutter: 3
 
+   .. grid-item-card:: :fa:`book;mr-1` **The Project**
+      :text-align: center
+      :shadow: md
 
-   :fa:`book,mr-1` **The Project**
+      Information regarding the philosophy of OSSCAR.
 
-   Information regarding the philosophy of OSSCAR.
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      .. button-ref:: the_project
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
 
-   .. link-button:: the_project
-      :type: ref
-      :text: About the project
-      :classes: btn-outline-primary btn-block stretched-link
+         About the project      
 
-   ----------------------------------------------
+   .. grid-item-card:: :fa:`road;mr-1` **Roadmap**
+      :text-align: center
+      :shadow: md
 
-   :fa:`road,mr-1` **Roadmap**
+      The roadmap of OSSCAR project.
 
-   The roadmap of OSSCAR project.
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      .. button-ref:: roadmap
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
 
-   .. link-button:: roadmap
-      :type: ref
-      :text: About the project
-      :classes: btn-outline-primary btn-block stretched-link
+         About the roadmap    
 
-   ----------------------------------------------
+   .. grid-item-card:: :fa:`users;mr-1` **The Team**
+      :text-align: center
+      :shadow: md
 
-   :fa:`users,mr-1` **The Team**
+      Get to know the OSSCAR team.
 
-   Get to know the OSSCAR team.
+      +++++++++++++++++++++++++++++++++++++++++++++
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      .. button-ref:: team
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
 
-   .. link-button:: team
-      :type: ref
-      :text: To the team
-      :classes: btn-outline-primary btn-block stretched-link
+         About the team    
+
