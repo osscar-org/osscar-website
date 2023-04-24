@@ -5,58 +5,58 @@ OSSCAR Team
 Main Team
 +++++++++
 
-.. panels::
-   :body: bg-light text-center
-   :footer: bg-light border-0
+.. grid:: 1 2 2 2
+   :gutter: 3
 
-    **Project Manager**
+   .. grid-item-card::
+      :text-align: center
+      :shadow: md
 
-   .. image:: images/pizzi.jpg
+      **Project Manager**
 
-   `Dr. Giovanni Pizzi <https://people.epfl.ch/giovanni.pizzi>`_
+      .. image:: images/pizzi.jpg
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      `Dr. Giovanni Pizzi <https://people.epfl.ch/giovanni.pizzi>`_
 
-   ----------------------------------------------
+   .. grid-item-card::
+      :text-align: center
+      :shadow: md
 
-    **Deputy Project Manager**
+      **Deputy Project Manager**
 
-   .. image:: images/bonella.jpg
+      .. image:: images/bonella.jpg
 
-   `Dr. Sara Bonella <https://people.epfl.ch/sara.bonella>`_
+      `Dr. Sara Bonella <https://people.epfl.ch/sara.bonella>`_
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+   .. grid-item-card::
+      :text-align: center
+      :shadow: md
 
-   ----------------------------------------------
+      **Deputy Project Manager**
 
-    **Deputy Project Manager**
+      .. image:: images/pagonabarraga.jpg
 
-   .. image:: images/pagonabarraga.jpg
+      `Prof. Ignacio Pagonabarraga <https://people.epfl.ch/ignacio.pagonabarraga>`_
 
-   `Prof. Ignacio Pagonabarraga <https://people.epfl.ch/ignacio.pagonabarraga>`_
+   .. grid-item-card::
+      :text-align: center
+      :shadow: md
 
-   +++++++++++++++++++++++++++++++++++++++++++++
+      **Team Member**
 
-   ----------------------------------------------
+      .. image:: images/du.jpg
 
-    **Team Member**
+      `Dr. Dou Du <https://people.epfl.ch/dou.du>`_
 
-   .. image:: images/du.jpg
+   .. grid-item-card::
+      :text-align: center
+      :shadow: md
 
-   `Dr. Dou Du <https://people.epfl.ch/dou.du>`_
+      **Team Member**
 
-   +++++++++++++++++++++++++++++++++++++++++++++
-   
-   ----------------------------------------------
+      .. image:: images/baird.jpg
 
-    **Team Member**
-
-   .. image:: images/baird.jpg
-
-   `Taylor Baird <https://people.epfl.ch/taylor.baird>`_	      
-
-   +++++++++++++++++++++++++++++++++++++++++++++
-
+      `Taylor Baird <https://people.epfl.ch/taylor.baird>`_	      
 
 Steering Committee
 ++++++++++++++++++
