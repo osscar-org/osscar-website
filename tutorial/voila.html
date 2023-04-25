@@ -331,7 +331,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="using-voila-to-convert-jupyter-notebooks-into-web-application">
+  <section id="using-voila-to-convert-jupyter-notebooks-into-web-application">
 <h1><strong>Using Voila to convert Jupyter notebooks into web application</strong><a class="headerlink" href="#using-voila-to-convert-jupyter-notebooks-into-web-application" title="Permalink to this heading">#</a></h1>
 <section id="introduction-to-voila">
 <h2>1. Introduction to Voila<a class="headerlink" href="#introduction-to-voila" title="Permalink to this heading">#</a></h2>
@@ -365,8 +365,8 @@ to use Voila locally.</p>
 </div>
 </section>
 <section id="b-deploying-with-binder-mybinder-org">
-<h3><strong>b. Deploying with Binder (<a class="reference external" href="http://mybinder.org">mybinder.org</a>)</strong><a class="headerlink" href="#b-deploying-with-binder-mybinder-org" title="Permalink to this heading">#</a></h3>
-<p>Binder (<a class="reference external" href="http://mybinder.org">mybinder.org</a>) offers free cloud computing services to deploy Jupyter applications.
+<h3><strong>b. Deploying with Binder (mybinder.org)</strong><a class="headerlink" href="#b-deploying-with-binder-mybinder-org" title="Permalink to this heading">#</a></h3>
+<p>Binder (mybinder.org) offers free cloud computing services to deploy Jupyter applications.
 We can deploy the web applications with Voila by calling the Voila server extension.
 One can follow the steps as listed below:</p>
 <ul class="simple">
@@ -374,7 +374,7 @@ One can follow the steps as listed below:</p>
 put the package name “voila” in the requirements.txt file.</p></li>
 <li><p>The voila Jupyter server extension is specified by prepending “<strong>voila/render</strong>” to the path of your Jupyter notebook.</p></li>
 </ul>
-<p>Provide the URL to <a class="reference external" href="http://mybinder.org">mybinder.org</a> as shown below:</p>
+<p>Provide the URL to mybinder.org as shown below:</p>
 <p><img alt="voila" src="../_images/fig_binderVoila.png" /></p>
 </section>
 <section id="c-deploying-on-a-dokku-server">
@@ -385,7 +385,7 @@ Dokku is a open source platform as a service, which supports voila deployment as
 web applications. One can set up their own dokku servers. Otherwise, there is a
 dokku server maintained by the Materials Cloud team. Here is the link for instructions on how to deploy
 a new tool at Materials Cloud.</p>
-<p><a class="github reference external" href="https://github.com/materialscloud-org/issues/wiki/Contributing-a-new-tool">materialscloud-org/issues</a></p>
+<p>https://github.com/materialscloud-org/issues/wiki/Contributing-a-new-tool</p>
 <p>For deploying apps with Voila for a single notebook, we need set the Procfile file as:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>web:<span class="w"> </span>voila<span class="w"> </span>—-port<span class="o">=</span><span class="nv">$PORT</span><span class="w"> </span>—-no-browser<span class="w"> </span>your_notebook.ipynb
 </pre></div>

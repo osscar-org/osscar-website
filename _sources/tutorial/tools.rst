@@ -171,7 +171,7 @@ Other tools
 
       +++++++++++++++++++++++++++++++++++++++++++++
 
-      .. button-ref:: ../extensions/mol_visualizer
+      .. button-ref:: ../extensions/molecular_rendering
          :ref-type: doc
          :click-parent:
          :expand:
