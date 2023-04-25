@@ -23,13 +23,7 @@ However, it could still take hours to obtain the rendered images and videos.**
 
 * The electrostatic colormap of the benzene (C6H6) molecule
 
-<div>
-<img src="images/electrostatic_colormap.png" alt="drawing" width="350"/>
-<img src="images/electrostatic_trans.png" alt="drawing" width="350"/>
-</div>
+![benzene1](./images/electrostatic_colormap.png)
+![benzene2](./images/electrostatic_trans.png)
 
-# Acknowledgements
 
-We acknowledge support from the EPFL Open Science Fund via the [OSSCAR](http://www.osscar.org) project.
-
-<img src='http://www.osscar.org/wp-content/uploads/2019/03/OSSCAR-logo.png' width='230'>
