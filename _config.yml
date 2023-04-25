@@ -41,3 +41,7 @@ sphinx:
   config:
     html_theme_options:
       search_bar_text: "Search this website..."
+
+parse:
+  myst_enable_extensions:
+    - html_image

@@ -23,7 +23,5 @@ However, it could still take hours to obtain the rendered images and videos.**
 
 * The electrostatic colormap of the benzene (C6H6) molecule
 
-![benzene1](./images/electrostatic_colormap.png)
-![benzene2](./images/electrostatic_trans.png)
-
-
+<img src="./images/electrostatic_colormap.png" alt="drawing" width="350"/>
+<img src="./images/electrostatic_trans.png" alt="drawing" width="350"/>
