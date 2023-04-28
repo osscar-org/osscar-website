@@ -4,7 +4,7 @@
 title: Open Software Services for Classrooms and Research
 author: The OSSCAR Development Team
 logo: osscar-log.svg
-copyright: "2019-2022"
+copyright: "2019-2023"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
