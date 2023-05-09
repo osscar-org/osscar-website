@@ -1,6 +1,6 @@
 # **Band Theory of Crystals**
 
-## 1. [Fourier Transforms and Plane-Wave Expansions](https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/band-theory/FFT_and_planewaves.ipynb)
+## 1. [Fourier Transforms and Plane-Wave Expansions](https://github.com/osscar-org/quantum-mechanics/blob/master/notebook/band-theory/FFT_and_planewaves.ipynb)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/master?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fband-theory%2FFFT_and_planewaves.ipynb) | [![Materials Cloud Tool osscar-qmcourse](https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg)](https://osscar-quantum-mechanics.materialscloud.io/voila/render/band-theory/FFT_and_planewaves.ipynb)
 
@@ -16,7 +16,7 @@ the reader focus on the essential aspects of such a representation.
 :align: center
 ```
 
-% ## 2. [Free-electron Bands in a Periodic Lattice](https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/band-theory/free_electron.ipynb)
+% ## 2. [Free-electron Bands in a Periodic Lattice](https://github.com/osscar-org/quantum-mechanics/blob/master/notebook/band-theory/free_electron.ipynb)
 
 % [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fband-theory%2Ffree_electron.ipynb)
 % [![Materials Cloud Tool osscar-qmcourse](https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg)](https://osscar-quantum-mechanics.matcloud.xyz/voila/render/band-theory/free_electron.ipynb)
@@ -31,7 +31,7 @@ the reader focus on the essential aspects of such a representation.
 % :align: center
 % ```
 
-% ## 3. [Density of states (DOS)](https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/band-theory/density_of_states.ipynb)
+% ## 3. [Density of states (DOS)](https://github.com/osscar-org/quantum-mechanics/blob/master/notebook/band-theory/density_of_states.ipynb)
 
 % [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/develop?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fband-theory%2Fdensity_of_states.ipynb)
 % [![Materials Cloud Tool osscar-qmcourse](https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg)](https://osscar-quantum-mechanics.matcloud.xyz/voila/render/band-theory/density_of_states.ipynb)
@@ -47,7 +47,7 @@ the reader focus on the essential aspects of such a representation.
 % :align: center
 % ```
 
-## 2. [Norm-conserving Pseudopotentials](https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/band-theory/pseudopotential.ipynb)
+## 2. [Norm-conserving Pseudopotentials](https://github.com/osscar-org/quantum-mechanics/blob/master/notebook/band-theory/pseudopotential.ipynb)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/master?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fband-theory%2Fpseudopotential.ipynb) | [![Materials Cloud Tool osscar-qmcourse](https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg)](https://osscar-quantum-mechanics.materialscloud.io/voila/render/band-theory/pseudopotential.ipynb)
 
