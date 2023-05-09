@@ -1,6 +1,6 @@
 # **Molecular and Lattice Vibration**
 
-## 1. [Introduction to 1D Phonons](https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/lattice-vibration/Phonon_1D.ipynb)
+## 1. [Introduction to 1D Phonons](https://github.com/osscar-org/quantum-mechanics/blob/master/notebook/lattice-vibration/Phonon_1D.ipynb)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/master?urlpath=%2Fvoila%2Frender%2Fnotebook%2Flattice-vibration%2FPhonon_1D.ipynb) | [![Materials Cloud Tool osscar-qmcourse](https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg)](https://osscar-quantum-mechanics.materialscloud.io/voila/render/lattice-vibration/Phonon_1D.ipynb)
 
@@ -17,7 +17,7 @@ lattice are discussed in *duo* with the interactive visualizer.
 :align: center
 ```
 
-## 2. [2D Phonons Dispersion](https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/lattice-vibration/Phonon_2D.ipynb)
+## 2. [2D Phonons Dispersion](https://github.com/osscar-org/quantum-mechanics/blob/master/notebook/lattice-vibration/Phonon_2D.ipynb)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/master?urlpath=%2Fvoila%2Frender%2Fnotebook%2Flattice-vibration%2FPhonon_2D.ipynb) | [![Materials Cloud Tool osscar-qmcourse](https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg)](https://osscar-quantum-mechanics.materialscloud.io/voila/render/lattice-vibration/Phonon_2D.ipynb)
 
@@ -34,7 +34,7 @@ and a more complex one, the honeycomb lattice, are presented.
 :align: center
 ```
 
-## 3. [Introduction to Molecular Vibrations](https://github.com/osscar-org/quantum-mechanics/blob/develop/notebook/lattice-vibration/Molecule_Vibration.ipynb)
+## 3. [Introduction to Molecular Vibrations](https://github.com/osscar-org/quantum-mechanics/blob/master/notebook/lattice-vibration/Molecule_Vibration.ipynb)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/osscar-org/quantum-mechanics/master?urlpath=%2Fvoila%2Frender%2Fnotebook%2Flattice-vibration%2FMolecule_Vibration.ipynb) | [![Materials Cloud Tool osscar-qmcourse](https://raw.githubusercontent.com/materialscloud-org/mcloud-badge/main/badges/img/mcloud_badge_tools.svg)](https://osscar-quantum-mechanics.materialscloud.io/voila/render/lattice-vibration/Molecule_Vibration.ipynb)
 
