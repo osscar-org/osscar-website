@@ -76,13 +76,14 @@ OSSCAR web apps and technologies, with the hope that they shall provide a powerf
 
 News
 ----------
-
+* **2023 11.05**: OSSCAR project was presented at `JupyterCon 2023`_ by Taylor Baird.
 * **2023.01.01**: 1st OSSCAR paper `"OSSCAR, an open platform for collaborative development of computational tools for education in science"`_ published on Computer Physics Communications.
 * **2022.03.09**: `CECAM workshop`_: Presenting an OSSCAR…collaborative platform for Open Software Services for Classroom and Research.
 * **2021.07.09**: OSSCAR project was presented by Dr. Dou Du in `"2021 AiiDA tutorial week - virtual edition"`_ workshop. 
 * **2021.03**: OSSCAR web applications for quantum mechanics and computational materials science were introduced to EPFL classroom by Dr. Giovanni Pizzi in the `"atomisitc and quantum simulations of materials"`_ course.
 * **2021.01.11**: Dr. Giovanni Pizzi and Dr. Dou Du were awarded the `Digital Resources for Instruction and Learning fund`_.
-* **2020.07.10**: OSSCAR project was presented for the 1st time by Dr. Dou Du in `"2022 AiiDA tutorial week - virtual edition"`_ workshop. 
+* **2020.07.10**: OSSCAR project was presented for the 1st time by Dr. Dou Du in `"2022 AiiDA tutorial week - virtual edition"`_ workshop.
+  
 
 .. _"2022 AiiDA tutorial week - virtual edition": https://aiida-tutorials.readthedocs.io/en/tutorial-2020-intro-week
 .. _Digital Resources for Instruction and Learning fund: https://www.epfl.ch/education/educational-initiatives/cede/digitaltools/dril
@@ -102,7 +103,7 @@ News
 .. _CECAM workshop: https://www.cecam.org/workshop-details/1166
 .. _paper: https://doi.org/10.1016/j.cpc.2022.108546
 .. _"OSSCAR, an open platform for collaborative development of computational tools for education in science": https://doi.org/10.1016/j.cpc.2022.108546
-
+.. _"JupyterCon 2023: https://www.jupytercon.com/
 
 
 
