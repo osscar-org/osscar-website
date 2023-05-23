@@ -1,6 +1,6 @@
 # `jupyterlab-hide-code`: A JupyterLab Extension to Run and Hide Source Code
 
-**Source code:** https://github.com/osscar-org/widget-code-input
+**Source code:** [https://github.com/osscar-org/widget-code-input](https://github.com/osscar-org/widget-code-input)
 
 This extension adds a button in JupyterLab which enables one to run the code cells of a notebook and have them subsequently be hidden from view.
 This JupyterLab extension was inspired by the 
