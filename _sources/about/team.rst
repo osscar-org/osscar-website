@@ -56,7 +56,17 @@ Main Team
 
       .. image:: images/baird.jpg
 
-      `Taylor Baird <https://people.epfl.ch/taylor.baird>`_	      
+      `Taylor Baird <https://people.epfl.ch/taylor.baird>`_
+   
+   .. grid-item-card::
+      :text-align: center
+      :shadow: md
+
+      **Team Member**
+
+      .. image:: images/eimre.jpg
+
+      `Dr. Kristjan Eimre <https://people.epfl.ch/kristjan.eimre>`_
 
 Steering Committee
 ++++++++++++++++++
