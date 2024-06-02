@@ -2,9 +2,8 @@
 OSSCAR Jupyter widgets, JupyterLab extensions and other tools
 ##############################################################
 
-We have developed custom Jupyter widgets related to computational chemistry 
-and physics. For instance, we developed a interactive periodic table. 
-Besides, we also developed JupyterLab extensions, which can help development.
+We have developed custom Jupyter widgets which facilitate a number of tasks typically carried out in computational chemistry and physics. All of these widgets are compatible with JupyterLab >= 4.x (Notebook 7) and were revised in 2024 to make use of the anywidget framework.
+In addition to interactive widgets, we have also developed JupyterLab extensions, which can improve a user's development experience.
 
 ######################
 Jupyter widgets
