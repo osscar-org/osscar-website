@@ -70,25 +70,6 @@ Jupyter widgets
          
          To the instruction 
 
-   .. grid-item-card:: :fa:`tools;mr-1` **Widget Jsmol**
-      :text-align: center
-      :shadow: md
-
-      A Jupyter widget to use Jmol/Jsmol.
-
-      .. image:: ../widgets/images/widget_jsmol.png
-
-      +++++++++++++++++++++++++++++++++++++++++++++
-
-      .. button-ref:: ../widgets/widget_jsmol 
-         :ref-type: doc
-         :click-parent:
-         :expand:
-         :color: primary
-         :outline:
-         
-         To the instruction 
-
    .. grid-item-card:: :fa:`tools;mr-1` **Widget Code Input**
       :text-align: center
       :shadow: md
@@ -171,6 +152,25 @@ Other tools
       +++++++++++++++++++++++++++++++++++++++++++++
 
       .. button-ref:: ../extensions/molecular_rendering
+         :ref-type: doc
+         :click-parent:
+         :expand:
+         :color: primary
+         :outline:
+         
+         To the instruction 
+
+   .. grid-item-card:: :fa:`tools;mr-1` **Widget Jsmol**
+      :text-align: center
+      :shadow: md
+
+      A Jupyter widget to use Jmol/Jsmol.
+
+      .. image:: ../widgets/images/widget_jsmol.png
+
+      +++++++++++++++++++++++++++++++++++++++++++++
+
+      .. button-ref:: ../widgets/widget_jsmol 
          :ref-type: doc
          :click-parent:
          :expand:
