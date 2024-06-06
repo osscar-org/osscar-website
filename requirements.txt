@@ -6,6 +6,7 @@ scipy
 ase
 ipympl
 nglview
+anywidget
 widget-bzvisualizer
 widget-code-input
 widget-periodictable
