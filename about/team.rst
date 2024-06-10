@@ -46,7 +46,7 @@ Main Team
 
       .. image:: images/du.jpg
 
-      `Dr. Dou Du <https://people.epfl.ch/dou.du>`_
+      `Dr. Dou Du <mailto:dou.du@icloud.com>`_
 
    .. grid-item-card::
       :text-align: center
